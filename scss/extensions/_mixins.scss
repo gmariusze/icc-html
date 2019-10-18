@@ -1,0 +1,118 @@
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+/*
+  NAUDOJIMAS:
+  @include placeholder {
+    color: green;
+  }
+*/
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+@mixin full_size() {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@mixin pseudo() {
+  content: " ";
+  display: block;
+}
+
+
+
+@mixin dim($color,$opacity) {
+  position: relative;
+  &:before {
+    @include full_size();
+    @include pseudo();
+    background: rgba(#000,0.4);
+  }
+}
+
+@mixin title_border($pos,$width,$color) {
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom: 0;
+
+    @include pseudo();
+    height: 1px;
+    background: $color;
+    width: $width;
+    @if $pos == 'left' {
+      left: 0px;
+    } @else if $pos == 'center' {
+      left: calc( 50% - #{$width/2})
+    } @else if $pos == 'right' {
+      left: initial;
+      right: 0px;
+    }
+
+  }
+}
+
+@mixin menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    a {
+      text-decoration: none;
+    }
+    &:first-child {
+      a {
+        padding-left: 0;
+      }
+    }
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+  &.cloned {
+    ul {
+      flex-flow: column;
+      > li  {
+        > a {
+          display: block;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}

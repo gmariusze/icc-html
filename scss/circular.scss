@@ -1,0 +1,85 @@
+.circular-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 500;
+}
+$text-lines:4;
+.circular {
+    animation: rotateAxis 5s 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    .item {
+      text-align: left;
+      font-size: 3vw;
+      transition: all cubic-bezier(.165,.84,.44,1) .8s;
+      text-transform: uppercase;
+      mix-blend-mode: difference;
+      font-family: 'Anton', sans-serif;
+      font-size: 8.25rem;
+      line-height: 8rem;
+      .scrolling-texts {
+        height: 8rem;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+        min-width: 38rem;
+        overflow: hidden;
+        margin-top: 4.4rem;
+        > div {
+          display: flex;
+          align-items: center;
+          > div {
+            position: absolute;
+            white-space: nowrap;
+            mix-blend-mode: difference;
+            opacity: 0;
+            visibility: hidden;
+            &.visible {
+              visibility: visible;
+              opacity: 1;
+            }
+            &:nth-child(1) {
+              color:#2E86AB;
+            }
+            &:nth-child(2) {
+              color: #ECA72C;
+            }
+            &:nth-child(3) {
+              color: #A23B72;
+            }
+            &:nth-child(4) {
+              color: #EE5622;
+            }
+            &:nth-child(5) {
+              color: #31263E;
+            }
+          }
+          /*animation: rotateProducts 2s alternate;
+          animation-fill-mode:forwards;*/
+        }
+      }
+      &:hover {
+        transform: rotate(0) skewX(0);
+      }
+      @for $i from 1 through $text-lines {
+        $rotate: (360deg / $text-lines)*$i - 45deg;
+        $skewX: $i*40deg;
+        $translateX: $i*50vw;
+        &:nth-child(#{$i}) {
+          //transform: rotate(#{$rotate}) skewX(#{$skewX}) translateX(#{$translateX});
+          transform: rotate(#{$rotate}) translateX(#{$translateX});
+          @if $i == 1 {
+            transform: rotate(#{$rotate}) translateX(#{$translateX}) translateY(-3vw);
+          }
+          animation: rotateAxis_#{$i} 10s 1;
+          animation-direction: alternate;
+          animation-fill-mode:forwards;
+        }
+      }
+    }
+}

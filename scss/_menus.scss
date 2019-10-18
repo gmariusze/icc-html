@@ -1,0 +1,28 @@
+/* MENU STYLING START */
+.breadcrumbs-menu {
+  ul {
+    @include menu;
+    li {
+      a {
+        padding: 0 5px;
+        &:after {
+          content: ">";
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+.secondary-menu,
+.menu {
+  ul {
+    @include menu;
+    li {
+      a {
+        display: block;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+/* MENU STYLING END */

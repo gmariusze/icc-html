@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  .mobile_strip {
+    display: flex;
+  }
+  a.logo {
+    background-size: contain;
+  }
+  .hide_if_mobile {
+    display: none;
+  }
+  .footer_guarantor {
+    display: none;
+  }
+  .footer {
+    height: auto;
+    margin: 0;
+  }
+  div.section {
+    &.simple {
+      table {
+        display: inline-block;
+        max-width: 100%;
+        overflow: auto;
+        border-collapse: collapse;
+      }
+    }
+  }
+
+
+}

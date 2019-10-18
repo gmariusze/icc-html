@@ -1,0 +1,33 @@
+body {
+  &:after {
+    content: " ";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/demo/index.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: 10000;
+    opacity: 0.3;
+    display: none;
+  }
+  &.demo-visible {
+    position: relative;
+    &:after {
+      display: block;
+    }
+    min-height: 940px !important;
+  }
+  a.demo {
+    display: inline-block;
+    position: fixed;
+    top:0;
+    right: 0;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    z-index: 5000000;
+  }
+}

@@ -1,0 +1,103 @@
+body {
+  &.mobile-menu-opened {
+    .slider {
+      .swiper-slide {
+        width: 100% !important;
+      }
+    }
+  }
+}
+.mobile-navigation-place {
+  background-color: $mobile_menu_background;
+  *.cloned {
+    display: block;
+    width: 100%;
+    &.logo {
+      display: block;
+      height: 90px;
+      background-image: url(../images/logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 85px;
+    }
+    ul {
+      display: block;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        &.selected,
+        &:hover {
+          > a {
+            @include linear-gradient(0deg, darken($mobile-color,3) 0%, $mobile-color 50%, darken($mobile-color,3) 100%);
+          }
+        }
+        > a {
+          transition: all ease-in-out 0.3s;
+          display: block;
+          font-size: 16px;
+          @include linear-gradient(0deg, $mobile-color 0%, lighten($mobile-color,5) 100%);
+          color: $mobile-text-color;
+          padding: 10px 15px;
+          border-bottom: 1px solid darken($mobile-color,2);
+          border-top: 1px solid lighten($mobile-color,0.5);
+          text-transform: none;
+          display: flex;
+          justify-content: space-between;
+          span {
+            &.mobile-toggle {
+              background-color: $mobile_submenu_toggle;
+              color: $mobile-text-color;
+              box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.75);
+              padding: 0 10px;
+              border-radius: 8px;
+              .fa {
+                transition: all ease-in-out 0.3s;
+              }
+            }
+          }
+        }
+        > ul {
+          opacity: 0;
+          visibility: hidden;
+          max-height: 0;
+          overflow: hidden;
+          transition: all ease-in-out 0.3s;
+          li {
+            &.selected,
+            &:hover {
+              > a {
+                @include linear-gradient(0deg, darken($mobile-color,1) 0%, $mobile-color 50%, darken($mobile-color,1) 100%);
+              }
+            }
+            a {
+              display: block;
+              font-size: 14px;
+              border-bottom: 1px solid rgba(darken($mobile-color,0.5),0.2);
+              border-top: 1px solid lighten($mobile-color,0.5);
+              @include linear-gradient(0deg, lighten($mobile-color,8) 0%, lighten($mobile-color,10) 100%);
+              .pre {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        &.open {
+          > a {
+            .mobile-toggle {
+              .fa {
+                transform: rotate(90deg);
+              }
+            }
+          }
+          > ul {
+            opacity: 1;
+            visibility:visible;
+            max-height: 5000px;
+
+          }
+        }
+      }
+    }
+  }
+}
