@@ -36,4 +36,14 @@ input[type='button'],
     font-weight: 500;
     line-height: 20px;
   }
+  &.full-width {
+    display: block;
+    text-align: center;
+  }
+  &.no-shadow {
+    box-shadow: none;
+  }
+  &.tc-dark {
+    color: $color_prussian_blue;
+  }
 }

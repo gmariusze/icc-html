@@ -18,11 +18,3 @@ ANIMACIJOS:
   zoomOutDown	zoomOutLeft	zoomOutRight	zoomOutUp
   slideInDown	slideInLeft	slideInRight	slideInUp
   slideOutDown	slideOutLeft	slideOutRight	slideOutUp
-
-TODO list:
-  Gradient generation function
-  +Perkelti matematikos funkcijas is baltled
-  +Ikelti animation.css i bundle
-  +Sutvarkyti mobilu meniu
-  +-Sudeti kintamuosius visur
-  Fontu auto font-face https://github.com/sapegin/grunt-webfont

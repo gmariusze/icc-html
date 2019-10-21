@@ -41,18 +41,22 @@ body {
   font-size: 12px;
   line-height: 1.5;
   background-color: $background-color;
-
+  &.white {
+    background-color: $color_white;
+  }
 }
 .pure-g {
   [class*=pure-u] {
     font-family: $font-stack;
   }
 }
-
+.spacer {
+  height: $header-height;
+}
 .header {
   height: $header-height;
   position: relative;
-  z-index: 222;
+  z-index: $zi_header;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -80,6 +84,10 @@ body {
     padding: 13px;
     color: transparent;
     cursor: pointer;
+
+    &.blue {
+      background-color: $color_big_stone;
+    }
   }
   .line-2 {
       > .container {
@@ -117,12 +125,15 @@ body {
   height: $footer-height;
   clear: both;
   position: relative;
-  z-index: 3;
+  z-index: $zi_footer;
   background:$color_white;
   font-family: $font-stack-2;
   font-size: 11px;
   font-weight: 300;
   line-height: 13px;
+  &.grey {
+    background-color: $color_alabaster;
+  }
   > .container {
     height: 100%;
 
@@ -198,6 +209,7 @@ strong {
 
 /* DEFAULT STYLING END */
 //@import 'slider';
+@import 'login';
 @import 'sections';
 @import 'menus';
 @import 'mobile_menus';

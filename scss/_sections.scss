@@ -1,6 +1,20 @@
 div.section {
   padding: 15px 0;
   /* Front page image with text ( First section )*/
+  div.back {
+    a.back {
+      color: $color_main_text_darker;
+      font-family: $font-stack-2;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 19px;
+      text-transform: uppercase;
+      padding-left: 16px;
+      background-image: url('../images/ico-arrow-left.svg');
+      background-position: center left;
+      background-repeat: no-repeat;
+    }
+  }
   h2 {
     color: $color_prussian_blue;
   	font-family: $font-stack;
@@ -8,6 +22,11 @@ div.section {
   	font-weight: 900;
   	line-height: 42px;
     margin: 20px 0;
+    &.smaller {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 36px;
+    }
   }
   &.front-page-picture {
     padding-top: 140px;
@@ -58,9 +77,50 @@ div.section {
   	font-weight: 300;
   	line-height: 24px;
   	text-align: center;
+    .narrower-text-container {
+      max-width: 1046px;
+      margin: 0 auto;
+    }
     /*596px*/
     h2 {
     	text-align: center;
+    }
+    &.white {
+      background-color: #fff;
+    }
+    &.no-shadow {
+      box-shadow: none;
+    }
+    &.type-a {
+      color: $color_main_text_darker;
+      font-family: $font-stack-2;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 17px;
+      text-align: left;
+      h2 {
+        text-align: left;
+      }
+      h3 {
+        color: $color_prussian_blue;
+        font-family: $font-stack-2;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 22px;
+        margin: 20px 0;
+        margin-top: 40px;
+      }
+      p {
+        margin: 15px 0;
+      }
+      a {
+        font-weight: 500;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin:20px 0;
+      }
     }
   }
   &.picture-text {
@@ -295,6 +355,9 @@ div.section {
     }
   }
   &.partners {
+    &.grey {
+      background-color: $color_alabaster;
+    }
     .logos-wrap {
       display: flex;
       justify-content: space-between;

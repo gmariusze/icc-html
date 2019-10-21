@@ -14,21 +14,51 @@ textarea {
     outline-style: none;
   }
 }
-input[type='text']{
+
+.checkbox-wrap {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   vertical-align: top;
-  outline: none;
-  height: $input-height;
-  line-height: $input-height;
-  transition: all ease-in-out 0.2s;
-  @include placeholder {
-    color: lighten($primary-color, 50%);
+  > input[type='checkbox'] {
+    opacity: 0;
+    @include full_size;
+    &:checked ~ span {
+      border: 1px solid $color_prussian_blue;
+      background-color: $color_prussian_blue;
+      background-image: url('../images/ico-checkbox.svg');
+    }
   }
-  &:focus {
-    border:$input-focus-border;
+  > input[type='checkbox'],
+  > span {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid $color_iron;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    vertical-align: top;
   }
-  &[type='text'] {
+  > span {
+    transition: all ease-in-out 0.3s;
   }
 }
+
+input[type='password'],
+input[type='text'] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid $color_iron;
+  border-radius: 5px;
+  background-color: $color_white;
+  //box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+  padding: 0 15px;
+}
+
 select {
   vertical-align: top;
   outline: none;
