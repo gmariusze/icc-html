@@ -30,8 +30,8 @@ div.section {
   }
   &.front-page-picture {
     padding-top: 140px;
+    padding-bottom: 83px;
     background-color: $color_big_stone;
-    min-height: 768px;
     position: relative;
     &:before {
       @include full_size;
@@ -305,6 +305,7 @@ div.section {
           }
         }
         .title {
+          width: 80%;
           .name {
             color: $color_prussian_blue;
             font-family: $font-stack-2;
@@ -312,6 +313,10 @@ div.section {
             font-weight: 500;
             line-height: 18px;
             margin: 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
           }
           .position {
             height: 12px;
@@ -322,6 +327,10 @@ div.section {
             font-weight: 500;
             line-height: 14px;
             margin: 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
           }
         }
       }
@@ -355,6 +364,7 @@ div.section {
     }
   }
   &.partners {
+    overflow: hidden;
     &.grey {
       background-color: $color_alabaster;
     }
@@ -367,11 +377,34 @@ div.section {
     .logos {
       display: flex;
       align-items: center;
-      &.icons {
+      justify-content: center;
+      .logos-flex {
         > * {
-          padding: 0 15px;
+          padding: 0 30px;
           img {
             vertical-align: top;
+          }
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+      &.icons {
+        .logos-flex {
+          > * {
+            padding: 0 15px;
+            img {
+              vertical-align: top;
+            }
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
           }
         }
       }

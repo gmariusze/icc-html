@@ -40,6 +40,19 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all ease-in-out 0.3s;
+  a.close {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    max-width: 60px;
+    background-color: $color_prussian_blue;
+    span {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
   > .container {
     height: 100%;
     > .pure-g {
@@ -58,6 +71,33 @@ body {
   .main-credentials-container {
     position: relative;
     height: 100%;
+    a.close {
+      position: absolute;
+      right: 100%;
+      top:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        &:after,
+        &:before {
+          display: block;
+          width: 3px;
+          height: 20px;
+          background-color: #fff;
+          content: " ";
+        }
+        &:after {
+          transform: rotate(45deg) translate(-8px,-20px);
+        }
+        &:before {
+          transform: rotate(-45deg) translate(6px, 6px);
+        }
+      }
+    }
     &:after {
       content: " ";
       position: absolute;
@@ -103,12 +143,14 @@ body {
     	line-height: 17px;
       display: block;
       text-align: right;
+      margin-bottom: 46px;
+
       .green {
+        text-decoration: underline;
         color: $color_green;
       }
     }
     .login-area {
-      margin-top: 46px;
       h3 {
         color: $color_prussian_blue;
       	font-family: $font-stack-2;
@@ -172,6 +214,9 @@ body {
         font-weight: 500;
         line-height: 14px;
         text-align: center;
+        a {
+          text-decoration: underline;
+        }
       }
     }
 

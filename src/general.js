@@ -20,14 +20,30 @@ var swiper = new Swiper('.continuous-carousel', {
 });
 */
 var swiper = new Swiper('.continuous-carousel.swiper-container', {
-   slidesPerView: 4,
-   spaceBetween: 30,
-   slidesPerGroup: 4,
+   slidesPerView: 1,
+   spaceBetween: 15,
+   slidesPerGroup: 1,
    loop: true,
    loopFillGroupWithBlank: true,
    autoplay: {
      delay: 1,
      disableOnInteraction: false,
    },
-   speed:15000
+   speed:15000,
+   breakpoints: {
+      320: {
+        slidesPerView: 'auto',
+        speed:10000,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+      },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 30
+      }
+   }
  });

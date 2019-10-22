@@ -57,6 +57,9 @@ input[type='text'] {
   background-color: $color_white;
   //box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
   padding: 0 15px;
+  @include placeholder {
+    color: $color_gray_chateau;
+  }
 }
 
 select {
@@ -84,7 +87,6 @@ select,
 textarea {
   margin: 0;
   color: $input-text-color;
-  border:$input-border;
   padding:$input-padding;
 }
 textarea {
