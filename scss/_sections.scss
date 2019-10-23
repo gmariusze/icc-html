@@ -33,13 +33,15 @@ div.section {
     padding-bottom: 83px;
     background-color: $color_big_stone;
     position: relative;
+    /* BLUE IMAGE overlay */
+    /*
     &:before {
       @include full_size;
       content: " ";
       background: linear-gradient(222.95deg, $color_black 0%, $color_prussian_blue 100%);
       z-index: 25;
       opacity: 0.6;
-    }
+    }*/
     h2 {
       	color: $color_white;
       	font-family: $font-stack;
@@ -243,6 +245,7 @@ div.section {
                   top:-45px;
                   right: auto;
                   bottom: auto;
+                  background-image: url('../images/ico-quate_a.svg');
                 }
               }
             }
@@ -269,7 +272,7 @@ div.section {
         display: block;
         width: 80px;
         height: 60px;
-        background-image: url('http://dummyimage.com/80x60/cecece/fff.jpg&text=SVG');
+        background-image: url('../images/ico-quate_b.svg');
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -336,6 +339,8 @@ div.section {
       }
     }
   }
+
+
   &.picture-title {
     padding: 55px 0;
     position: relative;
@@ -343,11 +348,16 @@ div.section {
     text-align: center;
     display: flex;
     align-items: center;
-    &:before {
-      @include full_size;
-      content: " ";
-      background: linear-gradient(147.41deg, rgba(0,0,0,0) 0%, rgba(0,18,37,0.41) 47.24%, #002C5B 100%);
+    background-position: center;
+    background-size: cover;
+    &.gradient-overlay {
+      &:before {
+        @include full_size;
+        content: " ";
+        background: linear-gradient(147.41deg, rgba(0,0,0,0) 0%, rgba(0,18,37,0.41) 47.24%, #002C5B 100%);
+      }
     }
+
     h2 {
       color: $color_white;
       font-family: $font-stack;
