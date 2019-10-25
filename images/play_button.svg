@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>931437D4-100F-4C11-8EE7-A7D5E6E1C358</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-17.9%" y="-17.9%" width="135.8%" height="135.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Elements" transform="translate(-39.000000, -223.000000)" fill="#FFFFFF">
+            <g id="play_button" transform="translate(49.000000, 232.000000)">
+                <g id="Group-3-Copy-2" filter="url(#filter-1)">
+                    <g id="play-button-(1)">
+                        <path d="M60,0 C93.137085,0 120,26.862915 120,60 C120,93.137085 93.137085,120 60,120 C26.862915,120 0,93.137085 0,60 C0,26.862915 26.862915,0 60,0 Z M47.7061748,44 C46.7639338,44 46,44.7806118 46,45.7435247 L46,45.7435247 L46,76.2563935 C46,77.2193063 46.7639338,78 47.7061748,78 C47.7061748,78 74.151644,63.6153279 75.4312751,62.3077049 C76.7109062,60.9999181 75.4312751,59.6922132 75.4312751,59.6922132 L75.4312751,59.6922132 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

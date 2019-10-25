@@ -20,6 +20,7 @@ textarea {
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
+  flex-shrink: 0;
   > input[type='checkbox'] {
     opacity: 0;
     @include full_size;
@@ -55,10 +56,14 @@ input[type='text'] {
   border: 1px solid $color_iron;
   border-radius: 5px;
   background-color: $color_white;
+  outline: none;
   //box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
   padding: 0 15px;
   @include placeholder {
     color: $color_gray_chateau;
+  }
+  &:focus {
+    border: 1px solid $color_main_text;
   }
 }
 
@@ -91,4 +96,30 @@ textarea {
 }
 textarea {
   padding:$input-padding-textarea;
+}
+
+.search-input {
+  position: relative;
+  input[type='text'] {
+    width: 100%;
+    height: 50px;
+    @include placeholder {
+      color: #CED1D3;
+      font-family: $font-stack-2;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17px;
+    }
+  }
+  input[type='submit'] {
+    @include full_size;
+    left: auto;
+    width: 50px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    background-image: url('../images/ico-search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

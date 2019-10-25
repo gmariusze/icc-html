@@ -75,6 +75,7 @@
         display: block;
         @include full_size;
         background-size: cover;
+        background-position: center;
       }
       .element {
         align-items: flex-end;
@@ -345,6 +346,27 @@
             .checkbox-wrap {
               flex-shrink: 0;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .header {
+    .buttons {
+      .button {
+        padding: 9px 10px;
+      }
+    }
+  }
+  div.section{
+    &.picture-text {
+      .text {
+        .badges {
+          a {
+            margin: 0 10px;
           }
         }
       }

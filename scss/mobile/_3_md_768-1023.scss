@@ -69,4 +69,19 @@
       }
     }
   }
+  .reset-pw-wrapper,
+  .change-pw-wrapper,
+  .signup-wrapper,
+  .login-wrapper {
+    .main-credentials-space {
+      .more-link {
+        font-size: 13px;
+      }
+      .buttons {
+        .button {
+          padding: 11px 25px;
+        }
+      }
+    }
+  }
 }

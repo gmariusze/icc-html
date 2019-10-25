@@ -29,6 +29,22 @@ input[type='button'],
       background-color: darken($color_green, 5);
     }
   }
+  &.dark-grey {
+    background-color: $button_dark_grey;
+    color: #FFFFFF;
+  }
+  &.grey {
+    background-color: $button_light_grey;
+    color: $color_main_text;
+  }
+  &.smaller {
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    border-radius: 15px;
+    padding: 8px 45px;
+  }
   &.larger {
     padding: 13px 44px;
     color: $color_white;
@@ -45,5 +61,37 @@ input[type='button'],
   }
   &.tc-dark {
     color: $color_prussian_blue;
+  }
+  &.tag {
+    color: $tag_button_color;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    border: 1px solid $tag_button_color;
+    border-radius: 15px;
+    padding: 7px 14px;
+  }
+}
+
+.video-tag {
+  display: block;
+  background-color: #121B2C;
+  border-radius: 21px;
+  padding: 2px 12px;
+  display: flex;
+  align-items: center;
+  .icon {
+    margin-right: 5px;
+    > img {
+      vertical-align: middle;
+    }
+  }
+  .number {
+    color: #88A3B2;
+    font-family: $font-stack-2;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
   }
 }

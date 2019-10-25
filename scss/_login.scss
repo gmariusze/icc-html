@@ -1,4 +1,11 @@
 body {
+  &.modal-login-open,
+  &.modal-signup-open,
+  &.modal-change-pw-open,
+  &.modal-reset-pw-open {
+    overflow: hidden;
+  }
+
   &.modal-login-open {
     .login-wrapper {
       opacity: 1;
@@ -40,6 +47,8 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  overflow-x: hidden;
   a.close {
     display: block;
     width: 60px;
@@ -54,15 +63,15 @@ body {
     }
   }
   > .container {
-    height: 100%;
+    min-height: 100%;
     > .pure-g {
-      height: 100%;
+        min-height: 100vh;
       > [class*=pure-u] {
-        height: 100%;
+        min-height: 100vh;
         > .pure-g {
-          height: 100%;
+          min-height: 100vh;
           > [class*=pure-u] {
-            height: 100%;
+            min-height: 100vh;
           }
         }
       }
@@ -115,8 +124,6 @@ body {
     box-shadow: 0 1px 15px 0 rgba(0,44,91,0.15);
     height: 100%;
     padding: 60px 0;
-    overflow-y: auto;
-    overflow-x: hidden;
     &::-webkit-scrollbar {
       width: 5px;
       margin-left: 10px;
@@ -146,8 +153,14 @@ body {
       margin-bottom: 46px;
 
       .green {
-        text-decoration: underline;
         color: $color_green;
+        &.underline-animation {
+          &:before,
+          &:after {
+            background-color: $color_green;
+          }
+        }
+
       }
     }
     .login-area {
@@ -190,7 +203,17 @@ body {
             margin-right: 10px;
           }
           label {
+            color: #80939E;
             cursor: pointer;
+            font-weight: 300;
+            .label {
+              margin: 0;
+              color: #80939E;
+              font-weight: 300;
+            }
+            .underline {
+              text-decoration: underline;
+            }
           }
         }
         &.non-input-text {
@@ -214,9 +237,6 @@ body {
         font-weight: 500;
         line-height: 14px;
         text-align: center;
-        a {
-          text-decoration: underline;
-        }
       }
     }
 

@@ -34,7 +34,7 @@
                   <div class="pure-u-1 pure-u-md-4-5">
                     <div class="login-area">
                       <div class="head-wrap">
-                        <a href="" class="more-link">Don’t have an account? <span class="green">Sign up</span></a>
+                        <a href="" class="more-link">Don’t have an account? <span class="green underline-animation">Sign up</span></a>
                         <h3>Log in</h3>
                       </div>
                       <form action="">
@@ -87,7 +87,7 @@
                   <div class="pure-u-1 pure-u-md-4-5">
                     <div class="login-area">
                       <div class="head-wrap">
-                        <a href="" class="more-link">Don’t have an account? <span class="green">Sign up</span></a>
+                        <a href="" class="more-link">Already have an account? <span class="green underline-animation">Log in</span></a>
                         <h3>Sign up</h3>
                       </div>
                       <form action="">
@@ -101,27 +101,40 @@
                           <label for="surname">
                             <span class="label">Surname <span class="req">*</span></span>
                           </label>
-                          <input type="password" name="text" id="surname" placeholder="Surname" value="" required>
+                          <input type="text" name="text" id="surname" placeholder="Surname" value="" required>
                         </div>
                         <div class="input">
                           <label for="email">
                             <span class="label">Email <span class="req">*</span></span>
                           </label>
-                          <input type="password" name="email" id="email" placeholder="Email" value="" required>
+                          <input type="text" name="email" id="email" placeholder="Email" value="" required>
                         </div>
+                        <div class="input">
+                          <label for="password">
+                            <span class="label">Password <span class="req">*</span></span>
+                          </label>
+                          <input type="password" name="password" placeholder="Password" id="password" required>
+                        </div>
+                        <div class="input">
+                          <label for="password">
+                            <span class="label">Repeat password <span class="req">*</span></span>
+                          </label>
+                          <input type="password" name="password" placeholder="Repeat password" id="password" required>
+                        </div>
+
                         <div class="input input-checkbox larger-top-margin">
                           <div class="checkbox-wrap">
                             <input type="checkbox" name="checkbox_a" id="checkbox_a">
                             <span></span>
                           </div>
-                          <label for="checkbox_a">I have read and accept the ECB Privacy Policy *</label>
+                          <label for="checkbox_a"><span class="label">I have read and accept the <span class="underline underline-animation">ECB Privacy Policy</span> <span class="req">*</span></span></label>
                         </div>
                         <div class="input input-checkbox">
                           <div class="checkbox-wrap">
                             <input type="checkbox" name="checkbox_b" id="checkbox_b">
                             <span></span>
                           </div>
-                          <label for="checkbox_b">I can confirm I am 16 years of age or above *</label>
+                          <label for="checkbox_b"><span class="label">I can confirm I am 16 years of age or above <span class="req">*</span></span></label>
                         </div>
                         <div class="input non-input-text">
                             I consent to receiving invitations, newsletters, offers and opportunities and other initiatives by email, phone, post or as an on-screen personalised message unless I have ticked the relevant boxes below:

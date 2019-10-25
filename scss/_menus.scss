@@ -1,26 +1,29 @@
 /* MENU STYLING START */
-.breadcrumbs-menu {
-  ul {
-    @include menu;
-    li {
-      a {
-        padding: 0 5px;
-        &:after {
-          content: ">";
-          margin-left: 3px;
-        }
-      }
-    }
-  }
-}
-.secondary-menu,
 .menu {
   ul {
-    @include menu;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     li {
+      &.selected,
+      &:hover {
+        > a {
+          opacity: 1;
+          border-left-color: $color_mexican_red;
+        }
+      }
       a {
+        transition: all ease-in-out 0.3s;
         display: block;
-        padding: 0 5px;
+        opacity: 0.55;
+        color: #FFFFFF;
+        font-family: $font-stack-2;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        padding: 20px 15px;
+        border-bottom: 1px solid rgba(234,239,242,0.1);
+        border-left: 4px solid transparent;
       }
     }
   }
