@@ -1,0 +1,75 @@
+body {
+  &.dashboard-popup-is-open {
+    overflow: hidden;
+    .dashpopup {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.dashpopup {
+  transition: all ease-in-out 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  @include full_size;
+  position: fixed;
+  z-index: $zi_dashboardpopup;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(#121B2C,0.7);
+  .dashpopup-wrap {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 460px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 68px 20px;
+    background-color: $color_oslo_gray;
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 16px;
+      height: 16px;
+      &:before,
+      &:after {
+        content: " ";
+        width: 16px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top:0;
+      }
+      &:after {
+        transform: translateY(7px) rotate(45deg);
+      }
+      &:before {
+        transform: translateY(7px) rotate(-45deg);
+      }
+    }
+    .popup-title,
+    .popup-subtitle {
+      color: #fff;
+    }
+    .popup-subtitle {
+      font-family: $font-stack-2;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      margin: 20px 0;
+    }
+    .popup-title {
+      font-family:$font-stack;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 34px;
+      text-align: center;
+      margin: 30px 0;
+    }
+  }
+}

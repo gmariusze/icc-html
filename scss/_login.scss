@@ -4,6 +4,8 @@ body {
   &.modal-change-pw-open,
   &.modal-reset-pw-open {
     overflow: hidden;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
   }
 
   &.modal-login-open {

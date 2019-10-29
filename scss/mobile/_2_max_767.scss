@@ -8,6 +8,21 @@
     justify-content: center;
     &.mobile-blue {
       background-color: $color_big_stone;
+      .buttons {
+        display: flex;
+        .button {
+          &:nth-child(1) {
+            order: 2;
+            background-color: $color_green;
+            border-radius: 5px;
+            overflow: hidden;
+          }
+          &:nth-child(2) {
+            order: 1;
+            background-color: transparent;
+          }
+        }
+      }
     }
     h1.logo,
     a.logo {
