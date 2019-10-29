@@ -1,39 +1,49 @@
+html,
+body
+{
+  &.modal_open {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
 body {
   &.modal-login-open,
   &.modal-signup-open,
   &.modal-change-pw-open,
   &.modal-reset-pw-open {
+    position: relative;
     overflow: hidden;
     height: 100vh;
-    -webkit-overflow-scrolling: touch;
   }
 
   &.modal-login-open {
     .login-wrapper {
       opacity: 1;
       visibility: visible;
-      transform: translateX(0);
+      /*transform: translateX(0);*/
     }
   }
   &.modal-signup-open {
     .signup-wrapper {
       opacity: 1;
       visibility: visible;
-      transform: translateX(0);
+      /*transform: translateX(0);*/
     }
   }
   &.modal-change-pw-open {
     .change-pw-wrapper {
       opacity: 1;
       visibility: visible;
-      transform: translateX(0);
+      /*transform: translateX(0);*/
     }
   }
   &.modal-reset-pw-open {
     .reset-pw-wrapper {
       opacity: 1;
       visibility: visible;
-      transform: translateX(0);
+      /*transform: translateX(0);*/
     }
   }
 }
@@ -42,30 +52,55 @@ body {
 .change-pw-wrapper,
 .signup-wrapper,
 .login-wrapper {
-  @include full_size;
-  transform: translateX(10px);
   position: fixed;
+  top:0;
+  left: 0;
+  right: -10px;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  //transform: translateX(10px);
   z-index: $zi_login_modal;
   opacity: 0;
   visibility: hidden;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   overflow-x: hidden;
+
   a.close {
-    display: block;
     width: 60px;
     height: 60px;
-    position: relative;
     max-width: 60px;
     background-color: $color_prussian_blue;
-    span {
+    position: fixed;
+    right: 50%;
+    top:0;
+    margin-right: -76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > span {
       display: block;
       width: 20px;
       height: 20px;
+      &:after,
+      &:before {
+        display: block;
+        width: 3px;
+        height: 20px;
+        background-color: #fff;
+        content: " ";
+      }
+      &:after {
+        transform: rotate(45deg) translate(-8px,-20px);
+      }
+      &:before {
+        transform: rotate(-45deg) translate(6px, 6px);
+      }
     }
   }
   > .container {
-    min-height: 100%;
+    min-height: 100vh;
     > .pure-g {
         min-height: 100vh;
       > [class*=pure-u] {
@@ -81,34 +116,8 @@ body {
   }
   .main-credentials-container {
     position: relative;
-    height: 100%;
-    a.close {
-      position: absolute;
-      right: 100%;
-      top:0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      > span {
-        display: block;
-        width: 20px;
-        height: 20px;
-        &:after,
-        &:before {
-          display: block;
-          width: 3px;
-          height: 20px;
-          background-color: #fff;
-          content: " ";
-        }
-        &:after {
-          transform: rotate(45deg) translate(-8px,-20px);
-        }
-        &:before {
-          transform: rotate(-45deg) translate(6px, 6px);
-        }
-      }
-    }
+    min-height: 100vh;
+
     &:after {
       content: " ";
       position: absolute;
@@ -124,7 +133,7 @@ body {
     position: relative;
     background-color: $color_white;
     box-shadow: 0 1px 15px 0 rgba(0,44,91,0.15);
-    height: 100%;
+    min-height: 100vh;
     padding: 60px 0;
     &::-webkit-scrollbar {
       width: 5px;

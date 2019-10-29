@@ -97,7 +97,7 @@ module.exports = function(grunt) {
           port: 80,
           host: '0.0.0.0',
           keepalive:true,
-          open:"http://mano/index.html"
+          open:"http://localhost/index.html"
         }
       }
     },

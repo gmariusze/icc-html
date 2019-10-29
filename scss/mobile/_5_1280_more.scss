@@ -1,2 +1,12 @@
 /* XL */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+  .reset-pw-wrapper,
+  .change-pw-wrapper,
+  .signup-wrapper,
+  .login-wrapper {
+    a.close {
+        right: 50%;
+        margin-right: -122px;
+    }
+  }
+}
