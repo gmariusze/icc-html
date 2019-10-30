@@ -48,4 +48,18 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    }
  });
 
+
+var mySwiper = new Swiper('.stats-slider.swiper-container', {
+    loop: true,
+    speed: 400,
+    spaceBetween: 100,
+    navigation: {
+      nextEl: '.stats-slider .swiper-button-next',
+      prevEl: '.stats-slider .swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+});
 /* Different image for mobile (Not recomended) */

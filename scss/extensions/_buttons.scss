@@ -36,7 +36,12 @@ input[type='button'],
   &.grey {
     background-color: $button_light_grey;
     color: $color_main_text;
+    &:hover {
+      background-color: $color_dark_grey;
+      color: #fff;
+    }
   }
+
   &.smaller {
     font-family: $font-stack-2;
     font-size: 12px;
@@ -44,6 +49,29 @@ input[type='button'],
     line-height: 14px;
     border-radius: 15px;
     padding: 8px 45px;
+    &.button-with-icon {
+      padding: 5px 15px;
+      &.icon-left {
+        padding-left: 5px;
+        vertical-align: middle;
+        &:before {
+          display: inline-block;
+          content: " ";
+          width: 20px;
+          height: 20px;
+          background-image: url('../images/play_button_plus.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          vertical-align: middle;
+          margin-right: 10px;
+          background-position-y: 1px;
+        }
+        .label {
+          vertical-align: middle;
+        }
+      }
+    }
   }
   &.larger {
     padding: 13px 44px;

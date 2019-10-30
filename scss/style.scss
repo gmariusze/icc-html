@@ -244,6 +244,25 @@ strong {
 .underline-animation {
   text-decoration: none;
   position: relative;
+  &.underline-thicker {
+    &:before,
+    &:after {
+      bottom: 6px;
+      height: 2px;
+    }
+  }
+  &.underline-opacity {
+    &:before,
+    &:after {
+      opacity: 0.4;
+    }
+  }
+  &.underline-white {
+    &:before,
+    &:after {
+      background-color: $color_white;
+    }
+  }
   &:before,
   &:after {
     content: " ";
