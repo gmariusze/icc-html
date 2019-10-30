@@ -95,3 +95,24 @@ input[type='button'],
     line-height: 12px;
   }
 }
+
+@media (max-width: 767px) {
+  .button {
+    &.mobile-full-width {
+      display: block;
+      text-align: center;
+    }
+    &.mobile-smaller-t2 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      padding: 11px 0;
+    }
+    &.mobile-smaller {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      padding: 8px 15px;
+    }
+  }
+}

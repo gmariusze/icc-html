@@ -47,3 +47,5 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
       }
    }
  });
+
+/* Different image for mobile (Not recomended) */

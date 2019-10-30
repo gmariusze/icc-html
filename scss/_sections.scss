@@ -826,10 +826,12 @@ div.section {
   }
   &.image-lai {
     padding-bottom: 30px;
+
     .picture {
       padding: 30px;
       border-radius: 5px;
       overflow: hidden;
+      background-size: cover;
       .text {
         display: block;
         color: #FFFFFF;

@@ -38,7 +38,7 @@ body {
       &:before,
       &:after {
         content: " ";
-        width: 16px;
+        width: 20px;
         height: 2px;
         background-color: #fff;
         position: absolute;
@@ -46,10 +46,10 @@ body {
         top:0;
       }
       &:after {
-        transform: translateY(7px) rotate(45deg);
+        transform: translateY(7px) translateX(-2px) rotate(45deg);
       }
       &:before {
-        transform: translateY(7px) rotate(-45deg);
+        transform: translateY(7px) translateX(-2px) rotate(-45deg);
       }
     }
     .popup-title,
