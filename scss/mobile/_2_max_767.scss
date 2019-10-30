@@ -428,6 +428,13 @@
     }
     &.material {
       padding: 10px 0;
+      &.material-association {
+        .material-container {
+          .pure-g {
+            width: 1570px;
+          }
+        }
+      }
       .material-container {
         padding: 0;
         overflow: auto;

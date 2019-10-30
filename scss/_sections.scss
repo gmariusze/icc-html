@@ -525,7 +525,97 @@ div.section {
 
       .search-input {
         max-width: 486px;
-
+        position: relative;
+        &.results-are-open {
+          input[type=text] {
+            border-radius: 5px 5px 0 0;
+          }
+          .search-results-wrap {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        .search-results-wrap {
+          visibility: hidden;
+          opacity: 0;
+          transition: all ease-in-out 0.3s;
+          position: absolute;
+          top:100%;
+          border-radius: 0 0 5px 5px;
+          background-color: #FFFFFF;
+          box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+          width: 100%;
+          .search-results {
+            max-height: 284px;
+            overflow: auto;
+            .entry-line {
+              display: block;
+              padding: 13px 15px;
+              border-top: 1px solid $border_color;
+              display: flex;
+              align-items: center;
+              &:first-child {
+                border-top: 0;
+              }
+              .icon {
+                flex-shrink: 0;
+                width: 20px;
+                margin-right: 10px;
+                > img {
+                  width: 100%;
+                  height: auto;
+                  vertical-align: top;
+                }
+              }
+              .text-data {
+                .label {
+                  display: block;
+                  color: $color_prussian_blue;
+                  font-family: $font-stack-2;
+                  font-size: 13px;
+                  font-weight: 500;
+                  line-height: 16px;
+                }
+                .sublabel {
+                  display: block;
+                  color: $color_dark_grey;
+                  font-family: $font-stack-2;
+                  font-size: 12px;
+                  font-weight: 300;
+                  line-height: 14px;
+                }
+              }
+            }
+          }
+          .search-tags-wrap {
+            border-top: 1px solid $border_color;
+            padding:  10px 15px;
+            padding-bottom: 20px;
+            .label {
+              color: $color_dark_grey;
+              font-family: $font-stack-2;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 14px;
+              padding: 10px 0;
+            }
+            .search-tags {
+              margin: -5px;
+              .tag {
+                display: inline-block;
+                color: $color_dark_grey;
+                font-family: $font-stack-2;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 14px;
+                padding: 9px 14px;
+                border: 1px solid rgba($color_dark_grey, 0.2);
+                border-radius: 15px;
+                margin:5px;
+              }
+            }
+          }
+        }
       }
       .dropdown {
         border-left: 0;
