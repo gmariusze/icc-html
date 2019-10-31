@@ -9,6 +9,7 @@ body
   }
 }
 body {
+  &.modal-mobile-menu-open,
   &.modal-login-open,
   &.modal-signup-open,
   &.modal-change-pw-open,
@@ -16,6 +17,14 @@ body {
     position: relative;
     overflow: hidden;
     height: 100vh;
+  }
+
+  &.modal-mobile-menu-open {
+    .mobile-menu-wrapper {
+      opacity: 1;
+      visibility: visible;
+      /*transform: translateX(0);*/
+    }
   }
 
   &.modal-login-open {
@@ -48,6 +57,7 @@ body {
   }
 }
 
+.mobile-menu-wrapper,
 .reset-pw-wrapper,
 .change-pw-wrapper,
 .signup-wrapper,
@@ -259,5 +269,47 @@ body {
       }
     }
   }
+}
+
+
+
+.search-mobile-menu {
+  padding: 20px 0;
+  .recent-results {
+    padding-top: 20px;
+    h3.recent-searches {
+      color: $color_dark_grey;
+      font-family: $font-stack-2;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      margin: 0;
+    }
+    .search-results {
+      padding-top: 20px;
+      .entry-line {
+        display: flex;
+        align-items: center;
+        color: $color_dark_grey;
+        padding: 10px 0;
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+        .icon {
+          margin-right: 10px;
+          > img {
+            vertical-align: middle;
+          }
+        }
+        .text-data {
+
+        }
+      }
+    }
+  }
+
 
 }

@@ -318,6 +318,7 @@
 
   }
 
+  .mobile-menu-wrapper,
   .reset-pw-wrapper,
   .change-pw-wrapper,
   .signup-wrapper,
@@ -348,6 +349,9 @@
         border-bottom: 1px solid #EEF0F1;
         position: relative;
         padding-bottom: 20px;
+        &.no-bottom-padding {
+          padding-bottom: 0;
+        }
         &:after {
           content: " ";
           position: absolute;
@@ -382,6 +386,8 @@
       }
     }
   }
+
+  .mobile-menu-wrapper a.close,
   .change-pw-wrapper a.close,
   .login-wrapper a.close,
   .reset-pw-wrapper a.close,
@@ -691,6 +697,8 @@
       }
     }
   }
+
+  .mobile-menu-wrapper a.close,
   .change-pw-wrapper a.close,
   .login-wrapper a.close,
   .reset-pw-wrapper a.close,
