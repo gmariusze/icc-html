@@ -19,8 +19,18 @@ input[type='button'],
   &.br-5 {
     border-radius: 5px;
   }
+  &.br-15 {
+    border-radius: 15px;
+  }
+  &.br-17 {
+    border-radius: 17px;
+  }
   &:focus {
     outline: none;
+  }
+  &.blue {
+    background-color: $color_prussian_blue;
+    color: #FFFFFF;
   }
   &.green {
     background-color: $color_green;
@@ -41,7 +51,7 @@ input[type='button'],
       color: #fff;
     }
   }
-
+  &.smaller,
   &.smaller {
     font-family: $font-stack-2;
     font-size: 12px;
@@ -72,6 +82,13 @@ input[type='button'],
         }
       }
     }
+  }
+  &.smaller-2 {
+    padding: 8px 15px;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
   }
   &.larger {
     padding: 13px 44px;

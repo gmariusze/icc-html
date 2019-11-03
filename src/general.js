@@ -48,8 +48,7 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    }
  });
 
-
-var mySwiper = new Swiper('.stats-slider.swiper-container', {
+var statsSlider = new Swiper('.stats-slider.swiper-container', {
     loop: true,
     speed: 400,
     spaceBetween: 100,
@@ -61,5 +60,18 @@ var mySwiper = new Swiper('.stats-slider.swiper-container', {
       el: '.swiper-pagination',
       type: 'bullets',
     },
+});
+
+var videoPlaylistSlider = new Swiper('.videoPlaylistSlider.swiper-container', {
+    slidesPerView: 'auto',
+    loop: false,
+    speed: 400,
+    freeMode: true,
+    freeModeSticky:false,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.videoPlaylistSlider .swiper-button-next',
+      prevEl: '.videoPlaylistSlider .swiper-button-prev',
+    }
 });
 /* Different image for mobile (Not recomended) */
