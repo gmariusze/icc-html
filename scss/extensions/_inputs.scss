@@ -13,8 +13,106 @@ textarea {
     outline-color: transparent;
     outline-style: none;
   }
+  &.noborder {
+    border: 0;
+  }
 }
 
+.select-wrap {
+  position: relative;
+  &.select-is-open {
+    .select-input {
+      border-radius: 5px 5px 0 0;
+      border: 1px solid $color_dark_grey;
+      .arrow {
+        transform: rotate(180deg);
+      }
+    }
+    .select-values {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .select-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid $color_iron;
+    border-radius: 5px;
+    .label {
+      color: $color_gray_chateau;
+      font-family: $font-stack-2;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 16px;
+      cursor: pointer;
+    }
+    .arrow {
+      transition: all ease-in-out 0.3s;
+    }
+  }
+  .select-values {
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.3s;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+    border-radius: 0 0 5px 5px;
+    .select-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      color: $color_dark_grey;
+      border-bottom: $border_color;
+      font-family: $font-stack-2;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14px;
+    }
+    .select-entries {
+      border-top: 1px solid $color_iron;
+      padding: 5px 10px;
+      .entry {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $color_iron;
+        padding: 12px;
+        margin: 5px 0;
+        border-radius: 5px;
+        &[data-selected='true'] {
+          background-color: $border_color;
+          .icon {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        .label {
+          color: $color_dark_grey;
+          font-family: $font-stack-2;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          display: flex;
+          align-items: center;
+        }
+        .icon {
+          visibility: hidden;
+          opacity: 0;
+          transition: all ease-in-out 0.3s;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
 .checkbox-wrap {
   position: relative;
   display: inline-block;
@@ -78,6 +176,9 @@ input[type='text'] {
       font-weight: 300;
       line-height: 16px;
     }
+  }
+  &.noborder {
+    border: 0;
   }
 }
 

@@ -28,6 +28,10 @@ input[type='button'],
   &:focus {
     outline: none;
   }
+  &.white {
+    color: #CED1D3;
+    border: 1px solid #CED1D3;
+  }
   &.blue {
     background-color: $color_prussian_blue;
     color: #FFFFFF;
@@ -43,6 +47,13 @@ input[type='button'],
     background-color: $button_dark_grey;
     color: #FFFFFF;
   }
+  &.dark-grey-v2 {
+    background-color: #6E8490;
+    color: #FFFFFF;
+  }
+  &.grey {
+
+  }
   &.grey {
     background-color: $button_light_grey;
     color: $color_main_text;
@@ -51,14 +62,14 @@ input[type='button'],
       color: #fff;
     }
   }
-  &.smaller,
   &.smaller {
     font-family: $font-stack-2;
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
     border-radius: 15px;
-    padding: 8px 45px;
+    padding: 8px 15px;
+    min-width: 80px;
     &.button-with-icon {
       padding: 5px 15px;
       &.icon-left {

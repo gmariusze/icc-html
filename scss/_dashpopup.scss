@@ -21,7 +21,6 @@ body {
   .dashpopup-wrap {
     position: relative;
     border-radius: 5px;
-    overflow: hidden;
     background-size: cover;
     background-position: center;
     width: 460px;
@@ -70,6 +69,127 @@ body {
       line-height: 34px;
       text-align: center;
       margin: 30px 0;
+    }
+
+    .form-dashboard {
+      .title {
+        border-bottom: 1px solid $border_color;
+        h2 {
+          color: $color_prussian_blue;
+          font-family: $font-stack-2;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  &.form-popup {
+    text-align: left;
+    .dashpopup-wrap {
+      width: 500px;
+      padding: 0;
+      background-color: #FFFFFF;
+      border: 1px solid $color_iron;
+
+      a.close {
+        position: relative;
+        display: inline-block;
+        right: initial;
+        left: initial;
+        top: initial;
+        bottom: initial;
+        &:before,
+        &:after {
+          background-color: $color_gray_chateau;
+        }
+      }
+      .title {
+        h2 {
+          text-align: left;
+          padding:0 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      .form-dashboard {
+        .form-place {
+          margin: 20px 24px 15px 24px;
+          border: 1px solid $color_iron;
+          border-radius: 5px;
+          &.no-border {
+            border: 0;
+          }
+          textarea,
+          input[type='text'] {
+            margin: 0 15px;
+            width: calc(100% - 30px);
+            vertical-align: top;
+            @mixin placeholder {
+              color: $color_gray_chateau;
+              font-family: $font-stack-2;
+              font-size: 13px;
+              font-weight: 300;
+              line-height: 16px;
+              color: $color_gray_chateau;
+            }
+          }
+          input[type='text'] {
+            border-bottom: 1px dashed $color_iron;
+          }
+          textarea {
+            min-height: 120px;
+            height: 120px;
+            resize: none;
+          }
+        }
+        .video {
+          margin: 0 24px;
+          margin-top: 14px;
+          margin-bottom: 24px;
+          text-align: left;
+          .entry {
+            display: inline-flex;
+            padding: 10px;
+            border: 1px solid $color_iron;
+            background-color: $color_greyish;
+            max-width: 300px;
+            border-radius: 5px;
+            text-align: left;
+            .video-image {
+              display: block;
+              width: 110px;
+              flex-shrink: 0;
+              margin-right: 10px;
+              > img {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+              }
+            }
+            .video-title {
+              color: $color_prussian_blue;
+              font-family: $font-stack-2;
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 16px;
+            }
+          }
+        }
+        .buttons-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: $color_greyish;
+          border-top: 1px solid $border_color;
+          padding: 20px 24px;
+          a.button {
+            min-width: 124px;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
