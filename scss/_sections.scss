@@ -1176,6 +1176,15 @@ div.section {
   }
   &.video-player {
     padding: 10px 0;
+    .picture {
+      height: 100%;
+      > img,
+      > * {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
     .text-area {
       overflow: hidden;
       .title-wrap {
@@ -1382,6 +1391,7 @@ div.section {
   &.video-desc {
     padding: 0 0;
     padding-bottom: 10px;
+    overflow: hidden;
     h2 {
       display: flex;
       justify-content: space-between;
@@ -1455,6 +1465,11 @@ div.section {
                 max-height: 10px;
                 width: auto;
                 vertical-align: middle;
+              }
+            }
+            .title {
+              &:after {
+                content: attr(data-title);
               }
             }
           }
@@ -1593,12 +1608,18 @@ div.section {
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 17px;
-                margin-top: 5px;
+                margin-top: 3px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                a.more {
+                  margin-left: 15px;
+                }
               }
               .subtitle {
                 display: flex;
                 align-items: center;
-                margin-bottom: 5px;
+                margin-bottom: 3px;
                 .job {
                   color: $color_prussian_blue;
                   font-family: $font-stack-2;
