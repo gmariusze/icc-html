@@ -28,4 +28,55 @@
     }
   }
 }
+
+.profile-menu,
+.mobile-menu-wrap {
+  padding: 10px 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      &.selected {
+        > a {
+          opacity: 1;
+          font-weight: bold;
+        }
+      }
+      a {
+        display: block;
+        opacity: 0.55;
+        color: $color_prussian_blue;
+        font-family: $font-stack-2;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 15px 0;
+        &.unerlined {
+          text-decoration: underline;
+        }
+      }
+      &.has-submenu {
+        > a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.profile-menu {
+  padding-bottom: 0;
+  ul {
+    li {
+      &:last-child {
+        > a {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
 /* MENU STYLING END */

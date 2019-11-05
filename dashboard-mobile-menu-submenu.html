@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="modal_open">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,138 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="modal-mobile-submenu-open">
 <div id="outdated"></div>
+<!-- Mobile menu Wrapper START -->
+<div class="mobile-menu-wrapper mobile-only-display">
+  <div class="container">
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-md-1-2 hide_if_mobile"></div>
+      <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-g">
+          <div class="pure-u-1-8 pure-u-md-1-6"></div>
+          <div class="pure-u-7-8 pure-u-md-5-6">
+            <div class="main-credentials-container">
+              <a href="" class="close"><span></span></a>
+              <div class="main-credentials-space menu-space">
+                <div class="pure-g">
+                  <div class="pure-u-1 pure-u-md-1-5"></div>
+                  <div class="pure-u-1 pure-u-md-4-5">
+                    <div class="login-area">
+                      <div class="head-wrap profile-wrap no-bottom-padding">
+                        <div class="profile-menu-wrap">
+                          <div class="left">
+                            <div class="picture">
+                              <img src="images/photos/photo.svg" alt="">
+                            </div>
+                            <div class="profile">
+                              <div class="name">John Doe</div>
+                              <div class="attributes">
+                                <div class="titlename">Coach</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <a href="" class="cbutton"></a>
+                          </div>
+                        </div>
+                        <div class="profile-menu">
+                          <ul>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Last viewed</a></li>
+                            <li><a href="">Saved posts</a></li>
+                            <li><a href="" class="unerlined">Log out</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mobile-menu-wrap">
+                        <ul>
+                          <li class="selected"><a href="">Dashboard</a></li>
+                          <li><a href="">Practices material</a></li>
+                          <li><a href="">Plan practice</a></li>
+                          <li><a href="">All stars cricket</a></li>
+                          <li><a href="">News feed</a></li>
+                          <li><a href="">Video blog</a></li>
+                          <li class="has-submenu"><a href=""><span>Supporting resources</span><span class="ico"><img src="images/ico-arrow-right-blue.svg" alt=""></span></a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu-wrapper-submenu mobile-only-display">
+  <div class="container">
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-md-1-2 hide_if_mobile"></div>
+      <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-g">
+          <div class="pure-u-1-8 pure-u-md-1-6"></div>
+          <div class="pure-u-7-8 pure-u-md-5-6">
+            <div class="main-credentials-container">
+              <a href="" class="close"><span></span></a>
+              <div class="main-credentials-space menu-space">
+                <div class="pure-g">
+                  <div class="pure-u-1 pure-u-md-1-5"></div>
+                  <div class="pure-u-1 pure-u-md-4-5">
+                    <div class="login-area">
+                      <div class="head-wrap profile-wrap no-bottom-padding">
+                        <div class="profile-menu-wrap">
+                          <div class="left">
+                            <div class="picture">
+                              <img src="images/photos/photo.svg" alt="">
+                            </div>
+                            <div class="profile">
+                              <div class="name">John Doe</div>
+                              <div class="attributes">
+                                <div class="titlename">Coach</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <a href="" class="cbutton"></a>
+                          </div>
+                        </div>
+                        <div class="profile-menu">
+                          <ul>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Last viewed</a></li>
+                            <li><a href="">Saved posts</a></li>
+                            <li><a href="" class="unerlined">Log out</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mobile-menu-wrap">
+                        <ul>
+                          <li class="selected"><a href="">Highlights</a></li>
+                          <li><a href="">General resources</a></li>
+                          <li><a href="">All stars cricket resources</a></li>
+                          <li><a href="">Women’s softball resources</a></li>
+                          <li><a href="">Junior cricket resources</a></li>
+                          <li><a href="">Cricket terms</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Mobile menu Wrapper END -->
 <div class="dashpopup">
   <div class="dashpopup-wrap" style="background-image:url('images/photos/i11.png')">
     <a href="" class="close"></a>
@@ -148,11 +278,68 @@
         <div class="dashboard-container">
           <div class="toolbar-wrap">
             <div class="left">
-              <div class="search-input">
+              <div class="search-input results-are-open">
                 <form action="" class="inputs-wrap">
                   <input type="text" placeholder="Search for Practices material…">
                   <input type="submit" value="">
                 </form>
+                <div class="search-results-wrap">
+                  <div class="search-results">
+                    <a href="" class="entry-line">
+                      <span class="icon">
+                        <img src="images/play_blue.svg" alt="">
+                      </span>
+                      <span class="text-data">
+                        <span class="label">Cricket circuit</span>
+                        <span class="sublabel">Practices Material - General Material</span>
+                      </span>
+                    </a>
+                    <a href="" class="entry-line">
+                      <span class="icon">
+                        <img src="images/play_blue.svg" alt="">
+                      </span>
+                      <span class="text-data">
+                        <span class="label">Cricket circuit</span>
+                        <span class="sublabel">Practices Material - General Material</span>
+                      </span>
+                    </a>
+                    <a href="" class="entry-line">
+                      <span class="icon">
+                        <img src="images/play_blue.svg" alt="">
+                      </span>
+                      <span class="text-data">
+                        <span class="label">Cricket circuit</span>
+                        <span class="sublabel">Practices Material - General Material</span>
+                      </span>
+                    </a>
+                    <a href="" class="entry-line">
+                      <span class="icon">
+                        <img src="http://dummyimage.com/20x20/cecece/fff.jpg" alt="">
+                      </span>
+                      <span class="text-data">
+                        <span class="label">Disability awareness pack</span>
+                        <span class="sublabel">Supporting resources - All Stars Cricket</span>
+                      </span>
+                    </a>
+                    <a href="" class="entry-line">
+                      <span class="icon">
+                        <img src="images/play_blue.svg" alt="">
+                      </span>
+                      <span class="text-data">
+                        <span class="label">Cricket circuit</span>
+                        <span class="sublabel">Practices Material - General Material</span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="search-tags-wrap">
+                    <div class="label">Tags:</div>
+                    <div class="search-tags">
+                      <a href="" class="tag">#Early</a>
+                      <a href="" class="tag">#Technical</a>
+                      <a href="" class="tag">#Physical</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="right">
@@ -318,7 +505,7 @@
       <div class="section news-feed dash-board-container color-grey ">
         <div class="dashboard-container">
           <div class="pure-g">
-            <div class="pure-u-1 pure-u-lg-1-3">
+            <div class="pure-u-1 pure-u-md-1-3">
               <!-- -->
               <div class="inner-container padding no-top-padding">
                 <h2 class="v2 justify">
@@ -483,7 +670,7 @@
               </div>
               <!-- -->
             </div>
-            <div class="pure-u-1 pure-u-lg-1-3">
+            <div class="pure-u-1 pure-u-md-1-3">
 
               <div class="inner-container no-top-padding">
                 <h2 class="v2 justify">
@@ -636,7 +823,7 @@
               </div>
             </div>
 
-            <div class="pure-u-1 pure-u-lg-1-3">
+            <div class="pure-u-1 pure-u-md-1-3">
               <div class="inner-container no-top-padding bottom-margin blue-gradient">
                 <h2 class="v2 justify">
                     <span>Your statistic</span>
@@ -756,7 +943,7 @@
       <div class="section video color-blue no-bottom-padding">
         <div class="dashboard-container">
           <div class="pure-g">
-            <div class="pure-u-1 pure-u-lg-2-3">
+            <div class="pure-u-1 pure-u-md-2-3">
               <div class="picture">
                 <div class="video-tag">
                   <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
@@ -766,7 +953,7 @@
                 <a href="" class="play-button"><img src="images/play_button.svg" alt=""></a>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-lg-1-3">
+            <div class="pure-u-1 pure-u-md-1-3">
               <div class="text-area">
                 <div class="title-wrap">
                   <div class="pretitle">PRACTICES MATERIAL</div>
@@ -815,7 +1002,7 @@
                     </span>
                     <img src="images/photos/i7.png" alt="">
                     <span class="title-wrap">
-                      <span class="title"><span class="hide-overflow">Development practices: <br/> 1 - Bowling overarm</span></span>
+                      <span class="title">Development practices: <br/> 1 - Bowling overarm</span>
                     </span>
                   </a>
                 </div>
@@ -829,7 +1016,7 @@
                     </span>
                     <img src="images/photos/i7.png" alt="">
                     <span class="title-wrap">
-                      <span class="title"><span class="hide-overflow">Development practices: <br/> 1 - Bowling overarm</span></span>
+                      <span class="title">Development practices: <br/>1 - Bowling overarm</span>
                     </span>
                   </a>
                 </div>
@@ -843,7 +1030,7 @@
                     </span>
                     <img src="images/photos/i7.png" alt="">
                     <span class="title-wrap">
-                      <span class="title"><span class="hide-overflow">Development practices: <br/> 1 - Bowling overarm</span></span>
+                      <span class="title">Development practices: <br/>1 - Bowling overarm</span>
                     </span>
                   </a>
                 </div>
@@ -857,7 +1044,7 @@
                     </span>
                     <img src="images/photos/i7.png" alt="">
                     <span class="title-wrap">
-                      <span class="title"><span class="hide-overflow">Development practices: <br/> 1 - Bowling overarm</span></span>
+                      <span class="title">Development practices: <br/>1 - Bowling overarm</span>
                     </span>
                   </a>
                 </div>

@@ -130,6 +130,17 @@ input[type='button'],
   }
 }
 
+.cbutton {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  background-color: $button_arrow;
+  border-radius: 100%;
+  background-image: url('../images/ico-arrow-down.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .video-tag {
   display: block;
   background-color: #121B2C;

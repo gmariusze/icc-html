@@ -636,6 +636,7 @@ div.section {
       padding: 0 24px;
       padding-top: 20px;
       .element {
+        min-height: 100%;
         .picture {
           border-radius: 5px;
           overflow: hidden;
@@ -1039,6 +1040,7 @@ div.section {
         margin: 0;
         padding: 0 24px;
         padding-bottom: 20px;
+        padding-top: 20px;
       }
       .text {
         color: #FFFFFF;
@@ -1303,8 +1305,18 @@ div.section {
           line-height: 18px;
           padding: 24px 20px;
 
+
           .title {
             position: relative;
+            .hide-overflow {
+              display: block;
+              max-height: 36px;
+              overflow: hidden;
+
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
             &:after {
               position: absolute;
               bottom: calc( 100% + 5px );
@@ -1494,6 +1506,9 @@ div.section {
             &:first-child {
               padding-left: 0;
             }
+            &:last-child {
+              padding-right: 15px;
+            }
             &.open {
               > a {
                 display: block;
@@ -1572,8 +1587,12 @@ div.section {
             position: relative;
             width: 100%;
             input[type='text'] {
-              line-height: 12px;
-              padding: 0 15px;
+              height: 40px;
+              line-height: 40px;
+              padding: 0px 15px;
+              @include placeholder {
+                line-height: 36px;
+              }
             }
             input[type=submit] {
               position: absolute;
