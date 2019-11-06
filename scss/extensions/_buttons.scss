@@ -8,11 +8,12 @@ input[type='button'],
   border: 0;
 
 	color: $color_white;
-	font-family: 'Gotham';
+	font-family: $font-stack-2;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 17px;
   box-shadow: 0 1px 15px 0 rgba(0,44,91,0.15);
+  text-align: center;
   &:hover {
 
   }
@@ -70,6 +71,7 @@ input[type='button'],
     border-radius: 15px;
     padding: 8px 15px;
     min-width: 80px;
+    text-align: center;
     &.button-with-icon {
       padding: 5px 15px;
       &.icon-left {

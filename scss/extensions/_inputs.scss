@@ -28,6 +28,12 @@ textarea {
         transform: rotate(180deg);
       }
     }
+    .text-input {
+      input[type='text'] {
+        border-radius: 5px 5px 0 0;
+        border: 1px solid $color_dark_grey;
+      }
+    }
     .select-values {
       opacity: 1;
       visibility: visible;
@@ -86,6 +92,7 @@ textarea {
         padding: 12px;
         margin: 5px 0;
         border-radius: 5px;
+        cursor: pointer;
         &[data-selected='true'] {
           background-color: $border_color;
           .icon {
@@ -155,6 +162,7 @@ input[type='text'] {
   border-radius: 5px;
   background-color: $color_white;
   outline: none;
+  font-size: 13px;
   //box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
   padding: 0 15px;
   @include placeholder {
@@ -331,6 +339,77 @@ textarea {
           border: 1px solid rgba($color_dark_grey, 0.2);
           border-radius: 15px;
           margin:5px;
+        }
+      }
+    }
+  }
+}
+
+.tabulated-input {
+  display: flex;
+  align-items: center;
+  .label {
+    margin-right: 15px;
+    color: $color_dark_grey;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    .value {
+      color: $color_dark_grey;
+      font-family: $font-stack-2;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14px;
+      padding: 7px 17px 7px 15px;
+      background-color: $color_white;
+      border: 1px solid $color_iron;
+      cursor: pointer;
+      &:first-child {
+        border-radius: 15px 0 0 15px;
+      }
+      &:last-child {
+        border-radius: 0px 15px 15px 0px;
+        border-left: 0;
+      }
+      &.selected {
+        background-color: $color_dark_grey;
+        color: #fff;
+        border: 0;
+      }
+    }
+  }
+}
+
+.pagination-input {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    li {
+      margin: 0 5px;
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $color_iron;
+        color: $color_dark_grey;
+        border-radius: 5px;
+        font-family: $font-stack-2;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        min-width: 40px;
+        height: 40px;
+        padding: 0 15px;
+        .rotate {
+          transform: rotate(180deg);
         }
       }
     }

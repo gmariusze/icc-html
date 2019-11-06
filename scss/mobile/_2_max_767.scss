@@ -327,6 +327,11 @@
           }
         }
       }
+      .title {
+        h2 {
+          text-align: left;
+        }
+      }
     }
     &.video-desc {
       padding-bottom: 20px;
@@ -886,6 +891,28 @@
     }
     &.no-bottom-padding {
       padding-bottom: 0;
+    }
+    &.filter-tabs {
+      .dashboard-container {
+        padding: 0;
+        .tabs-wrap {
+          border-radius: 0;
+          .tabs-nav {
+            border-radius: 0;
+            overflow: auto;
+            ul {
+              li{
+                a {
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+          .tabs-content {
+            border-radius: 0;
+          }
+        }
+      }
     }
   }
   .more-than-mobile-display {
