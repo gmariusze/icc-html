@@ -33,6 +33,9 @@ input[type='button'],
     color: #CED1D3;
     border: 1px solid #CED1D3;
   }
+  &.text-color-dark {
+    color: $color_dark_grey;
+  }
   &.blue {
     background-color: $color_prussian_blue;
     color: #FFFFFF;
@@ -130,6 +133,18 @@ input[type='button'],
     border-radius: 15px;
     padding: 7px 14px;
   }
+  &.icon {
+    display: flex;
+    align-items: center;
+    .icon {
+      display: inherit;
+      vertical-align: top;
+      margin-right: 8px;
+      img {
+        vertical-align: top;
+      }
+    }
+  }
 }
 
 .cbutton {
@@ -152,6 +167,10 @@ input[type='button'],
   align-items: center;
   .icon {
     margin-right: 5px;
+    &.right {
+      margin-left: 5px;
+      margin-right: 0;
+    }
     > img {
       vertical-align: middle;
     }

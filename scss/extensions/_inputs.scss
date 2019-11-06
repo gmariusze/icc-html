@@ -394,6 +394,13 @@ textarea {
     align-items: center;
     li {
       margin: 0 5px;
+      &.selected {
+        > a {
+          border: 1px solid $color_dark_grey;
+          background-color: $color_dark_grey;
+          color: $color_white;
+        }
+      }
       > a {
         display: flex;
         align-items: center;

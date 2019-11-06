@@ -235,8 +235,8 @@
             <div class="tabs-wrap">
               <div class="tabs-nav">
                 <ul>
-                  <li class="selected"><a href="">General material</a></li>
-                  <li><a href="">All Stars Cricket</a></li>
+                  <li><a href="">General material</a></li>
+                  <li class="selected"><a href="">All Stars Cricket</a></li>
                   <li><a href="">Junior Cricket</a></li>
                   <li><a href="">Women’s Soft Ball</a></li>
                 </ul>
@@ -244,7 +244,7 @@
               <div class="tabs-content">
                 <!-- TAB START -->
                 <!-- CLASS: open -->
-                <div class="tabs-content-single open">
+                <div class="tabs-content-single">
                   <div class="mobile-only-display">
                     <div class="pure-g">
                       <div class="pure-u-1-2">
@@ -401,15 +401,22 @@
                 </div>
                 <!-- TAB END -->
                 <!-- TAB START -->
-                <div class="tabs-content-single">
-                  <div class="pure-g">
+                <div class="tabs-content-single open">
+                  <div class="mobile-only-display">
+                    <div class="pure-g">
+                      <div class="pure-u-1">
+                        <a href="" class="button full-width smaller white text-color-dark no-shadow">Filter</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pure-g hide_if_mobile">
                     <div class="pure-u-1 pure-u-md-1-4">
                       <div class="element">
-                        <div class="label">Search practices material</div>
+                        <div class="label">Week</div>
                         <!-- CLASS: select-is-open -->
                         <div class="select-wrap ">
                           <div class="text-input">
-                            <input type="text" placeholder="Filter by material name">
+                            <input type="text" placeholder="All weeks">
                           </div>
                           <div class="select-values">
                             <div class="select-stats">
@@ -440,11 +447,11 @@
                     </div>
                     <div class="pure-u-1 pure-u-md-1-4">
                       <div class="element">
-                        <div class="label">Stage</div>
+                        <div class="label">Type</div>
                         <!-- select-is-open -->
                         <div class="select-wrap ">
                           <div class="select-input">
-                            <div class="label">All stages</div>
+                            <div class="label">All types</div>
                             <div class="arrow"><img src="images/input_arrow.svg" alt=""></div>
                           </div>
                           <div class="select-values">
@@ -474,76 +481,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="pure-u-1 pure-u-md-1-4">
-                      <div class="element">
-                        <div class="label">Part of the game</div>
-                        <div class="select-wrap ">
-                          <div class="select-input">
-                            <div class="label">All parts</div>
-                            <div class="arrow"><img src="images/input_arrow.svg" alt=""></div>
-                          </div>
-                          <div class="select-values">
-                            <div class="select-stats">
-                              <div class="left">
-                                <strong>2</strong> selected
-                              </div>
-                              <div class="right">
-                                <a href="" class="button white smaller no-shadow">Clear</a>
-                              </div>
-                            </div>
-                            <div class="select-entries">
-                              <div class="entry" data-selected="true">
-                                <div class="label">Basic</div>
-                                <div class="icon"><img src="images/checkbox.svg" alt=""></div>
-                              </div>
-                              <div class="entry" data-selected="false">
-                                <div class="label">Early</div>
-                                <div class="icon"><img src="images/checkbox.svg" alt=""></div>
-                              </div>
-                              <div class="entry" data-selected="true">
-                                <div class="label">Enhanced</div>
-                                <div class="icon"><img src="images/checkbox.svg" alt=""></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-4">
-                      <div class="element">
-                        <div class="label">Specific cricket skill</div>
-                        <div class="select-wrap ">
-                          <div class="select-input">
-                            <div class="label">All skills</div>
-                            <div class="arrow"><img src="images/input_arrow.svg" alt=""></div>
-                          </div>
-                          <div class="select-values">
-                            <div class="select-stats">
-                              <div class="left">
-                                <strong>2</strong> selected
-                              </div>
-                              <div class="right">
-                                <a href="" class="button white smaller no-shadow">Clear</a>
-                              </div>
-                            </div>
-                            <div class="select-entries">
-                              <div class="entry" data-selected="true">
-                                <div class="label">Basic</div>
-                                <div class="icon"><img src="images/checkbox.svg" alt=""></div>
-                              </div>
-                              <div class="entry" data-selected="false">
-                                <div class="label">Early</div>
-                                <div class="icon"><img src="images/checkbox.svg" alt=""></div>
-                              </div>
-                              <div class="entry" data-selected="true">
-                                <div class="label">Enhanced</div>
-                                <div class="icon"><img src="images/checkbox.svg" alt=""></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
                 <!-- TAB END -->
@@ -555,54 +493,61 @@
 
       <div class="section results-info grey-bg">
         <div class="dashboard-container">
-          <div class="results-info-wrap">
+          <div class="results-info-wrap crickets">
             <div class="left">
               <strong>245</strong> results found
             </div>
-            <div class="right hide_if_mobile">
-              <div class="tabulated-input">
-                <div class="label">Sort By</div>
-                <div class="input">
-                  <div class="value selected">Newest</div>
-                  <div class="value">Popular</div>
+            <div class="right">
+              <a href="" class="button blue br-5 icon"><span class="icon"><img src="images/ico-documentw-white.svg" alt=""></span>All stars cricket resources</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section video-with-text grey-bg">
+        <div class="dashboard-container">
+          <div class="video-text-wrapper">
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-lg-1-2">
+                <div class="video-place">
+                  <a href="" class="play-button"><img src="images/play_button.svg" width="100" alt=""></a>
+                  <div class="video-tag">
+                    <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                    <div class="number">255</div>
+                  </div>
+                  <img src="images/photos/i19.png" alt="">
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-lg-1-2">
+                <div class="text-area">
+                  <h2>All stars cricket</h2>
+                  <p>
+                    Welcome to All Stars Cricket on icoachcricket.
+                  </p>
+                  <p>
+                    Activators and volunteers can find all the resources they need for the programme as well as access to other great features and content too!
+                  </p>
+                  <p>
+                    The 2019 Activator handbook can be found in supporting resources.
+                  </p>
+                  <p>
+                    All Stars Cricket is all about creating a fantastic first experience and igniting a love of the game.  Focus on fun and the rest will take care of itself!
+                  </p>
+                  <p>
+                    For support contact <strong>allstarscricket@ecb.co.uk</strong>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
       <div class="section cards-list grey-bg">
         <div class="dashboard-container">
           <div class="pure-g">
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
+            <div class="pure-u-1 less-bottom-padding">
+              <div class="title-seperator">
+                <h2>Week one</h2>
               </div>
             </div>
             <div class="pure-u-1 pure-u-lg-1-4">
@@ -614,665 +559,378 @@
                       <div class="number">255</div>
                     </div>
                     <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
+                    <span class="ico-play playlist"></span>
                   </a>
                 </div>
                 <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
+                  <div class="title"><a href="">Volcanoes & Craters</a></div>
                   <div class="tags">
                     <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="video-tag">
-                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
-                      <div class="number">255</div>
-                    </div>
-                    <img src="images/photos/i18.png" alt="">
-                    <span class="ico-play"></span>
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Development practices: 1 - Bowling overarm</a></div>
-                  <div class="tags">
-                    <ul>
-                      <li><a href="">#early</a></li>
-                      <li><a href="">#technical</a></li>
-                      <li><a href="">#physical</a></li>
-                      <li><a href="">#batting</a></li>
-                      <li><a href="">#bowling</a></li>
-                      <li><a href="">#fast</a></li>
-                      <li><a href="">#basic</a></li>
-                      <li class="more"><a href="">+3 more</a></li>
+                      <li><a href="">Warm up</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
 
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play playlist"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Strike zone</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Batting</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play playlist"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star shapes</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Bowling</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play playlist"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star skills</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Fielding</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-1 less-bottom-padding">
+              <div class="title-seperator">
+                <h2>Week two</h2>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Volcanoes & Craters</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Warm up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Strike zone</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Batting</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star shapes</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Bowling</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star skills</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Fielding</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 less-bottom-padding">
+              <div class="title-seperator">
+                <h2>Week three</h2>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Volcanoes & Craters</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Warm up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Strike zone</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Batting</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star shapes</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Bowling</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star skills</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Fielding</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 less-bottom-padding">
+              <div class="title-seperator">
+                <h2>Week four</h2>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Volcanoes & Craters</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Warm up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Strike zone</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Batting</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star shapes</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Bowling</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-lg-1-4">
+              <div class="element">
+                <div class="picture">
+                  <a href="">
+                    <div class="video-tag">
+                      <div class="icon"><img src="images/ico-eye.svg" alt=""></div>
+                      <div class="number">255</div>
+                    </div>
+                    <img src="images/photos/i18.png" alt="">
+                    <span class="ico-play"></span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="title"><a href="">Star skills</a></div>
+                  <div class="tags">
+                    <ul>
+                      <li><a href="">Fielding</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

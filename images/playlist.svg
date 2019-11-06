@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>88D9F59F-8B33-4397-B8A7-F68BA36BA3A0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-82.7%" y="-82.7%" width="265.4%" height="265.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="all-stars-cricket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="All-Stars-Cricket" transform="translate(-190.000000, -954.000000)" fill="#FFFFFF">
+            <g id="playlist" transform="translate(200.000000, 963.000000)">
+                <g id="album" filter="url(#filter-1)">
+                    <path d="M25.2382812,6.09375 L0.76171875,6.09375 C0.34078982,6.09375 0,6.43453982 0,6.85546875 L0,25.2382812 C0,25.6592102 0.34078982,26 0.76171875,26 L25.2382812,26 C25.6592102,26 26,25.6592102 26,25.2382812 L26,6.85546875 C26,6.43453982 25.6592102,6.09375 25.2382812,6.09375 Z M16.0176704,16.3282416 L10.7158523,19.1843035 C10.5334489,19.2826046 10.300267,19.2900423 10.111267,19.2079801 C9.91965909,19.1252981 9.8,18.9639008 9.8,18.788248 L9.8,13.0761241 C9.8,12.9004714 9.91965909,12.7390741 10.111267,12.6563921 C10.3022613,12.5735861 10.5352898,12.5823874 10.7158523,12.6800686 L16.0176704,15.5361306 C16.1816648,15.6243909 16.28,15.7731441 16.28,15.9321861 C16.28,16.0911041 16.1816648,16.2398573 16.0176704,16.3282416 L16.0176704,16.3282416 Z" id="Shape"></path>
+                    <path d="M24.4765625,3.80859375 C24.4765625,3.38766482 24.1357727,3.046875 23.7148438,3.046875 L2.28515625,3.046875 C1.86422732,3.046875 1.5234375,3.38766482 1.5234375,3.80859375 L1.5234375,4.5703125 L24.4765625,4.5703125 L24.4765625,3.80859375 Z" id="Path"></path>
+                    <path d="M22.953125,0.76171875 C22.953125,0.34078982 22.6123352,0 22.1914062,0 L3.80859375,0 C3.38766482,0 3.046875,0.34078982 3.046875,0.76171875 L3.046875,1.5234375 L22.953125,1.5234375 L22.953125,0.76171875 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -910,7 +910,85 @@
           }
           .tabs-content {
             border-radius: 0;
+            padding: 20px 15px;
+
+            .pure-g {
+              margin: -7px;
+              [class*=pure-u] {
+                padding: 7px;
+              }
+            }
           }
+        }
+      }
+    }
+    &.pagination {
+      .pagination-wrap {
+        flex-flow: column;
+        padding: 20px 15px;
+        .button-for-mobile {
+          margin-top: 20px;
+        }
+        .left {
+          order: 2;
+        }
+        .right {
+          order: 1;
+          .result-data {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    &.results-info {
+      .results-info-wrap {
+        &.crickets {
+          flex-flow: column;
+          .right,
+          .left {
+            width: 100%;
+          }
+          .left {
+            order: 2;
+            margin-top: 20px;
+            text-align: left;
+          }
+          .right {
+            order: 1;
+            .button {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+    &.video-with-text {
+      .video-text-wrapper {
+        background-image: url('../images/photos/i22.jpg');
+        .text-area {
+          padding-right: 0;
+        }
+        .video-place {
+          .play-button {
+            position: absolute;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            width: 60px;
+            height: 60px;
+            img {
+              width: 100%;
+              height: auto;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+    }
+    &.cards-list {
+      .title-seperator {
+        h2 {
+          text-align: left;
         }
       }
     }
@@ -965,9 +1043,29 @@
     }
   }
   /*Dashboard light END*/
+
+  .pagination-input {
+    ul {
+      li {
+        margin: 0px;
+        margin-left: 5px;
+        &:first-child {
+          margin-left: 0;
+        }
+        > a {
+         min-width: 38px;
+         height: 38px;
+         padding: 0 14px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 330px) {
+  .hide_extra_small {
+    display: none;
+  }
   .header {
     .buttons {
       .button {

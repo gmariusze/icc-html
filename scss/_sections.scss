@@ -1855,6 +1855,7 @@ div.section {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .left {
         color: $color_dark_grey;
         font-family: $font-stack-2;
@@ -1870,6 +1871,20 @@ div.section {
       margin: -12px;
       [class*=pure-u] {
         padding: 12px;
+        &.less-bottom-padding {
+          padding-bottom: 8px;
+        }
+      }
+    }
+    .title-seperator {
+      h2 {
+        margin: 0;
+        color: $color_prussian_blue;
+        font-family: $font-stack-2;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        margin: 0;
       }
     }
     .element {
@@ -1892,6 +1907,12 @@ div.section {
           position: absolute;
           left: 15px;
           bottom: 15px;
+          &.ico-play {
+            background-image: url(../images/playlist.svg);
+            background-size: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
         }
         > a > img,
         > img {
@@ -1906,6 +1927,7 @@ div.section {
       .labels {
         background-color: #FFFFFF;
         padding: 15px;
+        min-height: 104px;
         .title {
           color: $color_prussian_blue;
           font-family: $font-stack-2;
@@ -1970,6 +1992,60 @@ div.section {
         .button {
           min-width: 258px;
         }
+      }
+    }
+  }
+  &.video-with-text {
+    .pure-g {
+      margin: -12px;
+      [class*=pure-u] {
+        padding: 12px;
+      }
+    }
+    .video-text-wrapper {
+      background-color: #FFFFFF;
+      background-image: url('../images/photos/i20.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+      border-radius: 5px;
+      padding: 24px;
+
+      .video-place {
+        position: relative;
+
+        .play-button {
+          display: inline-block;
+          position: absolute;
+          top:calc( 50% - 50px );
+          left: calc( 50% - 50px );
+        }
+        .video-tag {
+          position: absolute;
+          top:10px;
+          right: 10px;
+        }
+        > img {
+          vertical-align: top;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .text-area {
+        h2 {
+          color: $color_prussian_blue;
+          font-family: $font-stack-2;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 24px;
+          margin: 0;
+        }
+        padding-right: 128px;
+        color: $color_prussian_blue;
+        font-family: $font-stack-2;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
       }
     }
   }
