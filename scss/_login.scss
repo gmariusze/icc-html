@@ -157,6 +157,10 @@ body {
     &.menu-space {
       padding-right: 15px;
     }
+    &.filter-space {
+      padding-right: 15px;
+      padding-top: 6px;
+    }
     &::-webkit-scrollbar {
       width: 5px;
       margin-left: 10px;
@@ -173,9 +177,7 @@ body {
       background: #555;
 
     }
-    .buttons {
 
-    }
     .more-link {
     	font-family: $font-stack-2;
     	font-size: 14px;
@@ -272,7 +274,73 @@ body {
         text-align: center;
       }
     }
-
+    .filter-area {
+      .head-wrap {
+        .filter-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h2 {
+            margin: 0;
+            color: $color_prussian_blue;
+            font-family: $font-stack-2;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 24px;
+          }
+        }
+      }
+      .filters-menus {
+        .label {
+          margin-top: 10px;
+          padding: 10px 0;
+          &.justify {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .title-place {
+            color: $color_main_text_darker;
+            font-family: $font-stack-2;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+          }
+        }
+        .search-input {
+          margin-top: 20px;
+          input[type=text] {
+            box-shadow: none;
+          }
+        }
+        .submit-button-place  {
+          margin-top: 20px;
+        }
+        .select-wrap {
+          .select-values {
+            position: static;
+            box-shadow:none;
+            .select-entries {
+              padding: 0;
+              border: 0;
+              box-shadow: none;
+              .entry {
+                padding: 0 12px;
+                .label {
+                  margin: 0;
+                }
+                &:first-child {
+                  margin-top: 0;
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
     &.change-pw-space,
     &.reset-pw-space {
@@ -322,6 +390,4 @@ body {
       }
     }
   }
-
-
 }

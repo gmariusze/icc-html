@@ -897,11 +897,21 @@
         padding: 0;
         .tabs-wrap {
           border-radius: 0;
+          &.no-nav {
+            box-shadow: none;
+            .tabs-content {
+              background-color: transparent;
+              padding: 0 15px;
+            }
+          }
           .tabs-nav {
             border-radius: 0;
             overflow: auto;
             ul {
               li{
+                &:last-child {
+                  padding-right: 30px;
+                }
                 a {
                   white-space: nowrap;
                 }
@@ -917,6 +927,54 @@
               [class*=pure-u] {
                 padding: 7px;
               }
+            }
+          }
+        }
+      }
+    }
+    &.practice-list {
+      .practice-list-wrap {
+        .line {
+          padding: 20px 15px;
+          flex-flow: column;
+          > .column-d,
+          > .column-c,
+          > .column-b,
+          > .column-a {
+            width: 100%;
+            padding: 0;
+            .empty {
+              display: none;
+            }
+          }
+          .column-a {
+            .title {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20px;
+            }
+            .subtitle {
+              margin-top: 10px;
+            }
+          }
+          .column-b {
+            margin-top: 20px;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            align-items: center;
+            > * {
+              margin: 0;
+            }
+          }
+          .column-c {
+            margin-top: 10px;
+          }
+          .column-d{
+            margin-top: 20px;
+            justify-content: space-between;
+            > * {
+              width: 33%;
             }
           }
         }
@@ -957,6 +1015,7 @@
             order: 1;
             .button {
               width: 100%;
+              justify-content:center;
             }
           }
         }
@@ -992,7 +1051,66 @@
         }
       }
     }
+    &.plan-fields {
+      h2.v2 {
+        text-align: left;
+      }
+      .plan-fields-wrap {
+        padding: 10px 15px;
+      }
+    }
+    &.filter-tabs-mod-new-practice {
+      h2.v2 {
+        text-align: left;
+      }
+      .dashboard-container {
+        padding: 0 15px;
+        .tabs-wrap.no-nav {
+          .tabs-content {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+    &.practice-list-edit {
+      .inner-container  {
+        h2.v2 {
+          display: block;
+          .title {
+            display: block;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .practice-list-wrap {
+        .line{
+          display: block;
+          .column-a {
+            padding-right: 0;
+            .drag {
+              display: none;
+            }
+          }
+          >.column-c {
+            text-align: center;
+            margin: 10px 0;
+          }
+          >.column-c,
+          >.column-a {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &.save-back-buttons {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
+
   .more-than-mobile-display {
     display: none;
   }
@@ -1022,6 +1140,23 @@
     height: 100vh;
     overflow: auto;
     padding-top: 70px;
+    &.full-screen-mobile {
+      padding-top: 0;
+      z-index: 250;
+      .dashpopup-wrap {
+        margin: 0;
+        border-radius: 0px;
+        height: 100vh;
+        width: 100vw;
+        border: 0;
+        .form-dashboard {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          height: 100vh;
+        }
+      }
+    }
     .dashpopup-wrap {
       max-width: 100vw;
       margin: 0 15px;

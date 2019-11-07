@@ -30,9 +30,11 @@ input[type='button'],
     outline: none;
   }
   &.white {
+    background-color: #fff;
     color: #CED1D3;
     border: 1px solid #CED1D3;
   }
+
   &.text-color-dark {
     color: $color_dark_grey;
   }
@@ -40,11 +42,16 @@ input[type='button'],
     background-color: $color_prussian_blue;
     color: #FFFFFF;
   }
-  &.green {
-    background-color: $color_green;
+  &.red {
+    background-color: $color_sunset_orange;
     &:hover {
-      background-color:#5B9C0A;
-      background-color: darken($color_green, 5);
+      background-color: #E04644;
+    }
+  }
+  &.green {
+    background-color: $button_green;
+    &:hover {
+      background-color: $button_green_hover;
     }
   }
   &.dark-grey {
@@ -54,7 +61,11 @@ input[type='button'],
   &.dark-grey-v2 {
     background-color: #6E8490;
     color: #FFFFFF;
+    &:hover {
+      background-color: #60737E;
+    }
   }
+
   &.grey {
 
   }
@@ -65,6 +76,11 @@ input[type='button'],
       background-color: $color_dark_grey;
       color: #fff;
     }
+  }
+  &.ico-button {
+    padding: 6px;
+    min-width: 30px;
+    text-align: center;
   }
   &.smaller {
     font-family: $font-stack-2;

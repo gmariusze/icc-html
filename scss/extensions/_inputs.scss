@@ -64,6 +64,7 @@ textarea {
     visibility: hidden;
     transition: all ease-in-out 0.3s;
     position: absolute;
+    z-index: $zi_filter_input_results;
     top:100%;
     left: 0;
     width: 100%;
@@ -223,6 +224,12 @@ textarea {
 
 .search-input {
   position: relative;
+  &.smaller {
+    input[type='text'] {
+      height: 40px;
+      line-height:40px;
+    }
+  }
   input[type='text'] {
     width: 100%;
     line-height:50px;
@@ -267,6 +274,7 @@ textarea {
     opacity: 0;
     transition: all ease-in-out 0.3s;
     position: absolute;
+    z-index: $zi_search_results;
     top:100%;
     border-radius: 0 0 5px 5px;
     background-color: #FFFFFF;
@@ -275,6 +283,7 @@ textarea {
     .search-results {
       max-height: 284px;
       overflow: auto;
+      background-color: #FFFFFF;
       .entry-line {
         display: block;
         padding: 13px 15px;
