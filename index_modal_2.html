@@ -98,17 +98,20 @@
                           </label>
                           <input type="text" name="name" id="name" placeholder="name" value="" required>
                         </div>
-                        <div class="input">
+                        <div class="input disabled">
                           <label for="surname">
                             <span class="label">Surname <span class="req">*</span></span>
                           </label>
-                          <input type="text" name="text" id="surname" placeholder="Surname" value="" required>
+                          <input type="text" name="text" id="surname" placeholder="Surname" value="" required disabled>
                         </div>
                         <div class="input">
                           <label for="email">
                             <span class="label">Email <span class="req">*</span></span>
                           </label>
-                          <input type="text" name="email" id="email" placeholder="Email" value="" required>
+                          <input type="text" name="email" id="email" placeholder="Email" value="" class="error" required>
+                          <div class="error-label">
+                            Please check your email
+                          </div>
                         </div>
                         <div class="input">
                           <label for="password">

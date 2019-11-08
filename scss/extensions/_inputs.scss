@@ -217,9 +217,53 @@ textarea {
   margin: 0;
   color: $input-text-color;
   padding:$input-padding;
+  &.error {
+    border: 1px solid $color_sunset_orange;
+    ~ .error-label{
+      color: $color_sunset_orange;
+      font-family: $font-stack-2;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 13px;
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
+  &:disabled {
+    border: 1px solid $button_disabled_border;
+    color: $button_disabled_text_color;
+  }
 }
 textarea {
   padding:$input-padding-textarea;
+}
+
+.input {
+  .label {
+    display: block;
+    color: $color_comet;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    .req {
+      color: $color_sunset_orange;
+    }
+
+  }
+  &.disabled {
+    input[type='text'] {
+      @include placeholder {
+        color: $button_disabled_text_color;
+      }
+    }
+    .label {
+      color: $button_disabled_text_color;
+      .req {
+        color: $button_disabled_text_color;
+      }
+    }
+  }
 }
 
 .search-input {

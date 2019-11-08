@@ -212,16 +212,7 @@ body {
         display: block;
         overflow: hidden;
         .label {
-          display: block;
-          color: $color_comet;
-          font-family: $font-stack-2;
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 14px;
           margin: 10px 0;
-          .req {
-            color: $color_sunset_orange;
-          }
         }
       }
 
