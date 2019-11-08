@@ -133,7 +133,7 @@ textarea {
     &:checked ~ span {
       border: 1px solid $color_prussian_blue;
       background-color: $color_prussian_blue;
-      background-image: url('../images/ico-checkbox.svg');
+      background-image: url('../static/images/ico-checkbox.svg');
     }
   }
   > input[type='checkbox'],
@@ -252,7 +252,7 @@ textarea {
     padding: 0;
     background-color: transparent;
     box-shadow: none;
-    background-image: url('../images/ico-search.svg');
+    background-image: url('../static/images/ico-search.svg');
     background-position: center;
     background-repeat: no-repeat;
   }

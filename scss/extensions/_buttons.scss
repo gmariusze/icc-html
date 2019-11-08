@@ -101,7 +101,7 @@ input[type='button'],
           content: " ";
           width: 20px;
           height: 20px;
-          background-image: url('../images/play_button_plus.svg');
+          background-image: url('../static/images/play_button_plus.svg');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
@@ -132,6 +132,7 @@ input[type='button'],
   &.full-width {
     display: block;
     text-align: center;
+    width: 100%;
   }
   &.no-shadow {
     box-shadow: none;
@@ -169,7 +170,7 @@ input[type='button'],
   width: 28px;
   background-color: $button_arrow;
   border-radius: 100%;
-  background-image: url('../images/ico-arrow-down.svg');
+  background-image: url('../static/images/ico-arrow-down.svg');
   background-position: center;
   background-repeat: no-repeat;
 }

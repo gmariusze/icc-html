@@ -23,7 +23,7 @@ var config = {
         ]
     },
     dist = {
-        images: "dist/images/fancybox",
+        images: "dist/static/images/fancybox",
         css: "dist/css",
         js: "dist/js"
     };
@@ -56,7 +56,7 @@ gulp.task("styles", function () {
         .pipe($.plumberNotifier())
         .pipe($.concat("jquery.fancybox.min.css"))
         .pipe($.autoprefixer("last 5 version"))
-        .pipe($.replace(/url\('?(.*)'?\)/g, "url('../images/fancybox/$1')"))
+        .pipe($.replace(/url\('?(.*)'?\)/g, "url('../static/images/fancybox/$1')"))
         .pipe($.replace("''", "'"))
         .pipe($.cleanCss({compatibility: 'ie8'}))
         .pipe(gulp.dest(dist.css))

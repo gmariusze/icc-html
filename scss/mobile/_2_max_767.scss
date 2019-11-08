@@ -44,7 +44,7 @@
       width: 127px;
       height: 30px;
       background-size: contain;
-      background-image: url('../images/logo-t2.svg');
+      background-image: url('../static/images/logo-t2.svg');
     }
     .buttons {
       .button {
@@ -1024,7 +1024,7 @@
     }
     &.video-with-text {
       .video-text-wrapper {
-        background-image: url('../images/photos/i22.jpg');
+        background-image: url('../static/images/photos/i22.jpg');
         .text-area {
           padding-right: 0;
         }

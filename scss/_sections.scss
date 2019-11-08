@@ -13,7 +13,7 @@ div.section {
       line-height: 19px;
       text-transform: uppercase;
       padding-left: 16px;
-      background-image: url('../images/ico-arrow-left.svg');
+      background-image: url('../static/images/ico-arrow-left.svg');
       background-position: center left;
       background-repeat: no-repeat;
     }
@@ -259,7 +259,7 @@ div.section {
                   top:-45px;
                   right: auto;
                   bottom: auto;
-                  background-image: url('../images/ico-quate_a.svg');
+                  background-image: url('../static/images/ico-quate_a.svg');
                 }
               }
             }
@@ -286,7 +286,7 @@ div.section {
         display: block;
         width: 80px;
         height: 60px;
-        background-image: url('../images/ico-quate_b.svg');
+        background-image: url('../static/images/ico-quate_b.svg');
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -572,7 +572,7 @@ div.section {
           height: 28px;
           border-radius: 100%;
           background-color: #EEF0F1;
-          background-image: url('../images/ico-arrow-left.svg');
+          background-image: url('../static/images/ico-arrow-left.svg');
           background-position: center;
           background-repeat: no-repeat;
           transform: rotate(-90deg);
@@ -714,7 +714,7 @@ div.section {
       .stats-slider {
         .swiper-button-next,
         .swiper-button-prev {
-          background-image: url('../images/ico-arrow-right.svg');
+          background-image: url('../static/images/ico-arrow-right.svg');
           width: 12px;
           height: 20px;
           margin-top: -10px;
@@ -1329,7 +1329,7 @@ div.section {
               flex-shrink: 0;
               width: 20px;
               height: 20px;
-              background-image: url('../images/play_button.svg');
+              background-image: url('../static/images/play_button.svg');
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
@@ -1361,7 +1361,7 @@ div.section {
         height: auto;
         transition: all ease-in-out 0.3s;
         background-size: 24px 24px;
-        background-image: url('../images/arrow_right.svg');
+        background-image: url('../static/images/arrow_right.svg');
         &.swiper-button-disabled {
           opacity: 0;
         }
@@ -1759,7 +1759,7 @@ div.section {
             &:after {
               display: inline-block;
               content: " ";
-              background-image: url('../images/ico-breadcrumbs-seperator.svg');
+              background-image: url('../static/images/ico-breadcrumbs-seperator.svg');
               background-size: cover;
               width: 6px;
               height: 6px;
@@ -1921,7 +1921,7 @@ div.section {
           top:10px;
         }
         .ico-play {
-          background-image: url(../images/play_button.svg);
+          background-image: url(../static/images/play_button.svg);
           background-size: cover;
           width: 26px;
           height: 26px;
@@ -1930,7 +1930,7 @@ div.section {
           left: 15px;
           bottom: 15px;
           &.ico-play {
-            background-image: url(../images/playlist.svg);
+            background-image: url(../static/images/playlist.svg);
             background-size: 40px;
             background-position: center;
             background-repeat: no-repeat;
@@ -2159,7 +2159,7 @@ div.section {
     }
     .video-text-wrapper {
       background-color: #FFFFFF;
-      background-image: url('../images/photos/i20.png');
+      background-image: url('../static/images/photos/i20.png');
       background-repeat: no-repeat;
       background-position: bottom right;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
