@@ -1865,6 +1865,14 @@ div.section {
             font-weight: 500;
             line-height: 14px;
             padding: 10px 0;
+
+          }
+          > .input-value {
+            color: $color_dark_grey;
+            font-family: $font-stack-2;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16px;
           }
         }
       }
@@ -1989,6 +1997,7 @@ div.section {
       }
     }
   }
+  &.practice-view,
   &.practice-list-edit,
   &.practice-list {
     padding-bottom: 8px;
@@ -2235,6 +2244,13 @@ div.section {
         }
         .input-wrap {
 
+        }
+        .input-value {
+          color: $color_dark_grey;
+          font-family: $font-stack-2;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 16px;
         }
       }
       .pure-g {

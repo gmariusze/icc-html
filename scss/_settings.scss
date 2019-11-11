@@ -13,6 +13,7 @@ $color_iron:#E0E1E1;
 $color_light_grey:#DFE7EB;
 $color_greyish:#F9F9F9;
 $color_grey_back:#eef0f1;
+$color_grey_back_2:#CED1D3;
 
 $color_sunset_orange:#FF504E;
 $color_mexican_red:#FF504E;
@@ -32,9 +33,11 @@ $footer-height: 56px;
 $button_green:#66AF06;
 $button_green_hover:#5B9C0A;
 $border_color:#EEF0F1;
+$checkbox_border_input:#e2e2e2;
 $button_arrow: #EEF0F1;
 $button_disabled_border:#CED1D3;
 $button_disabled_text_color:#CED1D3;
+
 /* MISC */
 $tag_button_color:#3d495f;
 $button_light_grey:$color_light_grey;
@@ -61,6 +64,7 @@ $zi_login_modal:500;
 $zi_dashboardpopup:100;
 $zi_filter_input_results:50;
 $zi_search_results:150;
+$zi_flash_messages:500;
 
 /*                */
 /*      MISC      */

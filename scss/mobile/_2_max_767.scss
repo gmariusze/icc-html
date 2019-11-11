@@ -1143,18 +1143,61 @@
     &.full-screen-mobile {
       padding-top: 0;
       z-index: 250;
+      align-items: baseline;
       .dashpopup-wrap {
         margin: 0;
         border-radius: 0px;
-        height: 100vh;
+        min-height: 100vh;
         width: 100vw;
         border: 0;
         .form-dashboard {
           display: flex;
           flex-flow: column;
           justify-content: space-between;
-          height: 100vh;
+          min-height: 100vh;
         }
+      }
+    }
+    &.personal-practice {
+      .practices-list {
+        .practice{
+          display: block;
+          .label {
+            display: block;
+            text-align: left;
+          }
+          .controls {
+            margin-top: 20px;
+            display: flex;
+            > * {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    &.add-practice {
+      .tabs-menu {
+        overflow: auto;
+        padding: 0 15px;
+      }
+      .buttons-wrap {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .tabs {
+      }
+      .tabs-data {
+        max-height: initial;
+        padding: 10px 15px;
+        padding-bottom: 120px;
+      }
+      .search-input {
+        margin: 15px;
+        margin-top: 15px;
+        margin-bottom: 0;
       }
     }
     .dashpopup-wrap {
@@ -1192,6 +1235,14 @@
          height: 38px;
          padding: 0 14px;
         }
+      }
+    }
+  }
+
+  .input-range-with-labels {
+    .labels {
+      .label-item {
+        max-width: 90px;
       }
     }
   }

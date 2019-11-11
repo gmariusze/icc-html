@@ -192,4 +192,196 @@ body {
       }
     }
   }
+  // Add practice popup
+  &.personal-practice {
+    .practices-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      .left {
+        color: $color_dark_grey;
+      }
+    }
+    .practices-list {
+      padding: 0 24px;
+      padding-bottom: 24px;
+      .practice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:20px 15px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+        margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+        .label {
+          color: $color_prussian_blue;
+          font-family: $font-stack-2;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+        }
+        .controls {
+          > * {
+            margin-left: 15px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.new-practice {
+    .new-practices-form {
+      padding: 10px 24px;
+      padding-bottom: 24px;
+      .input-with-label {
+        margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &.new-practice,
+  &.personal-practice,
+  &.add-practice {
+    overflow: auto;
+    .dashpopup-wrap {
+      width: 680px;
+      .title {
+        h2 {
+        }
+      }
+    }
+    .search-input {
+      margin: 0 24px;
+      max-width: 100%;
+      margin-top: 24px;
+    }
+    .tabs-menu {
+      padding: 0 24px;
+      border-bottom: 1px solid $border_color;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        > li {
+          margin-left: 30px;
+          &.selected {
+            > a {
+              color: $color_prussian_blue;
+              position: relative;
+              &:after {
+                content: " ";
+                height: 2px;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+                background-color: $color_prussian_blue;
+              }
+            }
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+          > a {
+            display: block;
+            color: $color_dark_grey;
+            font-family: $font-stack-2;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+            padding: 20px 0;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .tabs-data {
+      padding: 10px 24px;
+      margin-right: 5px;
+      margin-top: 10px;
+      padding-bottom: 20px;
+      padding-right: 19px;
+      max-height: 296px;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(#9FA4A7,0.3);
+        border-radius: 2px;
+      }
+      > .tab {
+        display: none;
+        &.open {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.popup-steps {
+  padding: 0 24px;
+  margin: 20px 0;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    >li {
+      margin-left: 30px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &.inactive {
+        > span,
+        > a {
+          .step-number {
+            background-color: $color_gray_chateau;
+          }
+          color: $color_gray_chateau;
+        }
+      }
+      > span,
+      > a {
+        display: flex;
+        align-items: center;
+        .step-number {
+          padding: 1px 0;
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          line-height: 24px;
+          background-color: $color_prussian_blue;
+          color: #fff;
+          text-align: center;
+          border-radius: 100%;
+          margin-right: 10px;
+          flex-shrink: 0;
+        }
+        .step-label {
+          color: $color_prussian_blue;
+          font-family: $font-stack-2;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 16px;
+          text-align: left;
+          min-width: 96px;
+        }
+      }
+    }
+  }
 }
