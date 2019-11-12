@@ -81,6 +81,17 @@ input[type='button'],
     padding: 6px;
     min-width: 30px;
     text-align: center;
+    text-align: center;
+    > img {
+      vertical-align: middle;
+    }
+    &.larger {
+      padding: 10px 10px;
+      min-width: 40px;
+      > img {
+        vertical-align: text-top;
+      }
+    }
   }
   &.smaller {
     font-family: $font-stack-2;
@@ -111,6 +122,31 @@ input[type='button'],
         }
         .label {
           vertical-align: middle;
+        }
+        &.c-icon-play {
+          &:before {
+            width: 20px;
+            height: 20px;
+            background-image: url('../static/images/play_button.svg');
+          }
+        }
+        &.c-icon-pen {
+          padding: 8px 15px;
+          &:before {
+            vertical-align: top;
+            width: 12px;
+            height: 12px;
+            background-image: url('../static/images/ico-pen.svg');
+          }
+        }
+        &.c-icon-share {
+          padding: 8px 15px;
+          &:before {
+            vertical-align: top;
+            width: 12px;
+            height: 10px;
+            background-image: url('../static/images/share_white.svg');
+          }
         }
       }
     }

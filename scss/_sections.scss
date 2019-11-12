@@ -30,6 +30,7 @@ div.section {
       font-weight: 900;
       line-height: 36px;
     }
+    &.v3,
     &.v2 {
       color: $color_prussian_blue;
       font-family: $font-stack-2;
@@ -37,6 +38,47 @@ div.section {
       font-weight: bold;
       line-height: 24px;
       padding: 0 24px;
+    }
+    &.v3 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &.special {
+        margin: 20px -12px;
+      }
+      > .pure-g {
+        width: 100%;
+        margin: 0;
+      }
+      .title {
+        display: block;
+
+      }
+      .buttons {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .time-title {
+        height: 14px;
+        width: 35px;
+        color: $color_main_text_darker;
+        font-family: $font-stack-2;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        vertical-align: bottom;
+      }
+      .subtitle {
+        display: block;
+        color: $color_dark_grey;
+        font-family: $font-stack-2;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        margin-top: 10px;
+      }
     }
   }
 
@@ -1733,6 +1775,11 @@ div.section {
         line-height: 19px;
         margin: 0;
         margin-top: 10px;
+        &.justify {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
       }
     }
     .breadcrumbs-wrap {
@@ -2001,6 +2048,9 @@ div.section {
   &.practice-list-edit,
   &.practice-list {
     padding-bottom: 8px;
+    .no-eval {
+      padding-top: 10px;
+    }
     .practice-list-wrap {
       .line {
         display: flex;
@@ -2068,6 +2118,123 @@ div.section {
           font-weight: 500;
           line-height: 16px;
           margin-top: 10px;
+        }
+      }
+    }
+  }
+  &.practice-view {
+    &.large-bottom-padding {
+      padding-bottom: 60px;
+    }
+    .info-container {
+      border-top: 1px solid $border_color;
+      padding: 14px 24px;
+      color: $color_dark_grey;
+      font-family: $font-stack-2;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 17px;
+      h3 {
+        margin: 0;
+        padding: 0;
+        color: $color_main_text_darker;
+        font-family: $font-stack-2;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        margin: 10px 0;
+        &.no-bottom-margin {
+          margin-bottom: 0;
+        }
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin:10px 0;
+        li {
+          color: $color_dark_grey;
+          font-family: $font-stack-2;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 17px;
+          &:before {
+            content: " ";
+            width: 2px;
+            height: 2px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            border-radius: 100%;
+            background-color: $color_dark_grey;
+          }
+        }
+      }
+    }
+    .other-data {
+      margin: 20px 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid $border_color;
+      padding-bottom: 30px;
+      &.last-item {
+        margin-bottom: 0;
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      > .rating {
+        .rating-score {
+          margin-bottom: 30px;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          margin: 10px 0;
+          > li {
+            &:before {
+              display: none;
+            }
+            margin-left: 10px;
+            &:first-child {
+              margin-left: 0;
+            }
+            > *.rating {
+              display: block;
+              color: $color_prussian_blue;
+              font-family: $font-stack-2;
+              font-size: 11px;
+              font-weight: 500;
+              line-height: 13px;
+            }
+            > *.star {
+              display: block;
+              width: 21px;
+              height: 20px;
+              background-image: url('../static/images/ico-star-rating-filled.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              &.open {
+                background-image: url('../static/images/ico-star-rating-open.svg');
+              }
+            }
+          }
+        }
+      }
+      .paragraph {
+        margin-top: 30px;
+        color: $color_dark_grey;
+        font-family: $font-stack-2;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        h3 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin: 10px 0;
+
         }
       }
     }
@@ -2268,6 +2435,14 @@ div.section {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .more-right {
+        > * {
+          margin-left: 15px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
     }
   }
 }

@@ -88,6 +88,32 @@
       font-weight: 900;
       line-height: 32px;
       text-align: center;
+      &.v3 {
+        display: block;
+        text-align: left;
+        .left-titles {
+          display: block;
+        }
+        .time-title {
+          display: inline;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        .subtitle {
+          display: inline;
+          vertical-align: middle;
+          margin-bottom: 20px;
+          line-height: 19px;
+          &.block {
+            display: block;
+          }
+
+        }
+        .buttons {
+          display: block;
+          margin-top: 20px;
+        }
+      }
     }
     &.simple {
       table {
@@ -330,6 +356,15 @@
       .title {
         h2 {
           text-align: left;
+          &.justify {
+            display: block;
+            .label {
+              display: block;
+            }
+            .buttons {
+              margin-top: 20px;
+            }
+          }
         }
       }
     }
@@ -1054,6 +1089,7 @@
     &.plan-fields {
       h2.v2 {
         text-align: left;
+        padding: 0 15px;
       }
       .plan-fields-wrap {
         padding: 10px 15px;
@@ -1062,6 +1098,7 @@
     &.filter-tabs-mod-new-practice {
       h2.v2 {
         text-align: left;
+        padding: 0 15px;
       }
       .dashboard-container {
         padding: 0 15px;
@@ -1103,11 +1140,29 @@
         }
       }
     }
+    &.practice-view {
+      .buttons {
+        .button {
+          min-width: 150px;
+          text-align: center;
+        }
+      }
+    }
     &.save-back-buttons {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
+      .button.dark-grey-v2:not(.ico-button) {
+        padding: 12px 15px;
+      }
+      .more-right {
+        display: flex;
+        .button:not(.ico-button), button:not(.ico-button), input[type=button]:not(.ico-button), input[type=submit]:not(.ico-button) {
+          padding: 11px 25px;
+        }
+
+      }
     }
   }
 
