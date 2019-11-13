@@ -28,6 +28,7 @@ body {
     text-align: center;
     padding: 68px 20px;
     background-color: $color_oslo_gray;
+
     .close {
       position: absolute;
       right: 15px;
@@ -80,6 +81,7 @@ body {
           font-size: 20px;
           font-weight: bold;
           line-height: 24px;
+          margin: 19px 0;
         }
       }
     }
@@ -210,7 +212,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:20px 15px;
+        padding:23px 15px;
         border-radius: 5px;
         background-color: #FFFFFF;
         box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
@@ -228,6 +230,10 @@ body {
         .controls {
           > * {
             margin-left: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
             &:first-child {
               margin-left: 0;
             }
@@ -248,6 +254,7 @@ body {
       }
     }
   }
+
   &.new-practice,
   &.personal-practice,
   &.add-practice {
@@ -273,8 +280,18 @@ body {
         align-items: center;
         padding: 0;
         margin: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch; /* [3] */
+        -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+        &::-webkit-scrollbar {
+          display: none;
+        }
         > li {
           margin-left: 30px;
+          &:last-child {
+            margin-right: 30px;
+          }
           &.selected {
             > a {
               color: $color_prussian_blue;
@@ -328,6 +345,11 @@ body {
           display: block;
         }
       }
+    }
+  }
+  &.add-practice {
+    .tabs-data {
+      max-height: 417px;
     }
   }
 }

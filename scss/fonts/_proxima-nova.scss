@@ -1,84 +1,84 @@
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-Light.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-Light.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Light.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Light.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-Regular.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Regular.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
     font-weight: normal; /* 400 */
     font-style: normal;
 }
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-RegularIt.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-RegularIt.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-RegularIt.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype');
     font-weight: normal; /* 400 */
     font-style: italic;
 }
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-Semibold.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-Semibold.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Semibold.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Semibold.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-BoldIt.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-BoldIt.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-BoldIt.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-BoldIt.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-BoldIt.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-BoldIt.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-BoldIt.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-BoldIt.ttf') format('truetype');
     font-weight: bold; /* 700 */
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-Bold.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-Bold.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Bold.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Bold.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
     font-weight: bold;  /* 700 */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-Extrabld.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-Extrabld.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Extrabld.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../static/fonts/ProximaNova/ProximaNova-Black.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNova-Black.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Black.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Black.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -87,22 +87,22 @@
 /*Needs sorting*/
 @font-face {
     font-family: 'Proxima Nova Cn Lt';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Light.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Light.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Light.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Light.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Light.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Light.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Light.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Light.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Light.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova Cn Rg';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-RegularIt.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-RegularIt.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-RegularIt.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-RegularIt.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-RegularIt.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-RegularIt.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-RegularIt.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-RegularIt.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-RegularIt.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-RegularIt.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -110,11 +110,11 @@
 
 @font-face {
     font-family: 'Proxima Nova Cn Bl';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Black.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Black.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Black.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Black.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Black.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Black.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Black.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Black.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Black.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -123,22 +123,22 @@
 
 @font-face {
     font-family: 'Proxima Nova Cn Lt';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-LightIt.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-LightIt.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-LightIt.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-LightIt.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-LightIt.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-LightIt.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-LightIt.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-LightIt.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-LightIt.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Proxima Nova Cn Rg';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Regular.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Regular.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Regular.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Regular.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Regular.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Regular.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Regular.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -146,22 +146,22 @@
 
 @font-face {
     font-family: 'Proxima Nova Cn Lt';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Semibold.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Semibold.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Semibold.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-Semibold.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Semibold.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Semibold.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Semibold.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova Cn Lt';
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.eot');
-    src: url('../static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.eot?#iefix') format('embedded-opentype'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.woff2') format('woff2'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.woff') format('woff'),
-        url('../static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.ttf') format('truetype');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.eot');
+    src: url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.woff2') format('woff2'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.woff') format('woff'),
+        url('#{$path}static/fonts/ProximaNova/ProximaNovaCond-SemiboldIt.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }

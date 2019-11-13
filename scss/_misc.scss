@@ -52,7 +52,7 @@ body {
     display: block;
     width: 106px;
     height: 140px;
-    background: url('../static/images/logo.svg') 0 0 no-repeat;
+    background: url('#{$path}static/images/logo.svg') 0 0 no-repeat;
     background-position: center;
     background-size: 75%;
     font-size: 0;
@@ -99,7 +99,7 @@ body {
         width: 106px;
         height: 140px;
         margin: 12px auto;
-        background-image: url('../static/images/logo.svg');
+        background-image: url('#{$path}static/images/logo.svg');
         background-position: center;
         background-repeat: no-repeat;
       }

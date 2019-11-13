@@ -246,7 +246,7 @@ textarea {
     border-radius: 100%;
     background-color: #fff;
     border: 1px solid $color_prussian_blue;
-    $offset_circle:3px;
+    $offset_circle:4px;
     &:after {
       opacity: 0;
       transition: all ease-in-out 0.3s;
@@ -324,12 +324,30 @@ textarea {
         font-weight: 300;
         line-height: 17px;
         text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:after {
+          content: " ";
+          display: inline-block;
+          background-image: url('#{$path}static/images/input_arrow.svg');
+          background-size: contain;
+          height: 5px;
+        	width: 9px;
+          flex-shrink: 0;
+        }
       }
     }
     &.checked {
       > .title-lvl {
         border-bottom: 1px solid $color_iron;
         background-color: $color_grey_back;
+        .label {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
       }
       .options-list {
         display: block;
@@ -412,7 +430,7 @@ textarea {
     &:checked ~ span {
       border: 1px solid $color_prussian_blue;
       background-color: $color_prussian_blue;
-      background-image: url('../static/images/ico-checkbox.svg');
+      background-image: url('#{$path}static/images/ico-checkbox.svg');
     }
   }
   > input[type='checkbox'],
@@ -489,10 +507,34 @@ select {
 
   }
 }
+.input-with-eye {
+  position: relative;
+  input[type='password'] {
+    padding-right: 40px;
+  }
+  .view-password {
+    display: block;
+    background-image: url('#{$path}static/images/ico-eye.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 12px;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 15;
+    height: 40px;
+    width: 42px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
 
+input[type='password'],
 input[type='text'],
 select,
 textarea {
+  -webkit-appearance: none;
   margin: 0;
   color: $input-text-color;
   padding:$input-padding;
@@ -565,7 +607,6 @@ textarea {
       font-family: $font-stack-2;
       font-size: 14px;
       font-weight: 300;
-      line-height: 50px;
     }
   }
   input[type='submit'] {
@@ -575,7 +616,7 @@ textarea {
     padding: 0;
     background-color: transparent;
     box-shadow: none;
-    background-image: url('../static/images/ico-search.svg');
+    background-image: url('#{$path}static/images/ico-search.svg');
     background-position: center;
     background-repeat: no-repeat;
   }

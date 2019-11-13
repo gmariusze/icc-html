@@ -29,6 +29,7 @@ input[type='button'],
   &:focus {
     outline: none;
   }
+
   &.white {
     background-color: #fff;
     color: #CED1D3;
@@ -84,6 +85,8 @@ input[type='button'],
     text-align: center;
     > img {
       vertical-align: middle;
+      position: relative;
+      top: -1px;
     }
     &.larger {
       padding: 10px 10px;
@@ -99,9 +102,15 @@ input[type='button'],
     font-weight: 500;
     line-height: 14px;
     border-radius: 15px;
-    padding: 8px 15px;
+    padding: 6px 15px;
     min-width: 80px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    &.wider {
+      min-width: 138px;
+      text-align: center;
+    }
     &.button-with-icon {
       padding: 5px 15px;
       &.icon-left {
@@ -112,7 +121,7 @@ input[type='button'],
           content: " ";
           width: 20px;
           height: 20px;
-          background-image: url('../static/images/play_button_plus.svg');
+          background-image: url('#{$path}static/images/play_button_plus.svg');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
@@ -127,7 +136,7 @@ input[type='button'],
           &:before {
             width: 20px;
             height: 20px;
-            background-image: url('../static/images/play_button.svg');
+            background-image: url('#{$path}static/images/play_button.svg');
           }
         }
         &.c-icon-pen {
@@ -136,7 +145,7 @@ input[type='button'],
             vertical-align: top;
             width: 12px;
             height: 12px;
-            background-image: url('../static/images/ico-pen.svg');
+            background-image: url('#{$path}static/images/ico-pen.svg');
           }
         }
         &.c-icon-share {
@@ -145,7 +154,7 @@ input[type='button'],
             vertical-align: top;
             width: 12px;
             height: 10px;
-            background-image: url('../static/images/share_white.svg');
+            background-image: url('#{$path}static/images/share_white.svg');
           }
         }
       }
@@ -206,7 +215,7 @@ input[type='button'],
   width: 28px;
   background-color: $button_arrow;
   border-radius: 100%;
-  background-image: url('../static/images/ico-arrow-down.svg');
+  background-image: url('#{$path}static/images/ico-arrow-down.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -226,6 +235,8 @@ input[type='button'],
     }
     > img {
       vertical-align: middle;
+      position: relative;
+      top: -1px;
     }
   }
   .number {

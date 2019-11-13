@@ -1,8 +1,8 @@
 @import 'compass';
 @import '../node_modules/font-awesome-sass/assets/stylesheets/_font-awesome.scss';
 
-@import 'fonts';
 @import 'settings';
+@import 'fonts';
 
 @import 'extensions/outdated';
 @import 'extensions/maths';
@@ -20,7 +20,7 @@
 @import 'modules/purecss/grids-responsive';
 @import 'modules/lightbox';
 @import 'modules/swiper';
-@import 'modules/select2/core';
+//@import 'modules/select2/core';
 /* MODULES END */
 @import 'extensions/inputs';
 @import 'extensions/buttons';

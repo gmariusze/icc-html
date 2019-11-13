@@ -44,7 +44,7 @@
       width: 127px;
       height: 30px;
       background-size: contain;
-      background-image: url('../static/images/logo-t2.svg');
+      background-image: url('#{$path}static/images/logo-t2.svg');
     }
     .buttons {
       .button {
@@ -401,6 +401,7 @@
         }
         .tabs-menu {
           overflow: auto;
+          overflow-y: hidden;
           ul {
             li {
               a {
@@ -1059,7 +1060,8 @@
     }
     &.video-with-text {
       .video-text-wrapper {
-        background-image: url('../static/images/photos/i22.jpg');
+        background-image: url('#{$path}static/images/photos/i22.jpg');
+        background-size: 100%;
         .text-area {
           padding-right: 0;
         }
@@ -1113,6 +1115,7 @@
       .inner-container  {
         h2.v2 {
           display: block;
+          padding: 0 15px;
           .title {
             display: block;
             text-align: left;
@@ -1123,6 +1126,7 @@
       .practice-list-wrap {
         .line{
           display: block;
+          padding:20px 15px;
           .column-a {
             padding-right: 0;
             .drag {
@@ -1131,7 +1135,27 @@
           }
           >.column-c {
             text-align: center;
-            margin: 10px 0;
+            margin: 15px 0;
+          }
+          >.column-c {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            .title {
+              margin-right: 10px;
+            }
+            .subtitle {
+              margin-top: 0;
+              input[type='text'] {
+                color: $color_dark_grey;
+              }
+            }
+          }
+          > .column-d {
+            padding: 0;
+            > * {
+              width: 50%;
+            }
           }
           >.column-c,
           >.column-a {
@@ -1153,15 +1177,34 @@
       bottom: 0;
       left: 0;
       right: 0;
+      .save-back-buttons-wrap {
+        > .button {
+          width: 50%;
+          padding: 11px 15px;
+          margin: 0 7px;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
       .button.dark-grey-v2:not(.ico-button) {
-        padding: 12px 15px;
+        padding: 11px 15px;
       }
       .more-right {
+        margin-left: 7px;
         display: flex;
         .button:not(.ico-button), button:not(.ico-button), input[type=button]:not(.ico-button), input[type=submit]:not(.ico-button) {
           padding: 11px 25px;
         }
 
+      }
+    }
+    &.dash-footer {
+      &.footer-mobile-offset-bottom {
+        padding-bottom: 80px;
       }
     }
   }
@@ -1234,7 +1277,16 @@
     &.add-practice {
       .tabs-menu {
         overflow: auto;
+        overflow-y: hidden;
         padding: 0 15px;
+        ul {
+          width: auto;
+          > li {
+            > a {
+              display: block;
+            }
+          }
+        }
       }
       .buttons-wrap {
         position: fixed;
@@ -1301,9 +1353,43 @@
       }
     }
   }
+
+  .button{
+    &.smaller{
+      &.button-with-icon{
+        &.icon-left{
+          &.c-icon-play{
+            padding: 3px 5px;
+            &:before {
+              width: 20px;
+              height: 24px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 330px) {
+  .button.smaller, button.smaller, input[type=button].smaller, input[type=submit].smaller {
+    font-size: 9px;
+  }
+  .button.smaller.button-with-icon.icon-left:before, button.smaller.button-with-icon.icon-left:before, input[type=button].smaller.button-with-icon.icon-left:before, input[type=submit].smaller.button-with-icon.icon-left:before {
+    margin-right: 5px;
+  }
+  div.section.practice-list-edit .inner-container h2.v2 .buttons>* {
+    margin-left: 10px;
+  }
+  .search-input input[type=text],
+  input[type=password],
+  input[type=text] {
+    font-size: 12px;
+    @include placeholder {
+      font-size: 12px;
+    }
+  }
   .hide_extra_small {
     display: none;
   }

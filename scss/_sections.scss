@@ -13,7 +13,7 @@ div.section {
       line-height: 19px;
       text-transform: uppercase;
       padding-left: 16px;
-      background-image: url('../static/images/ico-arrow-left.svg');
+      background-image: url('#{$path}static/images/ico-arrow-left.svg');
       background-position: center left;
       background-repeat: no-repeat;
     }
@@ -301,7 +301,7 @@ div.section {
                   top:-45px;
                   right: auto;
                   bottom: auto;
-                  background-image: url('../static/images/ico-quate_a.svg');
+                  background-image: url('#{$path}static/images/ico-quate_a.svg');
                 }
               }
             }
@@ -328,7 +328,7 @@ div.section {
         display: block;
         width: 80px;
         height: 60px;
-        background-image: url('../static/images/ico-quate_b.svg');
+        background-image: url('#{$path}static/images/ico-quate_b.svg');
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -614,7 +614,7 @@ div.section {
           height: 28px;
           border-radius: 100%;
           background-color: #EEF0F1;
-          background-image: url('../static/images/ico-arrow-left.svg');
+          background-image: url('#{$path}static/images/ico-arrow-left.svg');
           background-position: center;
           background-repeat: no-repeat;
           transform: rotate(-90deg);
@@ -756,7 +756,7 @@ div.section {
       .stats-slider {
         .swiper-button-next,
         .swiper-button-prev {
-          background-image: url('../static/images/ico-arrow-right.svg');
+          background-image: url('#{$path}static/images/ico-arrow-right.svg');
           width: 12px;
           height: 20px;
           margin-top: -10px;
@@ -1371,7 +1371,7 @@ div.section {
               flex-shrink: 0;
               width: 20px;
               height: 20px;
-              background-image: url('../static/images/play_button.svg');
+              background-image: url('#{$path}static/images/play_button.svg');
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
@@ -1403,7 +1403,7 @@ div.section {
         height: auto;
         transition: all ease-in-out 0.3s;
         background-size: 24px 24px;
-        background-image: url('../static/images/arrow_right.svg');
+        background-image: url('#{$path}static/images/arrow_right.svg');
         &.swiper-button-disabled {
           opacity: 0;
         }
@@ -1512,12 +1512,20 @@ div.section {
           &:first-child {
             padding-left: 0;
           }
+
           padding-left: 15px;
           a {
             display: flex;
             align-items: center;
             .ico {
               margin-right: 8px;
+              &.larger {
+                > img {
+                  max-height: 14px;
+                  width: auto;
+                  vertical-align: top;
+                }
+              }
               > img {
                 max-height: 10px;
                 width: auto;
@@ -1646,8 +1654,9 @@ div.section {
               right: 3px;
               font-size: 13px;
               font-weight: 500;
-              line-height: 14px;
-              padding: 10px 35px;
+              line-height: 15px;
+              padding: 0px 20px;
+              min-width: 103px;
             }
           }
         }
@@ -1806,7 +1815,7 @@ div.section {
             &:after {
               display: inline-block;
               content: " ";
-              background-image: url('../static/images/ico-breadcrumbs-seperator.svg');
+              background-image: url('#{$path}static/images/ico-breadcrumbs-seperator.svg');
               background-size: cover;
               width: 6px;
               height: 6px;
@@ -1976,7 +1985,7 @@ div.section {
           top:10px;
         }
         .ico-play {
-          background-image: url(../static/images/play_button.svg);
+          background-image: url(#{$path}static/images/play_button.svg);
           background-size: cover;
           width: 26px;
           height: 26px;
@@ -1985,7 +1994,7 @@ div.section {
           left: 15px;
           bottom: 15px;
           &.ico-play {
-            background-image: url(../static/images/playlist.svg);
+            background-image: url(#{$path}static/images/playlist.svg);
             background-size: 40px;
             background-position: center;
             background-repeat: no-repeat;
@@ -2212,11 +2221,11 @@ div.section {
               display: block;
               width: 21px;
               height: 20px;
-              background-image: url('../static/images/ico-star-rating-filled.svg');
+              background-image: url('#{$path}static/images/ico-star-rating-filled.svg');
               background-size: cover;
               background-repeat: no-repeat;
               &.open {
-                background-image: url('../static/images/ico-star-rating-open.svg');
+                background-image: url('#{$path}static/images/ico-star-rating-open.svg');
               }
             }
           }
@@ -2291,6 +2300,7 @@ div.section {
               font-weight: 500;
               line-height: 14px;
               text-align: center;
+              padding: 0 5px;
             }
           }
 
@@ -2335,7 +2345,7 @@ div.section {
     }
     .video-text-wrapper {
       background-color: #FFFFFF;
-      background-image: url('../static/images/photos/i20.png');
+      background-image: url('#{$path}static/images/photos/i20.png');
       background-repeat: no-repeat;
       background-position: bottom right;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
