@@ -363,6 +363,11 @@
             }
             .buttons {
               margin-top: 20px;
+              .button.dark-grey-v2.smaller.button-with-icon.icon-left.c-icon-share {
+                min-width:165px;
+                text-align: center;
+                justify-content: center;
+              }
             }
           }
         }
@@ -1237,7 +1242,7 @@
     right: 0;
     height: 100vh;
     overflow: auto;
-    padding-top: 70px;
+    padding-top: 40px;
     &.full-screen-mobile {
       padding-top: 0;
       z-index: 250;
@@ -1369,6 +1374,11 @@
         }
       }
     }
+  }
+  .flash-messages {
+    left: 15px;
+    right: 15px;
+    top:15px;
   }
 }
 
