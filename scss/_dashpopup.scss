@@ -251,9 +251,29 @@ body {
   &.share-pdf {
     .share-pdf-form {
       padding:24px;
-      padding-top: 42px;
+      padding-top: 10px;
+      padding-right: 20px;
       .input {
         margin-top:10px;
+        label {
+          color: #51646E;
+          font-family: Gotham;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          width: 100%;
+          display: block;
+          text-align: left;
+          padding: 10px 0;
+        }
+        &.with-remove {
+          display: flex;
+          justify-content: space-between;
+          .input-wrap {
+            width: 95.375%;
+            flex-shrink: 0;
+          }
+        }
         &.no-top-margin {
           margin-top: 0;
         }

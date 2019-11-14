@@ -379,7 +379,7 @@
             .buttons {
               margin-top: 20px;
               .button.dark-grey-v2.smaller.button-with-icon.icon-left.c-icon-share {
-                min-width:165px;
+
                 text-align: center;
                 justify-content: center;
               }
@@ -1212,8 +1212,12 @@
       left: 0;
       right: 0;
       .save-back-buttons-wrap {
+        &.equalize-width {
+          > * {
+            width: 50%;
+          }
+        }
         > .button {
-          width: 50%;
           padding: 11px 15px;
           margin: 0 7px;
           &:first-child {
@@ -1269,10 +1273,17 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: calc( 100vh + 20px );
     overflow: auto;
     -webkit-overflow-scrolling: unset;
     padding-top: 10px;
+    &.share-pdf {
+      .share-pdf-form {
+        padding: 15px;
+        padding-top: 10px;
+        padding-right: 15px;
+      }
+    }
     &.form-popup {
       .dashpopup-wrap {
         .title {

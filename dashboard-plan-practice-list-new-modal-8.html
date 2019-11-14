@@ -25,26 +25,37 @@
 <div class="page-wrapper dashboard">
     <div class="dashpopup form-popup share-pdf full-screen-mobile">
       <div class="dashpopup-wrap">
-        <div class="form-dashboard">
-          <div class="top">
-            <div class="title">
-              <h2><span>Share pdf </span> <a href="" class="close"></a></h2>
+        <form action="">
+          <div class="form-dashboard">
+            <div class="top">
+              <div class="title">
+                <h2><span>Share pdf </span> <a href="" class="close"></a></h2>
+              </div>
+              <div class="share-pdf-form">
+                <div class="input with-remove no-top-margin">
+                  <div class="input-wrap">
+                    <label for="notes">Notes</label>
+                    <input type="text" id="a" name="a">
+                  </div>
+                  <div></div>
+                </div>
+                <div class="input with-remove">
+                  <div class="input-wrap">
+                    <input type="text" id="a" name="a">
+                  </div>
+                  <button class="remove-button button"><img src="static/images/ico-close.svg" alt=""></button>
+                </div>
+                <div class="input add-more">
+                  <button class="pbutton"><img src="static/images/ico-cplus.svg" alt=""><span class="label">Add more</span></button>
+                </div>
+              </div>
             </div>
-            <div class="share-pdf-form">
-              <div class="input no-top-margin">
-                <input type="text" id="notes" name="notes">
-              </div>
-              <div class="input">
-                
-                <input type="text" id="a" name="a">
-              </div>
+            <div class="buttons-wrap">
+              <button class="button dark-grey-v2 br-5">Cancel</button>
+              <button class="button green br-5">Share</button>
             </div>
           </div>
-          <div class="buttons-wrap">
-            <button class="button dark-grey-v2 br-5">Cancel</button>
-            <button class="button green br-5">Save</button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <div class="page-side-menu">
