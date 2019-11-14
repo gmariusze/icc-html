@@ -1,3 +1,15 @@
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    body {
+      .button{
+        &.ico-button{
+          > img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+}}
 button,
 input[type='submit'],
 input[type='button'],
@@ -14,6 +26,7 @@ input[type='button'],
 	line-height: 17px;
   box-shadow: 0 1px 15px 0 rgba(0,44,91,0.15);
   text-align: center;
+  justify-content: center;
   &:hover {
 
   }
@@ -58,6 +71,9 @@ input[type='button'],
   &.dark-grey {
     background-color: $button_dark_grey;
     color: #FFFFFF;
+    &:hover {
+      background-color: #60737E;
+    }
   }
   &.dark-grey-v2 {
     background-color: #6E8490;
@@ -84,10 +100,10 @@ input[type='button'],
     text-align: center;
     text-align: center;
     > img {
-      vertical-align: middle;
-      position: relative;
-      top: -1px;
+      display: inline-block;
+      vertical-align: baseline;
     }
+
     &.larger {
       padding: 10px 10px;
       min-width: 40px;
@@ -95,6 +111,16 @@ input[type='button'],
         vertical-align: text-top;
       }
     }
+  }
+  &.wider-2 {
+    min-width: 192px;
+    text-align: center;
+    justify-content: center;
+  }
+  &.wider {
+    min-width: 138px;
+    text-align: center;
+    justify-content: center;
   }
   &.smaller {
     font-family: $font-stack-2;
@@ -107,10 +133,8 @@ input[type='button'],
     text-align: center;
     display: inline-flex;
     align-items: center;
-    &.wider {
-      min-width: 138px;
-      text-align: center;
-    }
+
+
     &.button-with-icon {
       padding: 5px 15px;
       &.icon-left {
@@ -119,14 +143,15 @@ input[type='button'],
         &:before {
           display: inline-block;
           content: " ";
-          width: 20px;
-          height: 20px;
+          width: 23px;
+          height: 23px;
+          margin: -3px;
           background-image: url('#{$path}static/images/play_button_plus.svg');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
           vertical-align: middle;
-          margin-right: 10px;
+          margin-right: 7px;
           background-position-y: 1px;
         }
         .label {

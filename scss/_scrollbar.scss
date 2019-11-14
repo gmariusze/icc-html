@@ -1,0 +1,18 @@
+body {
+  .simplebar-scrollbar {
+    width: 3px;
+    right: 5px;
+    &:before {
+    	width: 3px;
+    	opacity: 0.3;
+    	border-radius: 2px;
+    	background-color: #E2E4E5;
+    }
+  }
+  .simplebar-track{
+    &.simplebar-vertical {
+      background-color: #fff;
+      width: 16px;
+    }
+  }
+}

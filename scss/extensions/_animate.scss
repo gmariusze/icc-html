@@ -3492,3 +3492,15 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+
+
+
+@keyframes MOVE-BG {
+   from {
+     background-position: 0;
+   }
+   to {
+     background-position: -1000px;
+   }
+}

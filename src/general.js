@@ -74,4 +74,5 @@ var videoPlaylistSlider = new Swiper('.videoPlaylistSlider.swiper-container', {
       prevEl: '.videoPlaylistSlider .swiper-button-prev',
     }
 });
-/* Different image for mobile (Not recomended) */
+
+/*Scrollbar*/

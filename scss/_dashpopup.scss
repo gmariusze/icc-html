@@ -8,6 +8,15 @@ body {
   }
 }
 .dashpopup {
+  &:before {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-color: #fff;
+    content: " "
+  }
   transition: all ease-in-out 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -186,7 +195,7 @@ body {
           background-color: $color_greyish;
           border-top: 1px solid $border_color;
           padding: 20px 24px;
-          a.button {
+          .button {
             min-width: 124px;
             text-align: center;
           }
@@ -230,9 +239,6 @@ body {
         .controls {
           > * {
             margin-left: 15px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
             min-height: 30px;
             &:first-child {
               margin-left: 0;
@@ -242,6 +248,19 @@ body {
       }
     }
   }
+  &.share-pdf {
+    .share-pdf-form {
+      padding:24px;
+      padding-top: 42px;
+      .input {
+        margin-top:10px;
+        &.no-top-margin {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
   &.new-practice {
     .new-practices-form {
       padding: 10px 24px;
