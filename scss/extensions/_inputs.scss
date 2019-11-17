@@ -599,6 +599,11 @@ textarea {
       background-color: $color_prussian_blue;
       background-image: url('#{$path}static/images/ico-checkbox.svg');
     }
+    &.error {
+      ~ span {
+        border: 1px solid $color_sunset_orange;
+      }
+    }
   }
   > input[type='checkbox'],
   > span {
@@ -618,6 +623,16 @@ textarea {
   }
 }
 
+.rich-input {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: $color_main_text_darker;
+  .non-contenteditable {
+    display: inline-block;
+  }
+}
+.rich-input,
 input[type='password'],
 input[type='text'] {
   width: 100%;
@@ -707,15 +722,6 @@ textarea {
   padding:$input-padding;
   &.error {
     border: 1px solid $color_sunset_orange;
-    ~ .error-label{
-      color: $color_sunset_orange;
-      font-family: $font-stack-2;
-      font-size: 11px;
-      font-weight: 300;
-      line-height: 13px;
-      margin-top: 10px;
-      text-align: right;
-    }
   }
   &:disabled {
     border: 1px solid $button_disabled_border;
@@ -727,6 +733,15 @@ textarea {
 }
 
 .input {
+  .error-label{
+    color: $color_sunset_orange;
+    font-family: $font-stack-2;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    margin-top: 10px;
+    text-align: right;
+  }
   .label {
     display: block;
     color: $color_comet;
@@ -749,6 +764,17 @@ textarea {
       color: $button_disabled_text_color;
       .req {
         color: $button_disabled_text_color;
+      }
+    }
+  }
+  &.input-checkbox {
+    display: block;
+    .checkbox-with-label-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      ~ .error-label {
+        text-align: left;
       }
     }
   }
@@ -791,6 +817,11 @@ textarea {
 .search-input {
   max-width: 486px;
   position: relative;
+  &.no-right-radius {
+    input[type=text] {
+      border-radius: 5px 0 0 5px;
+    }
+  }
   &.results-are-open {
     input[type=text] {
       border-radius: 5px 5px 0 0;

@@ -268,3 +268,51 @@ strong {
 .swiper-button-prev {
   outline: none;
 }
+
+.gallery {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  > * {
+    margin-left: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.column-b {
+      width: 171px;
+    }
+    &.column-a {
+      width: 361px;
+    }
+  }
+  .photo {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    .more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0,0,0,0.6);
+
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 41px;
+      color: #fff;
+      @include full_size;
+    }
+    > img {
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+  }
+  .columns {
+    .photo {
+      margin-top: 15px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

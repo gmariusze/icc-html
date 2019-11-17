@@ -237,6 +237,117 @@ input[type='button'],
     background: none;
     box-shadow: none;
   }
+  &.btn_t3,
+  &.btn_t2 {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  	font-weight: 500;
+  	line-height: 18px;
+    padding: 16px 30px;
+    color: $color_dark_grey;
+    &[class*="ico"]{
+      display: inline-flex;
+      align-items: center;
+      color: $color_dark_grey;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      box-shadow: none;
+      padding: 15px;
+
+
+      &:before {
+        content: " ";
+        display: inline-block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+      }
+      &.ico-like {
+        &:before {
+          height: 17px;
+          width: 18px;
+          background-image: url('#{$path}static/images/like.svg');
+        }
+      }
+      &.ico-comment {
+        &:before {
+          height: 17px;
+          width: 17px;
+          background-image: url('#{$path}static/images/comment.svg');
+        }
+      }
+      &.ico-save {
+        &:before {
+          height: 17px;
+          width: 17px;
+          background-image: url('#{$path}static/images/save.svg');
+        }
+      }
+      &.ico-reply {
+        &:before {
+          height: 12px;
+          width: 14px;
+          background-image: url('#{$path}static/images/share.svg');
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+  &.btn_t3 {
+    &[class*="ico"]{
+      color: $color_dark_grey;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      padding:10px 0;
+    }
+    &:before {
+      margin-right: 8px;
+    }
+  }
+  &.btn_t1 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 16px 30px;
+  }
+  &.btn_create_post {
+    &:before {
+      content:" ";
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      background-image: url('#{$path}static/images/ico_create_post.svg');
+      background-position: center;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+  }
+  &.btn_view_posts {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6E8490;
+    line-height: 16px;
+    &:after {
+      content:" ";
+      width: 6px;
+      height: 10px;
+      display: inline-block;
+      background-image: url('#{$path}static/images/ico-arrow-left.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+      margin-left: 10px;
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 .pbutton {
