@@ -107,6 +107,17 @@ input[type='button'],
     background: url('#{$path}static/images/ico-attach.svg');
     background-position: center;
     background-repeat: no-repeat;
+    &.with-label {
+      width: auto;
+      box-shadow: none;
+      color: $color_dark_grey;
+      font-family: $font-stack-2;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      padding-left: 24px;
+      background-position: left center;
+    }
   }
   &.ico-button {
     padding: 6px;

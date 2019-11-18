@@ -1455,6 +1455,7 @@
     overflow: auto;
     -webkit-overflow-scrolling: unset;
     padding-top: 10px;
+
     &.share-pdf {
       .share-pdf-form {
         padding: 15px;
@@ -1463,6 +1464,16 @@
       }
     }
     &.form-popup {
+      &.new-post {
+        .title {
+          margin-bottom: 71px;
+           h2 {
+             .profile-picture {
+               top:30px;
+             }
+           }
+        }
+      }
       .dashpopup-wrap {
         .title {
           h2 {

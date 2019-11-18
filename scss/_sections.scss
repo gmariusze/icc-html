@@ -1,5 +1,8 @@
 div.section {
   padding: 15px 0;
+  &.no-top-padding {
+    padding-top: 0;
+  }
   &.grey-bg {
     background-color: $color_grey_back;
   }
@@ -2205,7 +2208,7 @@ div.section {
           position: absolute;
           left: 15px;
           bottom: 15px;
-          &.ico-play {
+          &.playlist {
             background-image: url(#{$path}static/images/playlist.svg);
             background-size: 40px;
             background-position: center;
@@ -2262,6 +2265,13 @@ div.section {
             }
           }
         }
+      }
+    }
+  }
+  &.video-blog {
+    .element {
+      .labels {
+        min-height: 75px;
       }
     }
   }
