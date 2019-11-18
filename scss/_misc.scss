@@ -300,6 +300,7 @@ strong {
       line-height: 41px;
       color: #fff;
       @include full_size;
+      font-family: $font-stack-2;
     }
     > img {
       width: 100%;
@@ -313,6 +314,93 @@ strong {
       &:first-child {
         margin-top: 0;
       }
+    }
+  }
+}
+
+.attachments {
+  margin-top: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        color: $color_prussian_blue;
+        font-family: $font-stack-2;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        &:before {
+          content: " ";
+          display: inline-block;
+          width: 13px;
+          height: 15px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-image: url('#{$path}static/images/ico-file.svg');
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.video-attachments {
+  margin: 20px 0;
+  .video-line {
+    margin-top:10px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .entry {
+    position: relative;
+    display: inline-flex;
+    padding: 10px;
+    border: 1px solid $color_iron;
+    background-color: $color_greyish;
+    max-width: 361px;
+    border-radius: 5px;
+    text-align: left;
+    padding-right: 24px;
+    .close {
+      position: absolute;
+      top:11px;
+      right: 11px;
+      width: 12px;
+      height: 12px;
+      display: block;
+      background-image: url('#{$path}static/images/ico-close.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .video-image {
+      display: block;
+      width: 183px;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      > img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+      }
+    }
+    .video-title {
+      color: $color_prussian_blue;
+      font-family: $font-stack-2;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16px;
     }
   }
 }

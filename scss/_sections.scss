@@ -1071,6 +1071,46 @@ div.section {
               }
             }
           }
+          .text-wrap {
+            padding-right: 24px;
+            &.editable {
+              border: 1px solid $color_iron;
+              border-radius: 5px;
+              background-color: #FFFFFF;
+              padding:0 15px;
+              margin-right: 24px;
+              [contenteditable="true"] {
+                outline: none;
+              }
+              h3 {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 16px;
+              }
+              .text {
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 17px;
+                border-top: 1px dashed $color_iron;
+                padding: 9px 0;
+                padding-bottom: 15px;
+              }
+            }
+          }
+          .edit-actions {
+            text-align: right;
+            padding: 0 24px;
+            > * {
+              margin-left: 13px;
+              vertical-align: middle;
+              &.button:not(.btn-attachments) {
+                min-width: 91px;
+              }
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
         }
       }
     }
@@ -1121,6 +1161,9 @@ div.section {
   }
   &.news-feed-list {
     padding: 10px 0;
+    &.last-entry {
+      padding-bottom: 60px;
+    }
     .news-controls {
       padding: 0 10px;
       border-top: 1px solid $color_grey_back;
@@ -1193,6 +1236,7 @@ div.section {
           }
         }
       }
+
       &.comments-list {
         padding-right: 24px;
         padding-left: 30px;

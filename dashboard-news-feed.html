@@ -216,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="section top-picture " style="background-image:url('static/images/photos/i12.png');">
+      <div class="section top-picture hide_if_mobile" style="background-image:url('static/images/photos/i12.png');">
         <div class="dashboard-container-narrower">
 
         </div>
@@ -245,12 +245,15 @@
                   <input type="submit" value="">
                 </form>
               </div>
-              <div class="view-posts-wrap">
+              <div class="view-posts-wrap hide_if_mobile">
                 <button class="button white btn_t1 br-5 btn_view_posts">View posts</button>
               </div>
             </div>
             <div class="buttons-wrap">
               <button class="button green btn_t1 br-5 btn_create_post">Create post</button>
+            </div>
+            <div class="view-posts-wrap mobile-only-display">
+              <button class="button smaller white btn_t1 br-5 btn_view_posts">View posts</button>
             </div>
           </div>
         </div>
@@ -474,20 +477,21 @@
                     <div class="text">
                       This season, junior cricket at your local club and school may look slightly different.
                       To ensure that children have a great experience of playing cricket, ECB has spent the last three years engaging in extensive research looking at how to help boys and girls develop skills that will stay with them for life, alongside ensuring that they have fun while playing.
-                      <div class="gallery">
-                        <div class="column-a">
-                          <div class="photo"><img src="static/images/photos/i24.png" alt=""></div>
-                        </div>
-                        <div class="column-b">
-                          <div class="columns">
-                            <div class="photo"><img src="static/images/photos/i24.png" alt=""></div>
-                            <div class="photo"><a href="" class="more">+3</a><img src="static/images/photos/i24.png" alt=""></div>
-                          </div>
-                        </div>
-                        <div class="column-c"></div>
-                      </div>
+
                     </div>
 
+                  </div>
+                  <div class="gallery">
+                    <div class="column-a">
+                      <div class="photo"><img src="static/images/photos/i24.png" alt=""></div>
+                    </div>
+                    <div class="column-b">
+                      <div class="columns">
+                        <div class="photo"><img src="static/images/photos/i24.png" alt=""></div>
+                        <div class="photo"><a href="" class="more">+3</a><img src="static/images/photos/i24.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="column-c"></div>
                   </div>
                   <div class="social-attributes">
                     <a href="">
@@ -501,9 +505,9 @@
               </div>
             </div>
             <div class="news-controls">
-              <a href="" class="button btn_t2 ico-like">Like</a>
+              <a href="" class="button btn_t2 ico-like active">Like</a>
               <a href="" class="button btn_t2 ico-comment">Comment</a>
-              <a href="" class="button btn_t2 ico-save">Save</a>
+              <a href="" class="button btn_t2 ico-save active">Save</a>
             </div>
             <div class="comment-input">
               <div class="picture">
@@ -594,6 +598,123 @@
                 </div>
 
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section news-feed-list dash-board-container">
+        <div class="dashboard-container-narrower">
+          <div class="inner-container no-top-padding">
+            <div class="news-container">
+              <div class="line">
+                <div class="profile-pic">
+                  <div class="picture">
+                    <img src="static/images/photos/photo.svg" alt="">
+                  </div>
+                </div>
+                <div class="main-text-container">
+                  <div class="profile">
+                    <div class="more-button">
+                      <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a>
+                    </div>
+                    <div class="name">Jamie George</div>
+                    <div class="attributes">
+                      <div class="titlename">Coach</div>
+                      <div class="date">11/04/2019 at 14:27</div>
+                    </div>
+                  </div>
+                  <div class="text-wrap">
+                    <h3><a href="">ECB CA National Conference 2019</a></h3>
+                    <div class="text">
+                      The opening of the ground-breaking Leyton Cricket Hub, created in conjunction with Waltham Forest Council and Essex County Cricket Club, is the first Urban Cricket Centre of its kind. Designed to increase participation and encourage positive social cohesion, the facility will provide accessible and affordable cricket for the local community, brought to life through programmes such as Women’s Soft Ball Cricket, All Stars Cricket and tape ball cricket.
+                    </div>
+                  </div>
+                  <div class="attachments">
+                    <ul>
+                      <li><a href="">ecb_national_conference_programme.pdf</a></li>
+                    </ul>
+                  </div>
+                  <div class="social-attributes">
+                    <a href="">
+                      <strong>34</strong>likes
+                    </a>
+                    <a href="">
+                      <strong>2</strong>comments
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-controls">
+              <a href="" class="button btn_t2 ico-like active">Like</a>
+              <a href="" class="button btn_t2 ico-comment">Comment</a>
+              <a href="" class="button btn_t2 ico-save">Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section news-feed-list dash-board-container last-entry">
+        <div class="dashboard-container-narrower">
+          <div class="inner-container no-top-padding">
+            <div class="news-container">
+              <div class="line">
+                <div class="profile-pic">
+                  <div class="picture">
+                    <img src="static/images/photos/photo.svg" alt="">
+                  </div>
+                </div>
+                <div class="main-text-container">
+                  <div class="profile">
+                    <div class="more-button">
+                      <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a>
+                    </div>
+                    <div class="name">Jamie George</div>
+                    <div class="attributes">
+                      <div class="titlename">Coach</div>
+                      <div class="date">11/04/2019 at 14:27</div>
+                    </div>
+                  </div>
+                  <div class="text-wrap editable">
+                    <h3 contenteditable="true">ECB CA National Conference 2019</h3>
+                    <div class="text" contenteditable="true">
+                      The opening of the ground-breaking Leyton Cricket Hub, created in conjunction with Waltham Forest Council and Essex County Cricket Club, is the first Urban Cricket Centre of its kind. Designed to increase participation and encourage positive social cohesion, the facility will provide accessible and affordable cricket for the local community, brought to life through programmes such as Women’s Soft Ball Cricket, All Stars Cricket and tape ball cricket.
+                    </div>
+                  </div>
+                  <div class="video-attachments">
+                    <div class="video-line">
+                      <div class="entry">
+                        <a href="" rel="nofollow" class="close"></a>
+                        <span class="video-image">
+                          <img src="static/images/photos/i15.png" alt="">
+                        </span>
+                        <span class="video-title">
+                          Development practices:   1 - Bowling overarm
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edit-actions">
+                    <button class="button btn-attachments no-shadow"></button>
+                    <button class="button br-20 dark-grey-v2 smaller-2">Cancel</button>
+                    <button class="button br-20 green smaller-2">Save</button>
+                  </div>
+                  <div class="social-attributes">
+                    <a href="">
+                      <strong>34</strong>likes
+                    </a>
+                    <a href="">
+                      <strong>2</strong>comments
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-controls">
+              <a href="" class="button btn_t2 ico-like active">Like</a>
+              <a href="" class="button btn_t2 ico-comment">Comment</a>
+              <a href="" class="button btn_t2 ico-save">Save</a>
             </div>
           </div>
         </div>

@@ -39,6 +39,9 @@ input[type='button'],
   &.br-17 {
     border-radius: 17px;
   }
+  &.br-20 {
+    border-radius: 20px;
+  }
   &:focus {
     outline: none;
   }
@@ -93,6 +96,17 @@ input[type='button'],
       background-color: $color_dark_grey;
       color: #fff;
     }
+  }
+  &.btn-attachments {
+    padding: 0;
+    background: transparent;
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    width: 15px;
+    background: url('#{$path}static/images/ico-attach.svg');
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &.ico-button {
     padding: 6px;
@@ -254,8 +268,12 @@ input[type='button'],
       font-weight: 500;
       line-height: 18px;
       box-shadow: none;
-      padding: 15px;
+      padding: 20px 15px;
 
+      &.active,
+      &:hover {
+        color: $color_prussian_blue;
+      }
 
       &:before {
         content: " ";
@@ -264,12 +282,19 @@ input[type='button'],
         background-position: center;
         background-repeat: no-repeat;
         margin-right: 5px;
+        transition: all ease-in-out 0.3s;
       }
       &.ico-like {
         &:before {
           height: 17px;
           width: 18px;
           background-image: url('#{$path}static/images/like.svg');
+        }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/like-blue.svg');
+          }
         }
       }
       &.ico-comment {
@@ -278,12 +303,24 @@ input[type='button'],
           width: 17px;
           background-image: url('#{$path}static/images/comment.svg');
         }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/comment-blue.svg');
+          }
+        }
       }
       &.ico-save {
         &:before {
           height: 17px;
           width: 17px;
           background-image: url('#{$path}static/images/save.svg');
+        }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/save-blue.svg');
+          }
         }
       }
       &.ico-reply {
@@ -292,6 +329,12 @@ input[type='button'],
           width: 14px;
           background-image: url('#{$path}static/images/share.svg');
           transform: rotateY(180deg);
+        }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/share-blue.svg');
+          }
         }
       }
     }
@@ -315,6 +358,18 @@ input[type='button'],
     font-weight: 500;
     line-height: 18px;
     padding: 16px 30px;
+    &.smaller {
+      font-family: $font-stack-2;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      border-radius: 15px;
+      padding: 7px 15px;
+      min-width: 80px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+    }
   }
   &.btn_create_post {
     &:before {

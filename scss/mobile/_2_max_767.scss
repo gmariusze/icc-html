@@ -9,6 +9,9 @@
       overflow: hidden;
     }
   }
+  .page-content {
+    overflow: hidden;
+  }
   .spacer {
     height: 70px;
   }
@@ -91,6 +94,9 @@
 
   }
   div.section {
+    &.hide_if_mobile {
+      display: none;
+    }
     h2 {
       color: $color_prussian_blue;
       font-family: $font-stack;
@@ -356,7 +362,76 @@
 
       }
     }
+    &.search-news {
+      .search-toolbar {
+        display: block;
+        margin: -10px;
+        > * {
+          padding: 10px;
+        }
+        .view-posts-wrap {
+          &.mobile-only-display {
+            display: flex;
+            justify-content: flex-end;
+            .button {
+              min-width: 165px;
+              box-shadow: none;
+            }
+          }
+        }
+        .search-input-wrap {
+          display: block;
+          .search-input {
+            input[type=submit] {
+              background-size: 18px;
+            }
+            &.no-right-radius {
+              input[type=text] {
+                height: 40px;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+        .buttons-wrap {
+          width: 100%;
+          .button {
+            width: 100%;
+            padding: 12px 30px;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            &:before {
+              width: 14px;
+              height: 14px;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
     &.breadcrumbs {
+      &.white-text {
+        .breadcrumbs-wrap {
+          ul {
+            li {
+              span,
+              a {
+                color: #000;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .title {
+          h2 {
+            color: #000;
+          }
+        }
+      }
+      &.offset-on-top-of-picture {
+        margin-top: 0;
+      }
       .breadcrumbs-wrap {
         overflow: auto;
         ul {
@@ -532,6 +607,7 @@
           padding-bottom: 0;
           .comments-list {
             padding-bottom: 0;
+
             .comment {
               .comment-content {
                 .text {
@@ -554,6 +630,108 @@
             }
             .picture {
               display: none;
+            }
+          }
+        }
+      }
+    }
+    &.news-feed-list {
+      margin: 0 -15px;
+      .inner-container {
+        border-radius: 0;
+      }
+      .comment-input {
+        .input {
+          display: flex;
+          align-items: center;
+          input[type=submit] {
+            position: static;
+            margin-left: 10px;
+            font-size: 12px !important;
+            font-weight: 500;
+            line-height: 14px;
+            padding: 10px;
+          }
+        }
+        &.comment-input-inner {
+          .input {
+            input[type=submit] {
+              min-width: 71px;
+            }
+          }
+        }
+      }
+      .news-controls {
+        padding: 0;
+      }
+      .comment-input {
+        padding: 0 15px;
+      }
+      .news-container {
+        padding: 0 15px;
+        &.comments-list {
+          padding: 0 15px;
+          &.inner-list {
+            padding-left: 0;
+          }
+        }
+        .line {
+          padding: 15px 0;
+          .profile-pic {
+            margin-right: 10px;
+          }
+          .main-text-container {
+            .edit-actions {
+              padding: 0;
+            }
+            .profile {
+              .more-button {
+                top:-5px;
+                right: 0;
+              }
+            }
+            .video-attachments,
+            .attachments,
+            .gallery,
+            .social-attributes,
+            .text-wrap {
+              margin-left: -50px;
+            }
+            .video-attachments {
+              .entry {
+                width: 100%;
+                max-width: 100%;
+                .video-image {
+                  width: 155px;
+                }
+              }
+            }
+            .gallery {
+              .columns {
+                height: 100%;
+
+                .photo {
+                  height: calc( 50% - 7px );
+                  &:first-child {
+                    height: calc( 50% - 8px );
+                  }
+                  > img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+              >.column-a{
+                width: 65.6vw;
+                flex-shrink: 0;
+              }
+              >.column-b {
+                width: 100%;
+              }
+              > .column-c {
+                display: none;
+              }
             }
           }
         }
@@ -1477,6 +1655,7 @@
   input {
     font-size: 16px !important;
   }
+
 
 
 }
