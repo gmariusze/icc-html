@@ -262,6 +262,7 @@ input[type='button'],
     background: none;
     box-shadow: none;
   }
+  &.btn_t4,
   &.btn_t3,
   &.btn_t2 {
     display: flex;
@@ -348,6 +349,32 @@ input[type='button'],
           }
         }
       }
+      &.ico-share {
+        &:before {
+          height: 12px;
+          width: 14px;
+          background-image: url('#{$path}static/images/share.svg');
+        }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/share-blue.svg');
+          }
+        }
+      }
+      &.ico-url {
+        &:before {
+          height: 12px;
+          width: 14px;
+          background-image: url('#{$path}static/images/url.svg');
+        }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/url-blue.svg');
+          }
+        }
+      }
     }
   }
   &.btn_t3 {
@@ -360,6 +387,16 @@ input[type='button'],
     }
     &:before {
       margin-right: 8px;
+    }
+  }
+  &.btn_t4 {
+    &[class*="ico"]{
+      padding: 12px 15px;
+      color: $color_dark_grey;
+      font-family: $font-stack-2;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
     }
   }
   &.btn_t1 {
@@ -446,6 +483,7 @@ input[type='button'],
   background-repeat: no-repeat;
 }
 
+.text-tag,
 .video-tag {
   display: block;
   background-color: #121B2C;
@@ -453,6 +491,7 @@ input[type='button'],
   padding: 2px 12px;
   display: flex;
   align-items: center;
+
   .icon {
     margin-right: 5px;
     &.right {
@@ -472,6 +511,9 @@ input[type='button'],
     font-weight: 500;
     line-height: 12px;
   }
+}
+.text-tag {
+  min-height: 22px;
 }
 
 @media (max-width: 767px) {

@@ -1331,6 +1331,7 @@ div.section {
           vertical-align: top;
         }
       }
+      .text-tag,
       .video-tag {
         position: absolute;
         right:15px;
@@ -1498,6 +1499,7 @@ div.section {
         overflow:hidden;
         position: relative;
 
+        .text-tag,
         .video-tag {
           position: absolute;
           top:10px;
@@ -1648,6 +1650,7 @@ div.section {
       margin: 0;
       margin-top: 20px;
       margin-bottom: 13px;
+      .text-tag,
       .video-tag {
         height: 22px;
       }
@@ -2038,6 +2041,13 @@ div.section {
     }
   }
   &.filter-tabs {
+    &.no-content {
+      .tabs-wrap {
+        .tabs-nav {
+          border-radius: 5px;
+        }
+      }
+    }
     &.with-padding {
       padding: 10px 0;
     }
@@ -2168,6 +2178,32 @@ div.section {
   }
   &.cards-list {
     padding-bottom: 12px;
+    &.general-resources {
+      .element{
+        .labels  {
+          min-height: 59px;
+          .title {
+            margin-bottom: 15px;
+          }
+          .buttons {
+            display: flex;
+            justify-content:space-between;
+            margin-top: 15px;
+            margin: 0 -15px;
+            margin-bottom: -15px;
+            border-top:1px solid rgba($color_dark_grey, 0.2);
+            > * {
+              width: 50%;
+              border-left:1px solid rgba($color_dark_grey, 0.2);
+              &:first-child {
+                border-left: 0;
+              }
+            }
+          }
+        }
+
+      }
+    }
     .pure-g {
       margin: -12px;
       [class*=pure-u] {
@@ -2194,6 +2230,7 @@ div.section {
       overflow: hidden;
       .picture {
         position: relative;
+        .text-tag,
         .video-tag {
           position: absolute;
           right: 10px;
@@ -2583,6 +2620,7 @@ div.section {
           top:calc( 50% - 50px );
           left: calc( 50% - 50px );
         }
+        .text-tag,
         .video-tag {
           position: absolute;
           top:10px;
