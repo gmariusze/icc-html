@@ -912,7 +912,12 @@
     }
   }
   div.section {
-
+    &.search-bar {
+      input[type='text'] {
+        height: 40px;
+        line-height:40px;
+      }
+    }
     &.top-picture {
       height: 160px;
       h1 {
@@ -1249,6 +1254,9 @@
             order: 2;
             margin-top: 20px;
             text-align: left;
+            &.no-top-margin {
+              margin-top: 0;
+            }
           }
           .right {
             order: 1;
@@ -1422,6 +1430,27 @@
       &.footer-mobile-offset-bottom {
         padding-bottom: 80px;
       }
+    }
+    &.user-panel {
+      h2.v2 {
+        text-align: left;
+        justify-content: flex-start;
+      }
+        .user-panel-container {
+          padding: 20px 15px;
+          padding-bottom: 15px;
+          > .button {
+            display: block;
+            width: 100%;
+          }
+        }
+       .button-wrap  {
+         .button {
+           display: block;
+           width: 100%;
+         }
+       }
+
     }
   }
 

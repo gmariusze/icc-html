@@ -51,6 +51,12 @@ input[type='button'],
     color: #CED1D3;
     border: 1px solid #CED1D3;
   }
+  &.white-border {
+    background-color: #fff;
+    border: 1px solid #CED1D3;
+    color: $color_prussian_blue;
+    border: 1px solid $color_prussian_blue;
+  }
 
   &.text-color-dark {
     color: $color_dark_grey;
@@ -262,6 +268,7 @@ input[type='button'],
     background: none;
     box-shadow: none;
   }
+  &.btn_t5,
   &.btn_t4,
   &.btn_t3,
   &.btn_t2 {
@@ -375,6 +382,24 @@ input[type='button'],
           }
         }
       }
+      &.ico-play {
+        &.always-blue {
+          &:before {
+            background-image: url('#{$path}static/images/play_blue.svg');
+          }
+        }
+        &:before {
+          height: 12px;
+          width: 14px;
+          background-image: url('#{$path}static/images/play_blue_grey.svg');
+        }
+        &.active,
+        &:hover {
+          &:before {
+            background-image: url('#{$path}static/images/play_blue.svg');
+          }
+        }
+      }
     }
   }
   &.btn_t3 {
@@ -387,6 +412,22 @@ input[type='button'],
     }
     &:before {
       margin-right: 8px;
+    }
+  }
+  &.btn_t5 {
+    &[class*="ico"]{
+      color: $color_dark_grey;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      padding: 0;
+      &.ico-play {
+        &:before {
+          height: 20px;
+          width: 20px;
+          margin-right: 10px;
+        }
+      }
     }
   }
   &.btn_t4 {
@@ -450,6 +491,9 @@ input[type='button'],
       margin-left: 10px;
       transform: rotate(-90deg);
     }
+  }
+  &.min-w-137 {
+    min-width: 137px;
   }
 }
 

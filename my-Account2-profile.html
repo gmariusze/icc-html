@@ -13,15 +13,7 @@
 </head>
 <body>
 <div id="outdated"></div>
-<div class="dashpopup">
-  <div class="dashpopup-wrap" style="background-image:url('static/images/photos/i11.png')">
-    <a href="" class="close"></a>
-    <div class="icon"><img src="static/images/ico-alert.svg" alt=""></div>
-    <div class="popup-subtitle">This feature is not available to you.</div>
-    <div class="popup-title">Do you want to become a qualified coach?</div>
-    <a href="" class="button green br-5 larger">Get started</a>
-  </div>
-</div>
+
 <div class="page-wrapper dashboard">
     <div class="page-side-menu">
       <a href="#home_url" class="logo"></a>
@@ -211,6 +203,56 @@
                   </div>
                   <div class="arrow"></div>
                 </div>
+                <div class="profile-menu">
+                  <div class="profile-slider-wrap">
+                    <div class="background-animated-paths">
+                      <div class="path-a"></div>
+                      <div class="path-b"></div>
+                    </div>
+                    <div class="stats-slider swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                              <div class="stats-element">
+                                <div class="vertical-column">
+                                  <div class="title">278</div>
+                                  <div class="subtitle">Practice material video views</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="stats-element">
+                                <div class="vertical-column">
+                                  <div class="title">278</div>
+                                  <div class="subtitle">Practice material video views</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="stats-element">
+                                <div class="vertical-column">
+                                  <div class="title">278</div>
+                                  <div class="subtitle">Practice material video views</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                  <div class="profile-menu-wrapper">
+                    <ul>
+                      <li><a href="">Account</a></li>
+                      <li><a href="">Last viewed</a></li>
+                      <li><a href="">Saved posts</a></li>
+                      <li class="top-border no-arrow"><a href="">Log out</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -218,273 +260,152 @@
       </div>
 
       <div class="section breadcrumbs grey-bg">
-        <div class="dashboard-container">
+        <div class="dashboard-container-narrower">
           <div class="breadcrumbs-wrap">
             <ul>
               <li><a href="">Dashboard</a></li>
-              <li><span class="current">General resources</span></li>
+              <li><span class="current">My account</span></li>
             </ul>
           </div>
           <div class="title">
-            <h2>General resources</h2>
-          </div>
-        </div>
-      </div>
-      <div class="section filter-tabs no-content br-5 grey-bg no-top-padding">
-        <div class="dashboard-container">
-            <div class="tabs-wrap">
-              <div class="tabs-nav">
-                <ul>
-                  <li class="selected"><a href="">PDF</a></li>
-                  <li><a href="">WWW</a></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-      </div>
-
-
-      <div class="section results-info grey-bg">
-        <div class="dashboard-container">
-          <div class="results-info-wrap">
-            <div class="left">
-              <strong>10</strong> results found
-            </div>
-            <div class="right hide_if_mobile">
-
-            </div>
+            <h2>My account</h2>
           </div>
         </div>
       </div>
 
+      <div class="section user-panel dash-board-container no-top-padding">
+        <div class="dashboard-container-narrower">
+          <div class="inner-container">
+            <h2 class="v2">User information</h2>
+            <div class="user-panel-container">
+              <div class="profile">
+                <div class="picture">
+                  <div class="text">JD</div>
+                  <a href="" class="change-picture">
+                    <span>
+                      <span class="ico"><img src="static/images/ico-photo.svg" alt=""></span>
+                      <span class="label">Update</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="labels">
+                  <div class="name">John Doe</div>
+                  <div class="prof">Coach</div>
+                </div>
+              </div>
+              <div class="profile-fields-wrap">
+                <div class="pure-g">
+                  <div class="pure-u-1 pure-u-md-1-2">
+                    <div class="element">
+                      <div class="label">First name <span class="red">*</span></div>
+                      <div class="input-wrap">
+                        <input type="text" placeholder="John" name="session-plan-name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pure-u-1 pure-u-md-1-2">
+                    <div class="element">
+                      <div class="label">Surname <span class="red">*</span></div>
+                      <div class="input-wrap">
+                        <input type="text" placeholder="Doe" name="session-plan-name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pure-u-1 pure-u-md-1-2">
+                    <div class="element">
+                      <div class="label">Email <span class="red">*</span></div>
+                      <div class="input-wrap">
+                        <input type="text" placeholder="johndoe@gmail.com" name="session-plan-name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pure-u-1 pure-u-md-1-2">
+                    <div class="element">
 
-      <div class="section cards-list general-resources grey-bg">
-        <div class="dashboard-container">
-          <div class="pure-g">
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
                     </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <a href="" class="button btn_t4 ico-share no-shadow">Share to feed</a>
-                    <a href="" class="button btn_t4 ico-url no-shadow">Website</a>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <a href="" class="button btn_t4 ico-share no-shadow">Share to feed</a>
-                    <a href="" class="button btn_t4 ico-url no-shadow">Website</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <a href="" class="button btn_t4 ico-share no-shadow">Share to feed</a>
-                    <a href="" class="button btn_t4 ico-url no-shadow">Website</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <a href="" class="button btn_t4 ico-share no-shadow">Share to feed</a>
-                    <a href="" class="button btn_t4 ico-url no-shadow">Website</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <div class="button btn_t4 ico-share no-shadow">Share to feed</div>
-                    <div class="button btn_t4 ico-url no-shadow">Website</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <div class="button btn_t4 ico-share no-shadow">Share to feed</div>
-                    <div class="button btn_t4 ico-url no-shadow">Website</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <div class="button btn_t4 ico-share no-shadow">Share to feed</div>
-                    <div class="button btn_t4 ico-url no-shadow">Website</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <div class="button btn_t4 ico-share no-shadow">Share to feed</div>
-                    <div class="button btn_t4 ico-url no-shadow">Website</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <div class="button btn_t4 ico-share no-shadow">Share to feed</div>
-                    <div class="button btn_t4 ico-url no-shadow">Website</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-1 pure-u-lg-1-4">
-              <div class="element">
-                <div class="picture">
-                  <a href="">
-                    <div class="text-tag">
-                      <div class="number">WWW</div>
-                    </div>
-                    <img src="static/images/photos/i18.png" alt="">
-                  </a>
-                </div>
-                <div class="labels">
-                  <div class="title"><a href="">Disability Awareness Pack</a></div>
-                  <div class="buttons">
-                    <div class="button btn_t4 ico-share no-shadow">Share to feed</div>
-                    <div class="button btn_t4 ico-url no-shadow">Website</div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
+                  <div class="pure-u-1">
+                    <div class="element">
+                      <div class="input-wrap button-wrap tar">
+                        <button class="button green br-5">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="section pagination grey-bg">
-        <div class="dashboard-container">
-          <!--
-          <div class="pagination-wrap">
-            <div class="left">
-              <div class="pagination-input">
-                <ul>
-                  <li><a href="">First</a></li>
-                  <li><a href=""><img src="static/images/ico-arrow-left.svg" alt=""></a></li>
-                  <li class="selected"><a href="">1</a></li>
-                  <li class="hide_extra_small"><a href="">2</a></li>
-                  <li class="hide_if_mobile"><a href="">3</a></li>
-                  <li><a href="">...</a></li>
-                  <li><a href="">11</a></li>
-                  <li ><a href=""><img src="static/images/ico-arrow-left.svg" class='rotate' alt=""></a></li>
-                </ul>
-              </div>
-              <div class="button-for-mobile mobile-only-display">
-                <a href="" class="button blue br-5 full-width">Show me more</a>
-              </div>
+      <div class="section user-panel dash-board-container">
+        <div class="dashboard-container-narrower">
+          <div class="inner-container">
+            <h2 class="v2">Change password</h2>
+            <div class="user-panel-container">
+              <a href="" class="min-w-137 button white-border br-15 smaller-2">Change</a>
             </div>
-            <div class="right">
-              <div class="result-data">
-                <div class="label">Showing <strong>1-24</strong> results out of <strong>245</strong></div>
-                <a href="" class="button blue br-5 hide_if_mobile">Show me more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section user-panel dash-board-container large-bottom-padding">
+        <div class="dashboard-container-narrower">
+          <div class="inner-container">
+            <h2 class="v2">User settings</h2>
+            <div class="user-panel-container checkbox-list">
+              <div class="pure-g">
+                <div class="pure-u-1">
+                  <div class="element">
+                    <div class="input-wrap ">
+                      <div class="spec-label">Receiving invitations, newsletters, offers and opportunities and other initiatives.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pure-u-1">
+                  <div class="element">
+                    <div class="input input-checkbox">
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" name="checkbox_a" id="checkbox_a">
+                        <span></span>
+                      </div>
+                      <label for="checkbox_a">The ECB</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pure-u-1">
+                  <div class="element">
+                    <div class="input input-checkbox">
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" name="checkbox_a" id="checkbox_a">
+                        <span></span>
+                      </div>
+                      <label for="checkbox_a">Other Cricketing Organisations</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pure-u-1">
+                  <div class="element">
+                    <div class="input input-checkbox">
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" name="checkbox_a" id="checkbox_a">
+                        <span></span>
+                      </div>
+                      <label for="checkbox_a">ECB Commercial Partners</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pure-u-1 ">
+                  <div class="element">
+                    <div class="input-wrap button-wrap tar">
+                      <button class="button green br-5">Save</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        -->
         </div>
       </div>
 
