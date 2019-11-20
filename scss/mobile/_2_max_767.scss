@@ -1685,7 +1685,11 @@
     }
   }
 
-
+  .button {
+    &.mobile-full-width {
+      width: 100%;
+    }
+  }
   .flash-messages {
     left: 15px;
     right: 15px;

@@ -897,22 +897,24 @@ textarea {
         line-height: 14px;
         padding: 10px 0;
       }
-      .search-tags {
-        margin: -5px;
-        .tag {
-          display: inline-block;
-          color: $color_dark_grey;
-          font-family: $font-stack-2;
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 14px;
-          padding: 9px 14px;
-          border: 1px solid rgba($color_dark_grey, 0.2);
-          border-radius: 15px;
-          margin:5px;
-        }
-      }
+
     }
+  }
+}
+.search-tags {
+  margin: -5px;
+  .tag {
+    display: inline-block;
+    color: $color_dark_grey;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 9px 14px;
+    border: 1px solid rgba($color_dark_grey, 0.2);
+    border-radius: 15px;
+    margin:5px;
+    background-color: #fff;
   }
 }
 

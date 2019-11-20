@@ -15,6 +15,17 @@ body {
   &.white {
     background-color: $color_white;
   }
+  &.faded {
+    .page-wrapper {
+      &:before {
+        content: " ";
+        @include full_size;
+        background-color: rgba(0,0,0,0.4);
+        z-index: $zi_fade;
+      }
+    }
+
+  }
 }
 .pure-g {
   [class*=pure-u] {
@@ -95,6 +106,7 @@ body {
       box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
       width: 130px;
       flex-shrink: 0;
+      z-index: $zi_side_menu;
       .logo {
         display: block;
         width: 106px;

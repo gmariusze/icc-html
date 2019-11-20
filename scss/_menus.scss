@@ -25,12 +25,13 @@
         border-bottom: 1px solid rgba(234,239,242,0.1);
         border-left: 4px solid transparent;
       }
+      > .submenu-l2,
       > .submenu-l1 {
         position: absolute;
         top:0;
         bottom: 0;
         left: 100%;
-        width: 280px;
+        width: $menu_sub_width;
         background-color: $color_big_stone;
         padding-top: 60px;
         overflow: auto;
@@ -53,6 +54,12 @@
             }
           }
         }
+      }
+      > .submenu-l2 {
+        left: calc( 100% + #{$menu_sub_width});
+      }
+      > .submenu-l3 {
+        left: calc( 100% + #{$menu_sub_width*2});
       }
     }
   }
