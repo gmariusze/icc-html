@@ -373,6 +373,7 @@ body {
         }
         > li {
           margin-left: 30px;
+          flex-shrink: 0;
           &:last-child {
             margin-right: 30px;
           }
@@ -452,6 +453,7 @@ body {
 .popup-steps {
   padding: 0 24px;
   margin: 20px 0;
+  overflow: auto;
   ul {
     display: flex;
     align-items: center;
@@ -460,6 +462,7 @@ body {
     margin: 0;
     >li {
       margin-left: 30px;
+      flex-shrink: 0;
       &:first-child {
         margin-left: 0;
       }

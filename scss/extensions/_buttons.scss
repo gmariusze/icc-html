@@ -157,7 +157,7 @@ input[type='button'],
     font-family: $font-stack-2;
     font-size: 12px;
     font-weight: 500;
-    line-height: 14px;
+    //line-height: 14px;
     border-radius: 15px;
     padding: 6px 15px;
     min-width: 80px;
@@ -495,6 +495,9 @@ input[type='button'],
   &.min-w-137 {
     min-width: 137px;
   }
+  &.min-w-138 {
+    min-width: 137px;
+  }
   &.min-w-176 {
     min-width: 176px;
   }
@@ -535,12 +538,16 @@ input[type='button'],
   display: block;
   background-color: #121B2C;
   border-radius: 21px;
-  padding: 2px 12px;
+  padding: 5px 12px;
   display: flex;
   align-items: center;
 
   .icon {
+    display: flex;
+    align-items: center;
     margin-right: 5px;
+    bottom: -1px;
+    position: relative;
     &.right {
       margin-left: 5px;
       margin-right: 0;

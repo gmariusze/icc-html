@@ -1,3 +1,8 @@
+@media (max-width: 767px) {
+  .hide_if_mobile {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   html,
   body
@@ -75,9 +80,7 @@
     display: flex;
   }
 
-  .hide_if_mobile {
-    display: none;
-  }
+
   .footer_guarantor {
     display: none;
   }
@@ -129,6 +132,17 @@
         .buttons {
           display: block;
           margin-top: 20px;
+        }
+      }
+    }
+    &.coaches-list {
+      .inner-container {
+        padding: 15px;
+      }
+      .pure-g {
+        margin: -7px;
+        [class*=pure-u] {
+          padding: 7px;
         }
       }
     }
@@ -1233,6 +1247,7 @@
         }
         .left {
           order: 2;
+          width: 100%;
         }
         .right {
           order: 1;
@@ -1477,7 +1492,7 @@
   }
 
   .dashpopup {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1589,6 +1604,7 @@
         }
       }
     }
+
     &.new-practice {
       .new-practices-form {
         padding: 10px 15px;
@@ -1701,12 +1717,22 @@
     font-size: 16px !important;
   }
 
+  .checkbox-wrap{
+    >span,
+    >input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      background-size: 100%;
+    }
+
+  }
 
 
 }
 
 @media (max-width: 330px) {
   div.section{
+
     &.breadcrumbs{
       .breadcrumbs-wrap {
         ul {
