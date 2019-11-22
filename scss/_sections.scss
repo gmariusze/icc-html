@@ -969,7 +969,7 @@ div.section {
     .news-container {
       padding: 0 24px;
       border-top: 1px solid $border_color;
-      padding-right: 5px;
+      padding-right: 0px;
       position: relative;
       .background-animated-paths {
         @include full_size;
@@ -2421,6 +2421,7 @@ div.section {
     }
     &.general-resources {
       .element{
+
         .labels  {
           min-height: 59px;
           .title {
@@ -2469,6 +2470,7 @@ div.section {
       border-radius: 5px;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
       overflow: hidden;
+      word-break: break-all;
       .picture {
         position: relative;
         a.close {
@@ -2573,10 +2575,36 @@ div.section {
       }
     }
   }
+  --lh: 1.4rem;
   &.video-blog {
     .element {
       .labels {
         min-height: 75px;
+        &.limit-75 {
+          > .title {
+            > a {
+              position: relative;
+              --max-lines: 2;
+              max-height: calc(var(--lh) * var(--max-lines));
+              display: block;
+              overflow: hidden;
+              &:before {
+                content: "...";
+                position: absolute;
+                bottom: 5px;
+                right: 0;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                right: 0; /* note: not using bottom */
+                width: 1rem;
+                height: 1rem;
+                background: white;
+              }
+            }
+          }
+        }
       }
     }
   }

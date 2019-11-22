@@ -91,13 +91,13 @@ body {
     max-width: 60px;
     background-color: $color_prussian_blue;
     position: fixed;
-    right: 50%;
     top:0;
-    margin-right: -76px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    right: auto;
+    margin-left: -60px;
+    margin-right: auto;
     > span {
       display: block;
       width: 20px;
@@ -142,7 +142,7 @@ body {
       position: absolute;
       top:0;
       bottom: 0;
-      left: 100%;
+      left: calc( 100% - 1px);
       width: 10000px;
       background-color: $color_white;
     }

@@ -1,9 +1,12 @@
+
 @media (max-width: 767px) {
+
+}
+
+@media (max-width: 991px) {
   .hide_if_mobile {
     display: none;
   }
-}
-@media (max-width: 991px) {
   html,
   body
   {
@@ -133,6 +136,11 @@
           display: block;
           margin-top: 20px;
         }
+      }
+    }
+    &.notifications {
+      .line {
+        padding: 10px 15px;
       }
     }
     &.coaches-list {
@@ -691,10 +699,16 @@
         }
         .line {
           padding: 15px 0;
+          overflow: auto;
           .profile-pic {
             margin-right: 10px;
           }
           .main-text-container {
+            .text-wrap{
+              &.editable {
+                margin-right: 0;
+              }
+            }
             .edit-actions {
               padding: 0;
             }
@@ -761,8 +775,11 @@
   .login-wrapper {
     .main-credentials-space {
       padding-left: 15px;
-      padding-right: 15px;
+      padding-right: 10px;
       padding-top: 10px;
+      &.filter-space {
+        padding-right: 10px;
+      }
       &.reset-pw-space,
       &.change-pw-space {
         .login-area {
@@ -895,8 +912,6 @@
   .login-wrapper a.close,
   .reset-pw-wrapper a.close,
   .signup-wrapper a.close {
-      right: 50%;
-      margin-right: 34.5vw;
       &:after {
         position: absolute;
         top:0;
@@ -1096,10 +1111,12 @@
       }
       .text-area {
         margin-top:  20px;
+
         .more-wrap {
           padding: 10px 15px;
         }
         .tags-wrap{
+          padding: 20px 15px;
           >ul{
             >li{
               margin-top: 20px;
@@ -1113,6 +1130,7 @@
           }
         }
         .title-wrap {
+          padding: 20px 15px;
           h3 {
             margin-bottom: 0;
           }
@@ -1399,7 +1417,7 @@
           &.button-with-icon {
             min-width: auto;
             text-align: left;
-            align-items: flex-start;
+            margin-left: 0;
           }
         }
       }
@@ -1450,6 +1468,7 @@
       h2.v2 {
         text-align: left;
         justify-content: flex-start;
+        padding: 0 15px;
       }
         .user-panel-container {
           padding: 20px 15px;
@@ -1466,6 +1485,11 @@
          }
        }
 
+    }
+    &.terms {
+      .line {
+        padding: 20px 15px;
+      }
     }
   }
 
@@ -1611,6 +1635,7 @@
         padding-bottom: 24px;
       }
     }
+
     &.add-practice {
       .tabs-menu {
         overflow: auto;
@@ -1637,6 +1662,7 @@
         max-height: initial;
         padding: 10px 15px;
         padding-bottom: 120px;
+        margin-right: 0;
       }
       .search-input {
         margin: 15px;
@@ -1718,19 +1744,32 @@
   }
 
   .checkbox-wrap{
-    >span,
-    >input[type=checkbox] {
-      width: 20px;
-      height: 20px;
-      background-size: 100%;
+    &.larger {
+      >span,
+      >input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        background-size: 100%;
+      }
     }
-
   }
 
 
 }
 
 @media (max-width: 330px) {
+
+  .pagination-input{
+     ul {
+       li {
+         > a {
+           padding: 0 10px;
+           min-width: 35px;
+           height: 35px;
+         }
+       }
+     }
+  }
   div.section{
 
     &.breadcrumbs{
@@ -1747,6 +1786,20 @@
         }
       }
     }
+    &.news-feed-list {
+      .comment-input {
+        .rich-input {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .input {
+          input[type=submit] {
+            min-width: 80px;
+          }
+        }
+      }
+    }
   }
   .input-range-with-labels {
     .labels {
@@ -1759,12 +1812,9 @@
     overflow: auto;
     ul {
       li {
+        margin-left: 15px;
         &:last-child {
           padding-right: 30px;
-        }
-        > span,
-        a {
-          white-space: nowrap;
         }
       }
     }
@@ -1780,10 +1830,7 @@
       }
     }
   }
-  .button.smaller, button.smaller, input[type=button].smaller, input[type=submit].smaller {
-    font-size: 8px;
-    padding: 0 7px;
-  }
+
   .button.smaller.button-with-icon.icon-left, button.smaller.button-with-icon.icon-left, input[type=button].smaller.button-with-icon.icon-left, input[type=submit].smaller.button-with-icon.icon-left {
     margin-left: 5px;
   }
@@ -1828,14 +1875,37 @@
   .login-wrapper a.close,
   .reset-pw-wrapper a.close,
   .signup-wrapper a.close {
-    right: 50%;
-    margin-right: 32.5vw;
+    right: auto;
+    margin-left: -60px;
+    margin-right: auto;
   }
 
 
 
 }
+@media (min-width: 767px) and (max-width: 991px) {
+  .hide_if_table {
+    display: none;
+  }
+  .show_if_tablet {
+    display: block;
+  }
+
+  .login-wrapper,
+  .mobile-menu-wrapper,
+  .mobile-menu-wrapper-submenu,
+  .reset-pw-wrapper,
+  .signup-wrapper,
+  .change-pw-wrapper {
+    a.close{
+      right: auto;
+      margin-left: -60px;
+      margin-right: auto;
+    }
+  }
+}
 @media (min-width: 330px) and (max-width: 360px) {
+
   .mobile-menu-wrapper a.close,
   .change-pw-wrapper a.close,
   .login-wrapper a.close,
@@ -1844,4 +1914,5 @@
     right: 50%;
     margin-right: 32.5vw;
   }
+
 }

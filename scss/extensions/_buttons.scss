@@ -174,29 +174,38 @@ input[type='button'],
         &:before {
           display: inline-block;
           content: " ";
-          width: 23px;
-          height: 23px;
-          margin: -3px;
+          width: 20px;
+          height: 20px;
           background-image: url('#{$path}static/images/play_button_plus.svg');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
           vertical-align: middle;
-          margin-right: 7px;
-          background-position-y: 1px;
+          margin-right: 10px;
         }
         .label {
           vertical-align: middle;
         }
+        &.c-icon-plus {
+          &:before {
+            background-position-y: -2px;
+            background-size: 140%;
+          }
+        }
         &.c-icon-play {
+          padding: 5px 15px;
+          padding-left: 5px;
+          min-height: 30px;
           &:before {
             width: 20px;
             height: 20px;
-            background-image: url('#{$path}static/images/play_button.svg');
+            background-image: url(../static/images/play_button.svg);
+            background-size: 112%;
           }
         }
         &.c-icon-pen {
-          padding: 8px 15px;
+          padding: 6px 15px;
+          min-height: 30px;
           &:before {
             vertical-align: top;
             width: 12px;
@@ -205,7 +214,8 @@ input[type='button'],
           }
         }
         &.c-icon-share {
-          padding: 8px 15px;
+          padding: 6px 15px;
+          min-height: 30px;
           &:before {
             vertical-align: top;
             width: 12px;
@@ -500,6 +510,9 @@ input[type='button'],
   }
   &.min-w-176 {
     min-width: 176px;
+  }
+  &.min-w-124 {
+    min-width: 124px;
   }
 }
 
