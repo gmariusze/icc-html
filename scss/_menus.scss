@@ -32,6 +32,7 @@
         bottom: 0;
         left: 100%;
         width: $menu_sub_width;
+        min-height: 100vh;
         background-color: $color_big_stone;
         padding-top: 60px;
         overflow: auto;

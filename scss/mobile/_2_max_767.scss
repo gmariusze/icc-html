@@ -1910,6 +1910,18 @@
   .show_if_tablet {
     display: none;
   }
+  div.section {
+    &.notifications,
+    .notifications-list {
+      .line{
+        &.new{
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: 330px) and (max-width: 360px) {
 

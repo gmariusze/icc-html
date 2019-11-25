@@ -64,17 +64,20 @@ input[type='button'],
   &.blue {
     background-color: $color_prussian_blue;
     color: #FFFFFF;
+    &:hover {
+      background-color: $color_btn_blue_hover;
+    }
   }
   &.red {
-    background-color: $color_sunset_orange;
+    background-color: $color_btn_red;
     &:hover {
-      background-color: #E04644;
+      background-color: $color_btn_red_hover;
     }
   }
   &.green {
-    background-color: $button_green;
+    background-color: $color_btn_green;
     &:hover {
-      background-color: $button_green_hover;
+      background-color: $color_btn_green_hover;
     }
   }
   &.dark-grey {
@@ -187,6 +190,10 @@ input[type='button'],
           vertical-align: middle;
         }
         &.c-icon-plus {
+          > span {
+            position: relative;
+            top:-1px;
+          }
           &:before {
             background-position-y: -2px;
             background-size: 140%;
@@ -196,6 +203,13 @@ input[type='button'],
           padding: 5px 15px;
           padding-left: 5px;
           min-height: 30px;
+
+          min-width: 165px;
+          justify-content: flex-start;
+          > span {
+            position: relative;
+            top:-1px;
+          }
           &:before {
             width: 20px;
             height: 20px;
@@ -222,6 +236,10 @@ input[type='button'],
             height: 10px;
             background-image: url('#{$path}static/images/share_white.svg');
           }
+          > span {
+            position: relative;
+            top:-1px;
+          }
         }
       }
     }
@@ -232,6 +250,10 @@ input[type='button'],
     font-size: 12px;
     line-height: 14px;
     font-weight: 500;
+
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
   }
   &.larger {
     padding: 13px 44px;
@@ -460,7 +482,7 @@ input[type='button'],
     line-height: 18px;
     padding: 16px 30px;
     align-self: center;
-    
+
     &.smaller {
       font-family: $font-stack-2;
       font-size: 12px;

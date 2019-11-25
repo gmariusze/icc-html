@@ -2432,18 +2432,49 @@ div.section {
     padding: 5px 0;
 
   }
+  --lh2: 22px;
   &.cards-list {
     padding-bottom: 12px;
     &.large-bottom-padding {
       padding-bottom: 60px;
     }
     &.general-resources {
+      &.www {
+        .element{
+          .labels {
+            .title {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
       .element{
-
         .labels  {
           min-height: 59px;
           .title {
-            margin-bottom: 15px;
+            //margin-bottom: 15px;
+            > a {
+              position: relative;
+              --max-lines: 2;
+              max-height: calc(var(--lh2) * var(--max-lines));
+              overflow: hidden;
+              display: block;
+              &:before {
+                background: white;
+                content: "...";
+                position: absolute;
+                bottom: 5px;
+                right: 0;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                right: 0; /* note: not using bottom */
+                width: 1rem;
+                height: 1rem;
+                background: white;
+              }
+            }
           }
           .buttons {
             display: flex;
@@ -2543,6 +2574,29 @@ div.section {
           font-size: 16px;
           font-weight: 500;
           line-height: 20px;
+          > a {
+            position: relative;
+            --max-lines: 2;
+            max-height: calc(var(--lh2) * var(--max-lines));
+            overflow: hidden;
+            display: block;
+            &:before {
+              background: white;
+              content: "...";
+              position: absolute;
+              bottom: 5px;
+              right: 0;
+              padding-left: 5px;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0; /* note: not using bottom */
+              width: 1rem;
+              height: 1rem;
+              background: white;
+            }
+          }
         }
         .tags {
           margin: 10px 0;
@@ -2858,7 +2912,7 @@ div.section {
           }
         }
         .column-c {
-          width: 88px;
+          width: 128px;
           .title {
             font-size: 14px;
             font-weight: 300;

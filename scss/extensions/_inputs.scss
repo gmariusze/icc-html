@@ -1004,7 +1004,7 @@ textarea {
         font-family: $font-stack-2;
         font-size: 13px;
         font-weight: 300;
-        line-height: 16px;
+        //line-height: 16px;
         min-width: 40px;
         height: 40px;
         padding: 0 15px;
@@ -1016,6 +1016,37 @@ textarea {
     }
   }
 }
+
+/* Safari 10.1+ (alternate method) */
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+  .button {
+    &.smaller {
+      &.button-with-icon{
+        &.icon-left{
+          &.c-icon-share{
+            &:before {
+              position: relative;
+              top:-1px; 
+            }
+          }
+        }
+      }
+    }
+    .safari-fix {
+      position: relative;
+      bottom: -1px;
+      display: inline-block;
+    }
+  }
+  div.section.comments .desc-column .comments-wrap .comment-input .input input[type=text] {
+    @include placeholder {
+      line-height: 40px;
+    }
+  }
+}}
 
 /* Edge */
 @supports (-ms-ime-align:auto) {
@@ -1059,6 +1090,7 @@ textarea {
 
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
+
   .search-input {
     input[type='text'] {
       @include placeholder {

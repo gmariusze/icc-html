@@ -100,11 +100,16 @@ body {
   position: relative;
   &.dashboard {
     display: flex;
+    .side-menu-wrapper {
+      position: fixed;
+      top:0;
+      width: $side-menu-width;
+    }
     .page-side-menu {
       position: relative;
       background-color: $color_prussian_blue;
       box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
-      width: 130px;
+      width: $side-menu-width;
       flex-shrink: 0;
       z-index: $zi_side_menu;
       .logo {

@@ -136,7 +136,7 @@ body {
   .main-credentials-container {
     position: relative;
     min-height: 100vh;
-
+    padding-right: 1px;
     &:after {
       content: " ";
       position: absolute;
