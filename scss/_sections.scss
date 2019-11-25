@@ -221,6 +221,7 @@ div.section {
     font-weight: 300;
     line-height: 22px;
     padding: 80px 0;
+    background-color: #fff;
     &.bottom-padding-smaller {
       padding-top: 75px;
       padding-bottom: 26px;
@@ -298,6 +299,7 @@ div.section {
   }
   &.carousel {
     padding: 80px 0;
+    background-color: #fff;
     h2 {
       text-align: center;
     }
@@ -323,10 +325,25 @@ div.section {
         transform: scaleX(-1);
       }
       .continuous-carousel {
+        &:hover {
+          .swiper-wrapper {
+            transition-duration: 20000000ms !important;
+            .swiper-slide {
+              opacity: 0.6;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
         .swiper-wrapper {
           transition-timing-function: linear;
+
+
           .swiper-slide {
             padding: 20px 0;
+            transition: opacity ease-in-out 0.3s;
             &:nth-child(2n+1) {
               .element {
                 margin-top: 45px;
@@ -465,6 +482,7 @@ div.section {
   }
   &.partners {
     overflow: hidden;
+    background-color: #fff;
     &.grey {
       background-color: $color_alabaster;
     }
@@ -1436,7 +1454,7 @@ div.section {
           padding: 0px 15px;
           font-size: 13px;
           @include placeholder {
-            line-height: 36px;
+            //line-height: 36px;
           }
         }
         input[type=submit] {
@@ -2065,7 +2083,7 @@ div.section {
               line-height: 40px;
               padding: 0px 15px;
               @include placeholder {
-                line-height: 36px;
+                //line-height: 36px;
               }
             }
             input[type=submit] {

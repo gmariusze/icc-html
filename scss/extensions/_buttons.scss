@@ -311,7 +311,7 @@ input[type='button'],
         background-position: center;
         background-repeat: no-repeat;
         margin-right: 5px;
-        transition: all ease-in-out 0.3s;
+        transition: none;
       }
       &.ico-like {
         &:before {
@@ -451,12 +451,16 @@ input[type='button'],
     }
   }
   &.btn_t1 {
+    display: -webkit-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     padding: 16px 30px;
+    align-self: center;
+    
     &.smaller {
       font-family: $font-stack-2;
       font-size: 12px;
@@ -465,9 +469,6 @@ input[type='button'],
       border-radius: 15px;
       padding: 7px 15px;
       min-width: 80px;
-      text-align: center;
-      display: inline-flex;
-      align-items: center;
     }
   }
   &.btn_create_post {

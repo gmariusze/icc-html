@@ -4,36 +4,24 @@ var outdatedbrowser;
 
 /* Create carousel */
 window.Swiper = require('swiper');
-/*
-var swiper = new Swiper('.continuous-carousel', {
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  spaceBetween: 24,
-  loop: true,
-  loopFillGroupWithBlank: false,
-  autoplay: {
-    delay: 1,
-    disableOnInteraction: false,
-  },
-  speed: 5000,
-  freeMode: true
-});
-*/
+
 var swiper = new Swiper('.continuous-carousel.swiper-container', {
    slidesPerView: 1,
    spaceBetween: 15,
    slidesPerGroup: 1,
    loop: true,
    loopFillGroupWithBlank: true,
+   freeMode:true,
    autoplay: {
      delay: 1,
-     disableOnInteraction: false,
+     disableOnInteraction: true,
+     waitForTransition:false
    },
-   speed:15000,
+   speed:20000,
    breakpoints: {
       320: {
         slidesPerView: 'auto',
-        speed:10000,
+        speed:20000,
       },
       768: {
         slidesPerView: 2,
@@ -47,6 +35,42 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
       }
    }
  });
+
+ var swiperMain = document.getElementsByClassName("continuous-carousel");
+
+ swiperMain[0].onmouseover = function() {
+    swiper.changeDirection('vertical');
+    swiper.changeDirection('horizontal');
+ }
+
+ swiperMain[0].onmouseout = function() {
+    swiper.changeDirection('vertical');
+    swiper.changeDirection('horizontal');
+ }
+
+  /*
+  var swiperMain = document.getElementsByClassName("continuous-carousel");
+  var toggleAnimation = function(){
+    state = swiperMain[0].style.animationPlayState == 'paused' ? 'running' : 'paused';
+    swiperMain[0].style.animationPlayState = state;
+  }
+
+
+  swiperMain[0].onmouseover = function() {
+    toggleAnimation();
+  }
+
+  swiperMain[0].onmouseout = function() {
+    console.log('leave');
+    toggleAnimation();
+  }
+  */
+  /*
+  $("").hover(function(){
+     swiper.autoplay.stop();
+  }, function(){
+     swiper.autoplay.start();
+  });*/
 
 var statsSlider = new Swiper('.stats-slider.swiper-container', {
     loop: true,
@@ -112,14 +136,18 @@ var inputRange = document.getElementsByClassName('rangefinder')[0],
     maxValue = 100, // the higher the smoother when dragging
     speed = 1,
     currValue, rafID;
-    // set min/max value
-    inputRange.min = 0;
-    inputRange.max = maxValue;
-    // bind events
-    inputRange.addEventListener('mousedown', unlockStartHandler, false);
-    inputRange.addEventListener('mousestart', unlockStartHandler, false);
-    inputRange.addEventListener('mouseup', unlockEndHandler, false);
-    inputRange.addEventListener('touchend', unlockEndHandler, false);
+
+    if (typeof inputRange !== 'undefined') {
+      // set min/max value
+      inputRange.min = 0;
+      inputRange.max = maxValue;
+      // bind events
+      inputRange.addEventListener('mousedown', unlockStartHandler, false);
+      inputRange.addEventListener('mousestart', unlockStartHandler, false);
+      inputRange.addEventListener('mouseup', unlockEndHandler, false);
+      inputRange.addEventListener('touchend', unlockEndHandler, false);
+    }
+
 
 
 function unlockStartHandler() {

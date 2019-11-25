@@ -398,6 +398,7 @@
             .button {
               min-width: 165px;
               box-shadow: none;
+              text-align: center;
             }
           }
         }
@@ -702,6 +703,7 @@
           overflow: auto;
           .profile-pic {
             margin-right: 10px;
+            flex-shrink: 0;
           }
           .main-text-container {
             .text-wrap{
@@ -1902,6 +1904,11 @@
       margin-left: -60px;
       margin-right: auto;
     }
+  }
+}
+@media (min-width: 991px) {
+  .show_if_tablet {
+    display: none;
   }
 }
 @media (min-width: 330px) and (max-width: 360px) {
