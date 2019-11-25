@@ -1886,6 +1886,7 @@
 
 }
 @media (min-width: 767px) and (max-width: 991px) {
+
   .hide_if_table {
     display: none;
   }
@@ -1903,6 +1904,16 @@
       right: auto;
       margin-left: -60px;
       margin-right: auto;
+    }
+  }
+  div.section{
+    &.news-feed-list,
+    &.news-feed {
+      .news-container {
+        .stats-element {
+          min-height: 214px;
+        }
+      }
     }
   }
 }
