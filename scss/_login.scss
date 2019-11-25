@@ -19,12 +19,11 @@ body {
     overflow: hidden;
     height: 100vh;
   }
-
+  /*
   &.modal-mobile-menu-open {
     .mobile-menu-wrapper {
       opacity: 1;
       visibility: visible;
-      /*transform: translateX(0);*/
     }
   }
 
@@ -32,7 +31,6 @@ body {
     .mobile-menu-wrapper-submenu {
       opacity: 1;
       visibility: visible;
-      /*transform: translateX(0);*/
     }
   }
 
@@ -40,30 +38,27 @@ body {
     .login-wrapper {
       opacity: 1;
       visibility: visible;
-      /*transform: translateX(0);*/
     }
   }
   &.modal-signup-open {
     .signup-wrapper {
       opacity: 1;
       visibility: visible;
-      /*transform: translateX(0);*/
     }
   }
   &.modal-change-pw-open {
     .change-pw-wrapper {
       opacity: 1;
       visibility: visible;
-      /*transform: translateX(0);*/
     }
   }
   &.modal-reset-pw-open {
     .reset-pw-wrapper {
       opacity: 1;
       visibility: visible;
-      /*transform: translateX(0);*/
     }
   }
+  */
 }
 
 .mobile-menu-wrapper-submenu,
@@ -80,8 +75,8 @@ body {
   -webkit-overflow-scrolling: touch;
   //transform: translateX(10px);
   z-index: $zi_login_modal;
-  opacity: 0;
-  visibility: hidden;
+  //opacity: 0;
+  //visibility: hidden;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   overflow-x: hidden;
