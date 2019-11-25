@@ -11,10 +11,13 @@
   body
   {
     &.modal_open {
-      position: relative;
+      position: fixed;
       height: 100%;
       width: 100%;
       overflow: hidden;
+      body {
+        position: fixed;
+      }
     }
   }
   .page-content {
@@ -779,6 +782,15 @@
       padding-left: 15px;
       padding-right: 10px;
       padding-top: 10px;
+      &:before {
+        content: " ";
+        background-color: #fff;
+        position: absolute;
+        bottom:100%;
+        right: 0;
+        left: 0;
+        height: 1000px;
+      }
       &.filter-space {
         padding-right: 10px;
       }
