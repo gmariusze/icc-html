@@ -155,7 +155,15 @@
       }
     }
 
+    .notifications-list {
+      .inner-container {
+        padding: 5px 0;
+      }
+    }
     &.notifications {
+      .inner-container {
+        padding: 5px 0;
+      }
       .line {
         padding: 10px 15px;
       }

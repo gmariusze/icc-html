@@ -36,17 +36,18 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    }
  });
 
- var swiperMain = document.getElementsByClassName("continuous-carousel");
+  var swiperMain = document.getElementsByClassName("continuous-carousel");
+  if (typeof swiperMain !== 'undefined' && typeof swiperMain[0] !== 'undefined') {
+   swiperMain[0].onmouseover = function() {
+      swiper.changeDirection('vertical');
+      swiper.changeDirection('horizontal');
+   }
 
- swiperMain[0].onmouseover = function() {
-    swiper.changeDirection('vertical');
-    swiper.changeDirection('horizontal');
- }
-
- swiperMain[0].onmouseout = function() {
-    swiper.changeDirection('vertical');
-    swiper.changeDirection('horizontal');
- }
+   swiperMain[0].onmouseout = function() {
+      swiper.changeDirection('vertical');
+      swiper.changeDirection('horizontal');
+   }
+  }
 
   /*
   var swiperMain = document.getElementsByClassName("continuous-carousel");
