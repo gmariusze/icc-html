@@ -11,6 +11,11 @@
           opacity: 1;
           border-left-color: $color_mexican_red;
         }
+        > .submenu-l2,
+        > .submenu-l1 {
+          opacity: 1;
+          visibility: visible;
+        }
       }
       a {
         transition: all ease-in-out 0.3s;
@@ -27,6 +32,8 @@
       }
       > .submenu-l2,
       > .submenu-l1 {
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top:0;
         bottom: 0;

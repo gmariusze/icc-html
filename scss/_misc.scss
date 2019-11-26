@@ -27,6 +27,152 @@ body {
 
   }
 }
+
+.button-line-editables {
+  margin-top: 30px;
+  &.no-margin-top {
+    margin-top: 0;
+  }
+  > * {
+    margin-left: 18px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.popular-content {
+  border: 1px solid #E0E1E1;
+  overflow: hidden;
+  min-height: 212px;
+  border-radius: 5px;
+  .line {
+    border-bottom:1px solid #E0E1E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    .label {
+      display: flex;
+      align-items: center;
+      .icon {
+        flex-shrink: 0;
+        margin-right:10px;
+      }
+      .text {
+        color: $color_main_text_darker;
+        font-family: $font-stack-2;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.content-material {
+  border: 1px solid #E0E1E1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  .title {
+    color: $color_dark_grey;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 10px 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    li {
+      padding: 10px 0;
+      a {
+        color: $color_prussian_blue;
+        font-family: $font-stack-2;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+.calender {
+  border: 1px solid #E0E1E1;
+  overflow: hidden;
+  min-height: 212px;
+  border-radius: 5px;
+  .line {
+    border-bottom:1px solid #E0E1E1;
+  }
+  .element {
+    color: $color_main_text_darker;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: center;
+  }
+  .title {
+    color: $color_main_text_darker;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+  }
+  .pure-g {
+    margin: 0;
+    [class*=pure-u] {
+      border-left: 1px solid #E0E1E1;
+      padding: 5px;
+      &:first-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+.vtop {
+  vertical-align: top;
+}
+
+a {
+  font-size: 14px;
+}
+
+p {
+  font-family: $font-stack-2;
+  margin: 10px 0;
+  &.light {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  &.book {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  &.medium {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  &.bold {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+  }
+  &.black {
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 17px;
+  }
+}
 .pure-g {
   [class*=pure-u] {
     font-family: $font-stack;

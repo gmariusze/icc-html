@@ -188,7 +188,6 @@ body {
     transform: translateX(230px);
   }
   .page-wrapper {
-    /*ransform: translateX(0);*/
     transition: all ease-in-out 0.2s;
   }
   .mobile-navigation-place {
@@ -202,12 +201,78 @@ body {
   }
 }
 
-#mobile_lang {
-  height: $header-height;
-  padding: 0 10px;
-  border: 0;
-  outline:none;
-  background: none;
-  font-size: 16px;
-  option {}
+.inlined-tag {
+  display: inline-block;
+}
+
+.tags-list {
+  > * {
+    margin-left: 14px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 14px;
+    }
+  }
+}
+.tabs {
+  .tabs-nav {
+    background-color: $color_greyish;
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      > li {
+        margin-left: 35px;
+        display: flex;
+        align-items: center;
+        &:first-child {
+          margin-left: 24px;
+        }
+        &:last-child {
+          margin-right: 24px;
+        }
+        > a:not(.button) {
+          display: block;
+          color: $color_dark_grey;
+          font-family: $font-stack-2;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 18px;
+          padding: 18px 0;
+          border-top: 2px solid transparent;
+          border-bottom: 2px solid transparent;
+          position: relative;
+          .label {
+            position: relative;
+          }
+          .remove {
+            position: absolute;
+            top: -12px;
+            right: -14px;
+            display: block;
+            height: 14px;
+            width: 14px;
+            background-image: url('#{$path}static/images/close.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          &:after {
+            content: " ";
+            height: 2px;
+            background-color: $color_prussian_blue;
+          }
+        }
+        &.selected {
+          > a {
+            color: $color_prussian_blue;
+            border-bottom: 2px solid $color_prussian_blue;
+          }
+        }
+      }
+    }
+  }
 }

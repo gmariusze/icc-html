@@ -167,6 +167,14 @@ textarea {
 
 .select-wrap {
   position: relative;
+  > .label {
+    color: $color_main_text_darker;
+    font-family: $font-stack-2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 10px 0;
+  }
   &.select-is-open {
     .select-input {
       border-radius: 5px 5px 0 0;
@@ -193,6 +201,7 @@ textarea {
     height: 40px;
     padding: 0 15px;
     border: 1px solid $color_iron;
+    background-color: #fff;
     border-radius: 5px;
     .label {
       color: $color_gray_chateau;
@@ -264,6 +273,31 @@ textarea {
           display: flex;
           align-items: center;
         }
+      }
+    }
+  }
+  &.type-2 {
+
+    .select-values {
+      box-shadow: none;
+      .select-entries {
+        padding: 0;
+        border: 1px solid #E0E1E1;
+       .entry {
+         margin: 0;
+         border:0;
+         border-radius: 0;
+         padding: 11px 15px;
+          &[data-selected=true] {
+          }
+         .label {
+
+         }
+         .icon {
+           opacity: 0;
+           visibility: hidden;
+         }
+       }
       }
     }
   }
@@ -662,6 +696,7 @@ input[type='text'] {
   @include placeholder {
     color: $input-placeholder-color;
   }
+  &.focus,
   &:focus {
     border: 1px solid $color_main_text;
   }
@@ -763,6 +798,9 @@ textarea {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
+    &.pad {
+      padding: 10px 0;
+    }
     .req {
       color: $color_sunset_orange;
     }
@@ -787,6 +825,16 @@ textarea {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      label {
+        &.sized {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 17px;
+          margin-left: 10px;
+          vertical-align: middle;
+          margin-top: -4px;
+        }
+      }
       ~ .error-label {
         text-align: left;
       }
@@ -796,6 +844,9 @@ textarea {
 
 .search-input {
   position: relative;
+  &.max-width-384 {
+    max-width: 384px;
+  }
   &.smaller {
     input[type='text'] {
       height: 40px;
@@ -1029,7 +1080,7 @@ textarea {
           &.c-icon-share{
             &:before {
               position: relative;
-              top:-1px; 
+              top:-1px;
             }
           }
         }

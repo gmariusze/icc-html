@@ -1,0 +1,119 @@
+.booklet {
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+  }
+  .element {
+    max-width: 533px;
+  }
+  .max-width-384 {
+    max-width: 384px;
+  }
+  .description-tabs {
+    color: #9EA7AE;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: right;
+    margin-left: -20px;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .checkbox-line {
+    display: flex;
+    > * {
+      margin-left: 52px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .button-line {
+    margin-top: 30px;
+    &.no-margin-top {
+      margin-top: 0;
+    }
+    > * {
+      margin-left: 18px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .icons-list {
+    > * {
+      margin-left: 18px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .colors-list {
+    display: flex;
+    margin: -10px;
+    .color-element {
+      margin: 10px;
+      .color {
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9B9B9B;
+        &.white {
+          background-color: #fff;
+        }
+        &.black {
+          background-color: #000000;
+          color: #FFFFFF;
+        }
+        &.blue {
+          background-color: $color_prussian_blue;
+          color: #FFFFFF;
+        }
+        &.grey {
+          background-color: $color_oslo_gray;
+          color: #FFFFFF;
+        }
+        &.dark-grey {
+          background-color:$color_dark_grey;
+          color: #FFFFFF;
+        }
+        &.chateau {
+          background-color: $color_gray_chateau;
+          color: #FFFFFF;
+        }
+        &.comet {
+          background-color: $color_comet;
+          color: #FFFFFF;
+        }
+        &.dark-text {
+          background-color: $color_main_text_darker;
+          color: #FFFFFF;
+        }
+        &.greyish {
+          background-color: $color_greyish;
+        }
+        &.main-background {
+          background-color: $color_grey_back;
+        }
+      }
+      .label {
+        color: $color_gray_chateau;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: right;
+        margin: 10px 0;
+        width: 90px;
+      }
+    }
+  }
+}

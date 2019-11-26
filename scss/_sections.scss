@@ -2327,6 +2327,76 @@ div.section {
           border-top-left-radius: 5px;
         }
       }
+      &.with-other-content {
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+        background-color: #fff;
+        border-radius: 5px;
+        .pure-g {
+          margin:0px -12px;
+          [class*=pure-u] {
+            padding:20px 12px;
+          }
+        }
+        .tabs-content {
+          background-color: #F9F9F9;
+          padding: 0 24px;
+        }
+        .tabs-other-content {
+          overflow: hidden;
+          .results-info-wrap {
+            margin-top: 20px;
+            padding: 0 24px;
+          }
+          .table {
+            padding: 0;
+            .line {
+              border-top: 1px solid #E0E1E1;
+              padding: 20px 24px;
+              &.title-line {
+                padding: 9px 24px;
+                border-top: 0;
+                .pure-g {
+                  [class*=pure-u] {
+                    align-items: flex-end;
+                  }
+                }
+              }
+            }
+            .pure-g {
+              margin: 0;
+              [class*=pure-u] {
+                padding: 0 0;
+                display: flex;
+                align-content: center;
+                .title {
+                  padding: 0 0;
+                  color: $color_prussian_blue;
+                  font-family: $font-stack-2;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 20px;
+                }
+                .element {
+                  color: $color_dark_grey;
+                  font-family: $font-stack-2;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  display: flex;
+                  align-items: center;
+                  &.title {
+                    color: $color_prussian_blue;
+                    font-family: $font-stack-2;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       .tabs-nav {
         background-color: $color_greyish;
         padding: 0 24px;
@@ -3501,5 +3571,41 @@ div.section {
 
 
     }
+  }
+
+  &.misc {
+    padding: 10px 0;
+    &.larger-top-padding {
+      padding-top: 30px;
+    }
+    &.larger-bottom-padding {
+      padding-bottom: 30px;
+    }
+    h2 {
+      &.v2 {
+        display: flex;
+        justify-content: space-between;
+        &.no-right-padding {
+          padding-right: 0;
+        }
+        &.no-left-padding {
+          padding-left: 0;
+        }
+      }
+    }
+    .wrap {
+      padding: 20px 24px;
+      border-top: 1px solid $border_color;
+      &.no-border {
+        border-top: 0;
+      }
+      &.no-right-padding {
+        padding-right: 0;
+      }
+      &.no-left-padding {
+        padding-left: 0;
+      }
+    }
+
   }
 }
