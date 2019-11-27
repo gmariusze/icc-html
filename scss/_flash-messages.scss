@@ -4,6 +4,9 @@
   right: 30px;
   z-index: $zi_flash_messages;
   display: none;
+  &.static {
+    position: static;
+  }
   &.open {
     display: block;
   }

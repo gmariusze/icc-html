@@ -115,6 +115,9 @@ input[type='button'],
     background-color: #fff;
     color: #CED1D3;
     border: 1px solid #CED1D3;
+    &.text-color-blue {
+      color: $color_dark_grey;
+    }
   }
   &.white-border {
     background-color: #fff;
@@ -134,6 +137,7 @@ input[type='button'],
   &.blue {
     background-color: $color_prussian_blue;
     color: #FFFFFF;
+    &.active,
     &:hover {
       background-color: $color_btn_blue_hover;
     }
@@ -592,6 +596,10 @@ input[type='button'],
       font-weight: 500;
       line-height: 14px;
       padding: 0;
+      &.active,
+      &:hover {
+        text-decoration: underline;
+      }
       &.ico-play {
         &:before {
           height: 20px;
@@ -609,6 +617,22 @@ input[type='button'],
       font-size: 12px;
       font-weight: 500;
       line-height: 14px;
+    }
+    &.grey {
+      &.active,
+      &:hover {
+        color: #fff;
+        &[class*="ico"]{
+          &:before {
+            background-image: url('#{$path}static/images/share_white.svg');
+          }
+        }
+      }
+    }
+    &.smaller {
+      &[class*="ico"]{
+        padding: 8px 15px;
+      }
     }
   }
   &.btn_t1 {

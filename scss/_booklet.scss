@@ -1,4 +1,14 @@
 .booklet {
+  .list {
+    display: flex;
+    align-items: center;
+    > * {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
   h2 {
     font-size: 22px;
     font-weight: bold;

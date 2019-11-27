@@ -214,6 +214,11 @@ textarea {
     .arrow {
       transition: all ease-in-out 0.3s;
     }
+    &.has-entries-selected {
+      .label {
+        color: $color_dark_grey;
+      }
+    }
   }
   .select-values {
     opacity: 0;
@@ -821,6 +826,19 @@ textarea {
   }
   &.input-checkbox {
     display: block;
+    &.visual-wrap {
+      padding: 4px 8px;
+
+      border: 1px solid $border_color;
+      border-radius: 2px;
+      .checkbox-with-label-wrap  {
+        position: relative;
+        bottom: -2px;
+      }
+      &.checked {
+        background-color: $color_grey_back;
+      }
+    }
     .checkbox-with-label-wrap {
       display: flex;
       align-items: center;

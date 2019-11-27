@@ -28,6 +28,34 @@ body {
   }
 }
 
+.prof-picture,
+div.section.notifications .line .picture,
+div.section .notifications-list .line .picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  flex-shrink: 0;
+  margin-right: 15px;
+  background-color: #7C3290;
+  position: relative;
+  .text {
+    @include full_size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SF UI Display Light';
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+  }
+  > img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
 .button-line-editables {
   margin-top: 30px;
   &.no-margin-top {
