@@ -591,8 +591,23 @@ div.section {
       line-height: 19px;
     }
   }
+  &.toolbar-dummy {
+    min-height: $toolbar_dummy_height;
+  }
   &.toolbar {
-    position: relative;
+    &.fixaded {
+      position: fixed;
+      left: $side-menu-width;
+      top:0;
+      right: 0;
+    }
+    &.sticky {
+      position: fixed;
+      top: 0;
+      left: $side-menu-width;
+      right: 0;
+    }
+    z-index: $zi_fixed_header;
     padding: 10px 0;
     background-color: #FFFFFF;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
@@ -720,6 +735,7 @@ div.section {
           padding:0;
           border-radius: 5px;
           overflow: hidden;
+          z-index: $zi_profile_menu;
           box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
           .profile-slider-wrap {
             position: relative;

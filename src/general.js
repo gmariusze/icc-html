@@ -112,19 +112,21 @@ function offset(el) {
 function getStickOffset() {
   var offsetTOP = null;
   var sticky = document.getElementsByClassName("sticky-here");
-  if (typeof div !== 'undefined' && typeof div[0] !== 'undefined') {
+  if (typeof sticky !== 'undefined' && typeof sticky[0] !== 'undefined') {
     var offsetTOP = offset(sticky[0]).top;
   }
 
   return offsetTOP;
 }
-window.onscroll = function() {stickySidebar()};
+
 function stickySidebar() {
   var doc = document.documentElement;
   var left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
   var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
   var div = document.getElementsByClassName("sticky-here");
+
   if (typeof div !== 'undefined' && typeof div[0] !== 'undefined' && window.innerWidth > 991) {
+
     var transY = top;
     div[0].style.transform = "translateY("+transY+"px)";
   }
@@ -207,4 +209,51 @@ function animateHandler() {
 }
 /* Animate handler range input */
 
-/*Scrollbar*/
+/* Sticky header */
+var windowWidth = window.innerWidth;
+
+
+function scroll() {
+  stickySidebar();
+  stickyHeader();
+}
+function resize() {
+  windowWidth = window.innerWidth;
+}
+
+// Get the header
+var header = document.getElementsByClassName("toolbar")[0];
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+var body = document.body;
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyHeader() {
+
+  if(windowWidth<=991) {
+    header.classList.remove("sticky");
+    body.classList.remove("stickyHeader");
+  }else{
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      body.classList.add("stickyHeader");
+    } else {
+      header.classList.remove("sticky");
+      body.classList.remove("stickyHeader");
+    }
+  }
+
+}
+
+var submenu_li = document.getElementsByClassName("has-submenu")[0];
+/* Sidemenu hover blackout */
+if(typeof submenu_li !== 'undefined') {
+  submenu_li.onmouseover = function() {
+    body.classList.add("faded");
+  }
+  submenu_li.onmouseout = function() {
+    body.classList.remove("faded");
+  }
+}
+
+window.onscroll = function() {scroll()};
+window.onresize = function() {resize()};

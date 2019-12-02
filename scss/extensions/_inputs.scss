@@ -1063,6 +1063,8 @@ textarea {
           color: $color_white;
         }
       }
+      .dots,
+      > span,
       > a {
         display: flex;
         align-items: center;

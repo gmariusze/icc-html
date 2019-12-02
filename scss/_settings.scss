@@ -29,6 +29,7 @@ $header-height: 140px;
 
 $footer-height: 56px;
 
+$toolbar_dummy_height:70px;
 $side-menu-width:130px;
 /*                */
 /*       BTN      */
@@ -79,11 +80,13 @@ $zi_filter_input_results:50;
 $zi_search_results:150;
 $zi_flash_messages:600;
 $zi_save_bar:50;
-$zi_submenu:100;
 $zi_fav_dropdown:150;
 $zi_favourites-dropdown-line:15;
-$zi_fade:10;
-$zi_side_menu:15;
+$zi_fade:60;
+$zi_side_menu:150;
+$zi_side_submenu:150;
+$zi_profile_menu:50;
+$zi_fixed_header:50;
 
 $menu_sub_width:280px;
 
