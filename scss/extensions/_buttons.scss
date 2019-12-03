@@ -292,7 +292,10 @@ input[type='button'],
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
-
+    > span {
+      position: relative;
+      top: -1px;
+    }
     &.button-with-icon {
       padding: 5px 15px;
       justify-content: flex-start;

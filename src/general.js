@@ -12,9 +12,11 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    loop: true,
    loopFillGroupWithBlank: true,
    freeMode:true,
+   preventInteractionOnTransition:true,
+   allowTouchMove:true,
    autoplay: {
      delay: 1,
-     disableOnInteraction: true,
+     disableOnInteraction: false,
      waitForTransition:false
    },
    speed:20000,

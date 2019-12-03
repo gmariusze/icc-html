@@ -1092,31 +1092,86 @@ textarea {
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
-
-  .button {
-    &.smaller {
-      &.button-with-icon{
-        &.icon-left{
-          &.c-icon-share{
-            &:before {
-              position: relative;
-              top:-1px;
+  body {
+    .dashpopup{
+      &.personal-practice {
+        .practices-count {
+          .right {
+            .button {
+              &.smaller {
+                > span {
+                  top:1px;
+                }
+              }
             }
           }
         }
       }
     }
-    .safari-fix {
-      position: relative;
-      bottom: -1px;
-      display: inline-block;
+    .text-tag,
+    .video-tag {
+      .number {
+        position: relative;
+        bottom: -1px;
+      }
+    }
+    .button {
+      .safari-fix {
+        position: relative;
+        bottom: -1px;
+        display: inline-block;
+      }
+      &.smaller {
+        .safari-fix,
+        > span {
+          position: relative;
+          top:0;
+        }
+        &.button-with-icon{
+          &.icon-left{
+            &.c-icon-play {
+              > span {
+                top:0;
+              }
+            }
+            &.c-icon-share{
+              &:before {
+                position: relative;
+                top:-1px;
+              }
+            }
+          }
+        }
+      }
+
+      .safari-fix {
+        position: relative;
+        bottom: -1px;
+        display: inline-block;
+      }
+    }
+
+
+  }
+  div.section {
+    &.news-feed-list,
+    &.news-feed {
+      .comment-input {
+        .input {
+          input[type='text'] {
+            //line-height: 34px;
+          }
+        }
+      }
+    }
+    &.comments .desc-column .comments-wrap .comment-input .input input[type=text] {
+      @include placeholder {
+        line-height: 40px;
+      }
     }
   }
-  div.section.comments .desc-column .comments-wrap .comment-input .input input[type=text] {
-    @include placeholder {
-      line-height: 40px;
-    }
-  }
+
+
 }}
 
 /* Edge */
@@ -1162,10 +1217,50 @@ textarea {
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
 
+  .button {
+    &:not(.smaller) {
+      .safari-fix {
+        position: relative;
+        bottom: -1px;
+        display: inline-block;
+      }
+    }
+    &.smaller {
+      position: relative;
+      bottom: 0;
+      &.button-with-icon {
+        &.icon-left {
+          &.c-icon-play {
+            > span {
+              position: relative;
+              top:0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .search-input {
     input[type='text'] {
       @include placeholder {
         line-height: 24px;
+      }
+    }
+  }
+
+  div.section {
+    &.news-feed-list,
+    &.news-feed {
+      .comment-input {
+        .input {
+          input[type='text'] {
+            line-height: 34px;
+            @include placeholder {
+              line-height: 36px;
+            }
+          }
+        }
       }
     }
   }

@@ -329,7 +329,7 @@ div.section {
           .swiper-wrapper {
             transition-duration: 20000000ms !important;
             .swiper-slide {
-              opacity: 0.6;
+              opacity: 0.4;
 
               &:hover {
                 opacity: 1;
@@ -716,6 +716,7 @@ div.section {
           box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
           padding: 4px 5px;
           padding-right: 10px;
+          cursor: pointer;
         }
         .picture-place {
           margin-right: 15px;
@@ -1466,7 +1467,7 @@ div.section {
         .rich-input,
         input[type='text'] {
           height: 34px;
-          line-height: 34px;
+          //line-height: 34px;
           padding: 0px 15px;
           font-size: 13px;
           @include placeholder {

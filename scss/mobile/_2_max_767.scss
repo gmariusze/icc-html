@@ -4,6 +4,11 @@
 }
 
 @media (max-width: 991px) {
+  .content-material{
+    > ul {
+      padding-left: 0;
+    }
+  }
   .hide_if_mobile {
     display: none;
   }
@@ -152,6 +157,9 @@
         &.no-left-padding {
           padding: 20px 15px;
         }
+      }
+      .inner-container {
+        padding: 0;
       }
     }
 
@@ -1423,8 +1431,15 @@
             text-align: left;
             margin-bottom: 20px;
           }
+          .buttons {
+            //justify-content: center;
+            .button {
+
+            }
+          }
         }
       }
+
       .practice-list-wrap {
         .line{
           display: block;
@@ -1757,10 +1772,13 @@
         &:first-child {
           margin-left: 0;
         }
+        > .dots,
+        > span,
         > a {
-         min-width: 38px;
-         height: 38px;
-         padding: 0 14px;
+         min-width: 35px;
+         height: 35px;
+         padding: 0 10px;
+         max-width: 100%;
         }
       }
     }
