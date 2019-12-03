@@ -3597,10 +3597,31 @@ div.section {
     &.larger-bottom-padding {
       padding-bottom: 30px;
     }
+    .inner-container {
+      padding: 10px;
+      > .pure-g {
+        margin: 0;
+        > [class*=pure-u] {
+          padding: 12px;
+        }
+      }
+    }
+    .column {
+      > * {
+        margin-top: 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
     h2 {
       &.v2 {
         display: flex;
         justify-content: space-between;
+        padding:20px 0;
+        margin: 0;
+        border-bottom: 1px solid $border_color;
+        margin-bottom: 20px;
         &.no-right-padding {
           padding-right: 0;
         }
@@ -3610,8 +3631,8 @@ div.section {
       }
     }
     .wrap {
-      padding: 20px 24px;
-      border-top: 1px solid $border_color;
+      //padding: 20px 24px;
+      //border-top: 1px solid $border_color;
       &.no-border {
         border-top: 0;
       }
