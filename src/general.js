@@ -17,39 +17,54 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    autoplay: {
      delay: 1,
      disableOnInteraction: false,
+     reverseDirection: false,
      waitForTransition:false
    },
+   freeModeSticky:false,
    speed:20000,
    breakpoints: {
       320: {
         slidesPerView: 'auto',
         speed:20000,
+        preventInteractionOnTransition:false,
+        freeModeMomentumRatio:0.5,
+        freeModeMomentumVelocityRatio:0.8,
+        freeModeSticky:true
       },
       768: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
+        preventInteractionOnTransition:false,
+        freeModeMomentumRatio:0.5,
+        freeModeMomentumVelocityRatio:0.8,
+        freeModeSticky:true
       },
       1024: {
         slidesPerView: 4,
         slidesPerGroup: 4,
-        spaceBetween: 30
+        spaceBetween: 30,
+        preventInteractionOnTransition:true,
+        freeModeSticky:false,
       }
    }
  });
 
   var swiperMain = document.getElementsByClassName("continuous-carousel");
-  if (typeof swiperMain !== 'undefined' && typeof swiperMain[0] !== 'undefined') {
-   swiperMain[0].onmouseover = function() {
-      swiper.changeDirection('vertical');
-      swiper.changeDirection('horizontal');
-   }
+  if(window.innerWidth > 991) {
+    if (typeof swiperMain !== 'undefined' && typeof swiperMain[0] !== 'undefined') {
+     swiperMain[0].onmouseover = function() {
+        swiper.changeDirection('vertical');
+        swiper.changeDirection('horizontal');
+     }
 
-   swiperMain[0].onmouseout = function() {
-      swiper.changeDirection('vertical');
-      swiper.changeDirection('horizontal');
-   }
+     swiperMain[0].onmouseout = function() {
+        swiper.changeDirection('vertical');
+        swiper.changeDirection('horizontal');
+     }
+    }
   }
+
 
   /*
   var swiperMain = document.getElementsByClassName("continuous-carousel");

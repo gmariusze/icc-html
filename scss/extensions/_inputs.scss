@@ -1216,6 +1216,27 @@ textarea {
 
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
+  body {
+    .dashpopup{
+      &.full-screen-mobile {
+        .dashpopup-wrap {
+          .form-dashboard {
+            .top {
+              padding-bottom: 220px;
+            }
+          }
+        }
+      }
+    }
+    .change-pw-wrapper .main-credentials-space,
+    .login-wrapper .main-credentials-space,
+    .mobile-menu-wrapper .main-credentials-space,
+    .mobile-menu-wrapper-submenu .main-credentials-space,
+    .reset-pw-wrapper .main-credentials-space,
+    .signup-wrapper .main-credentials-space {
+      padding-bottom: 220px;
+    }
+  }
 
   .button {
     &:not(.smaller) {
