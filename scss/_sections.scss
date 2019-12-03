@@ -2607,6 +2607,8 @@ div.section {
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
       overflow: hidden;
       word-break: break-all;
+      min-height: 100%;
+      background-color: #fff;
       .picture {
         position: relative;
         a.close {
@@ -2734,7 +2736,7 @@ div.section {
       }
     }
   }
-  --lh: 1.4rem;
+  --lh: 1.35rem;
   &.video-blog {
     .element {
       .labels {

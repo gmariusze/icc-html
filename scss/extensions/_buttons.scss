@@ -295,6 +295,9 @@ input[type='button'],
     > span {
       position: relative;
       top: -1px;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &.button-with-icon {
       padding: 5px 15px;
@@ -320,6 +323,7 @@ input[type='button'],
           background-position: center;
           vertical-align: middle;
           margin-right: 10px;
+          flex-shrink: 0;
         }
         .label {
           vertical-align: middle;
