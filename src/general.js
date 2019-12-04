@@ -241,7 +241,9 @@ function resize() {
 // Get the header
 var header = document.getElementsByClassName("toolbar")[0];
 // Get the offset position of the navbar
-var sticky = header.offsetTop;
+if(typeof header !== 'undefined') {
+  var sticky = header.offsetTop;
+}
 var body = document.body;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyHeader() {

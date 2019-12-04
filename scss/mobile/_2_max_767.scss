@@ -25,6 +25,24 @@
       }
     }
   }
+  body {
+    &.modal-mobile-menu-open,
+    &.modal-login-open,
+    &.modal-signup-open,
+    &.modal-change-pw-open,
+    &.modal-reset-pw-open {
+      &:after {
+        width: calc(88% - 18px);
+        top:-1000px;
+        height: 10000px;
+        background-color: #fff;
+        content: "";
+        position: fixed;
+        right: 0;
+        z-index: 300;
+      }
+    }
+  }
   .page-content {
     overflow: hidden;
   }
@@ -808,6 +826,9 @@
   .change-pw-wrapper,
   .signup-wrapper,
   .login-wrapper {
+    > .container {
+      //padding: 0;
+    }
     .main-credentials-space {
       padding-left: 15px;
       padding-right: 10px;
@@ -817,9 +838,10 @@
         background-color: #fff;
         position: absolute;
         bottom:100%;
-        right: 0;
+        right: -600px;
         left: 0;
         height: 1000px;
+        z-index: 500;
       }
       &.filter-space {
         padding-right: 10px;
@@ -950,6 +972,7 @@
     }
   }
 
+  /*
   .mobile-menu-wrapper-submenu a.close,
   .mobile-menu-wrapper a.close,
   .change-pw-wrapper a.close,
@@ -965,7 +988,7 @@
         width: 100px;
         background-color: $color_prussian_blue;
       }
-  }
+  }*/
   .mobile-menu-wrapper-submenu a.close {
 
   }
