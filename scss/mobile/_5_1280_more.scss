@@ -7,4 +7,11 @@
   .dashboard-container {
     width: 1130px;
   }
+  div.section{
+    &.video-player {
+      .text-area {
+        max-width: 257px;
+      }
+    }
+  }
 }

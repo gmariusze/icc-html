@@ -228,18 +228,21 @@ function animateHandler() {
 
 /* Sticky header */
 var windowWidth = window.innerWidth;
+var header = document.getElementsByClassName("toolbar")[0];
 
 
 function scroll() {
-  stickySidebar();
+  //stickySidebar();
   stickyHeader();
 }
 function resize() {
   windowWidth = window.innerWidth;
+  if(typeof header !== 'undefined') {
+    sticky = header.offsetTop;
+  }
 }
 
 // Get the header
-var header = document.getElementsByClassName("toolbar")[0];
 // Get the offset position of the navbar
 if(typeof header !== 'undefined') {
   var sticky = header.offsetTop;
@@ -247,7 +250,7 @@ if(typeof header !== 'undefined') {
 var body = document.body;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyHeader() {
-
+  //windowWidth = window.innerWidth;
   if(windowWidth<=991) {
     header.classList.remove("sticky");
     body.classList.remove("stickyHeader");
@@ -274,5 +277,5 @@ if(typeof submenu_li !== 'undefined') {
   }
 }
 
-window.onscroll = function() {scroll()};
 window.onresize = function() {resize()};
+window.onscroll = function() {scroll()};

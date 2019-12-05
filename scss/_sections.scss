@@ -742,6 +742,9 @@ div.section {
             position: relative;
             background: linear-gradient(180deg, #0171B3 0%, #01446C 100%);
             .background-animated-paths {
+              @include animation();
+
+              /*
               @include full_size;
               .path-a,
               .path-b {
@@ -760,7 +763,7 @@ div.section {
               .path-b {
                 animation-duration: 50s;
                 background-image: url('#{$path}static/images/Line_2.png');
-              }
+              }*/
             }
             .stats-slider {
               .swiper-pagination-bullets {
@@ -1007,7 +1010,8 @@ div.section {
       padding-right: 0px;
       position: relative;
       .background-animated-paths {
-        @include full_size;
+        @include animation();
+        /*
         .path-a,
         .path-b {
           @include full_size;
@@ -1025,7 +1029,7 @@ div.section {
         .path-b {
           animation-duration: 50s;
           background-image: url('#{$path}static/images/Line_2.png');
-        }
+        }*/
       }
       &.blue-container {
         padding: 0;
@@ -1474,6 +1478,9 @@ div.section {
             //line-height: 36px;
           }
         }
+        .rich-input {
+          padding: 8px 15px;
+        }
         input[type=submit] {
           position: absolute;
           top:3px;
@@ -1613,6 +1620,7 @@ div.section {
       border-radius: 5px;
       background-color: $color_big_stone;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+      max-width: 282px;
       .title-wrap {
         padding: 20px 24px;
         overflow: hidden;

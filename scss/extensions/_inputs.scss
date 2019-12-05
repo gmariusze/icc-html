@@ -247,6 +247,17 @@ textarea {
     .select-entries {
       border-top: 1px solid $color_iron;
       padding: 5px 10px;
+      &.with-grouping {
+        padding: 2px 10px;
+      }
+      .entry-label {
+        color: $color_main_text_darker;
+        font-family: $font-stack-2;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 10px 0;
+      }
       .entry {
         display: flex;
         justify-content: space-between;
@@ -675,6 +686,7 @@ textarea {
   font-weight: 300;
   line-height: 16px;
   color: $color_main_text_darker;
+  padding: 8px 15px;
   .non-contenteditable {
     display: inline-block;
   }
@@ -1276,9 +1288,10 @@ textarea {
       .comment-input {
         .input {
           input[type='text'] {
-            line-height: 34px;
+            line-height: 16px;
             @include placeholder {
-              line-height: 36px;
+              padding: 4px 0;
+              line-height: 16px;
             }
           }
         }
@@ -1286,3 +1299,22 @@ textarea {
     }
   }
 }
+/* Ipad specific */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  div.section {
+    &.news-feed-list,
+    &.news-feed {
+      .comment-input {
+        .input {
+          input[type='text'] {
+            line-height: 16px;
+            @include placeholder {
+              padding: 1px 0;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+ }

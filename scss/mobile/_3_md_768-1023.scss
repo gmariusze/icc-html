@@ -1,6 +1,14 @@
 /* MD */
 @media (min-width: 991px) and (max-width: 1024px) {
+  body {
+    &.stickyHeader {
+      .page-content {
+        padding-top: 135px;
+      }
+    }
+  }
   div.section {
+    
     &.partners {
       padding: 30px 0;
       .logos {

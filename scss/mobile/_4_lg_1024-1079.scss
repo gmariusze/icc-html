@@ -9,6 +9,13 @@
         margin-right: -97px;
     }
   }
+  div.section{
+    &.video-player {
+      .text-area {
+        max-width: 223px;
+      }
+    }
+  }
 }
 @media (min-width: 1025px) and (max-width: 1145px) {
   .dashboard-container {

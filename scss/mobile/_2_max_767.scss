@@ -588,6 +588,7 @@
       .text-area {
         background-color: #fff;
         padding-top: 10px;
+        max-width: initial;
         .title-wrap {
           padding: 0 15px;
           border-bottom: 1px solid #EEF0F1;
@@ -1855,7 +1856,9 @@
 }
 
 @media (max-width: 330px) {
-
+  div.section.practice-list-edit .inner-container h2.v2 .buttons>* {
+    font-size: 9px;
+  }
   .pagination-input{
      ul {
        li {
@@ -1902,6 +1905,8 @@
     .labels {
       .label-item {
         max-width: 90px;
+        font-size: 10px;
+        line-height: 12px;
       }
     }
   }
