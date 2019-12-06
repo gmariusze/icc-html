@@ -8,7 +8,15 @@
     }
   }
   div.section {
-    
+    &.news-feed-list {
+      .comment-input {
+        .input {
+          .rich-input {
+            max-width: initial;
+          }
+        }
+      }
+    }
     &.partners {
       padding: 30px 0;
       .logos {

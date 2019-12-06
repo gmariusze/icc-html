@@ -166,10 +166,10 @@
     }
     &.news-feed-list {
       .comment-input {
-        .rich-input {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+        .input {
+          .rich-input {
+            padding: 8px 15px;
+          }
         }
       }
     }
@@ -982,6 +982,14 @@
     }
   }
 
+  .mobile-menu-wrapper-submenu,
+  .mobile-menu-wrapper,
+  .reset-pw-wrapper,
+  .change-pw-wrapper,
+  .signup-wrapper,
+  .login-wrapper {
+    right: -10px;
+  }
   /*
   .mobile-menu-wrapper-submenu a.close,
   .mobile-menu-wrapper a.close,
@@ -1897,11 +1905,6 @@
     }
     &.news-feed-list {
       .comment-input {
-        .rich-input {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
         .input {
           input[type=submit] {
             min-width: 80px;

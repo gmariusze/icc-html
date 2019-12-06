@@ -1240,6 +1240,7 @@ div.section {
           }
         }
         .main-text-container {
+          
           &.grey-text-back {
             .text-wrap {
               position: relative;
@@ -1480,6 +1481,7 @@ div.section {
           padding: 8px 15px;
           padding-right: 110px;
           height: auto;
+          max-width: 628px;
         }
         input[type=submit] {
           position: absolute;
@@ -2632,6 +2634,13 @@ div.section {
       background-color: #fff;
       .picture {
         position: relative;
+        .play-button {
+          position: absolute;
+          top:calc(50% - 25px);
+          left:calc(50% - 25px);
+          width: 50px;
+          height: 50px;
+        }
         a.close {
           position: absolute;
           top:15px;
@@ -2657,6 +2666,10 @@ div.section {
           position: absolute;
           left: 15px;
           bottom: 15px;
+          transition: .2s;
+          &:hover {
+            transform: scale(1.1)
+          }
           &.playlist {
             background-image: url(#{$path}static/images/playlist.svg);
             background-size: 40px;

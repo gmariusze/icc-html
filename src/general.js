@@ -14,8 +14,10 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    preventInteractionOnTransition:true,
    allowTouchMove:true,
    loopAdditionalSlides:3,
+   preventClicks:false,
+   preventClicksPropagation:false,
    autoplay: {
-     delay:0,
+     delay:1,
      stopOnLastSlide:false,
      disableOnInteraction: false,
      reverseDirection: false,
@@ -25,12 +27,12 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
    speed:110000,
    breakpoints: {
       320: {
-        speed:50000,
+        speed:5000,
         slidesPerView: 'auto',
         preventInteractionOnTransition:false,
         freeModeMomentumRatio:0.5,
         freeModeMomentumVelocityRatio:0.8,
-        freeModeSticky:true
+        //freeModeSticky:true
       },
       768: {
         slidesPerView: 2,
@@ -39,14 +41,14 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
         preventInteractionOnTransition:false,
         freeModeMomentumRatio:0.5,
         freeModeMomentumVelocityRatio:0.8,
-        freeModeSticky:true
+        //freeModeSticky:true
       },
       1024: {
         slidesPerView: 4,
         slidesPerGroup: 4,
         spaceBetween: 30,
         preventInteractionOnTransition:true,
-        freeModeSticky:false,
+        //freeModeSticky:false,
       },
       1600: {
         slidesPerView: 5,
