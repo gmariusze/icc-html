@@ -1478,16 +1478,17 @@ div.section {
         }
         .rich-input {
           padding: 8px 15px;
+          padding-right: 110px;
+          height: auto;
         }
         input[type=submit] {
           position: absolute;
-          top:3px;
-          bottom: 3px;
+          top:calc(50% - 14px);
           right: 3px;
           font-size: 12px;
           font-weight: 500;
           line-height: 14px;
-          padding: 0px 20px;
+          padding: 7px 35px;
           min-width: 101px;
         }
       }
