@@ -1075,6 +1075,7 @@ textarea {
           color: $color_white;
         }
       }
+      .inactive,
       .dots,
       > span,
       > a {
@@ -1095,6 +1096,10 @@ textarea {
         .rotate {
           transform: rotate(180deg);
         }
+      }
+      .inactive,
+      .dots {
+        background-color: $color_grey_back;
       }
     }
   }

@@ -742,7 +742,7 @@ div.section {
             position: relative;
             background: linear-gradient(180deg, #0171B3 0%, #01446C 100%);
             .background-animated-paths {
-              @include animation();
+              @include animation(lighten($color_prussian_blue,60),0.15);
 
               /*
               @include full_size;
@@ -936,6 +936,9 @@ div.section {
           }
         }
       }
+
+
+
       &.bottom-margin {
         margin-bottom: 24px;
       }
@@ -944,6 +947,12 @@ div.section {
       }
       &.no-bottom-padding {
         padding-bottom: 0;
+      }
+    }
+    @each $current-color in $colors-list {
+      $i: index($colors-list, $current-color);
+      .inner-container.gradient-#{$i} {
+        background: linear-gradient(180deg, lighten($current-color,40) 0%, $current-color 100%);
       }
     }
   }
@@ -1010,26 +1019,14 @@ div.section {
       padding-right: 0px;
       position: relative;
       .background-animated-paths {
-        @include animation();
-        /*
-        .path-a,
-        .path-b {
-          @include full_size;
-          background-repeat:repeat-x;
-          background-position: center;
-          animation-name: MOVE-BG;
-          animation-duration: 100s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          background-size: 100%;
+        @include animation(lighten($color_prussian_blue,60), 0.15);
+      }
+
+      @each $current-color in $colors-list {
+        $i: index($colors-list, $current-color);
+        .background-animated-paths.color-#{$i} {
+          @include animation($current-color, 0.4);
         }
-        .path-a {
-          background-image: url('#{$path}static/images/Line_1.png');
-        }
-        .path-b {
-          animation-duration: 50s;
-          background-image: url('#{$path}static/images/Line_2.png');
-        }*/
       }
       &.blue-container {
         padding: 0;
@@ -1598,10 +1595,14 @@ div.section {
         top: calc(50% - 60px);
         width: 120px;
         height: 120px;
+        transition: .2s;
         > img {
           width: 100%;
           height: auto;
           vertical-align: top;
+        }
+        &:hover {
+          transform: scale(1.1)
         }
       }
       .text-tag,
@@ -1620,7 +1621,9 @@ div.section {
       border-radius: 5px;
       background-color: $color_big_stone;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
-      max-width: 282px;
+      &.sticky-here {
+        max-width: 282px;
+      }
       .title-wrap {
         padding: 20px 24px;
         overflow: hidden;
@@ -2439,6 +2442,11 @@ div.section {
             &:first-child {
               padding-left: 0;
             }
+            &:hover {
+              > a {
+                color: $color_main_text_darker;
+              }
+            }
             > a {
               position: relative;
               display: block;
@@ -2448,6 +2456,7 @@ div.section {
               font-weight: bold;
               line-height: 17px;
               padding: 24px 0;
+              transition: color ease-in-out 0.3s;
               &:after {
                 transition: all ease-in-out 0.3s;
                 opacity: 0;

@@ -10,7 +10,9 @@
   div.section{
     &.video-player {
       .text-area {
-        max-width: 257px;
+        &.sticky-here {
+          max-width: 257px;
+        }
       }
     }
   }

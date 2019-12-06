@@ -27,15 +27,14 @@
   }
 }
 
-@mixin animation() {
+@mixin animation($color, $opacity) {
   @include full_size;
-
   .wave {
     width: 100%;
     height: 100%;
 
     path {
-      fill: rgba(lighten($color_prussian_blue,60), .15);
+      fill: rgba($color, $opacity);
       animation: wave infinite linear;
       &:first-child {
         animation-duration: 18s;

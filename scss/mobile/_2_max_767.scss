@@ -164,6 +164,15 @@
         }
       }
     }
+    &.news-feed-list {
+      .comment-input {
+        .rich-input {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
     &.misc {
        h2.v2 {
          padding: 0 15px;
