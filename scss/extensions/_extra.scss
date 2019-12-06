@@ -2,7 +2,10 @@
   display: none;
 }
 .sticky-here {
-  position: fixed;
+  &.doStick {
+    position: fixed;
+    top:calc(#{$header-height/2} + 10px);
+  }
 }
 /***********/
 /*  Extra  */

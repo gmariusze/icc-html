@@ -339,7 +339,8 @@ div.section {
         }
         .swiper-wrapper {
           transition-timing-function: linear;
-
+          transform: translateY(-1em);
+          position: relative;
 
           .swiper-slide {
             padding: 20px 0;
@@ -1622,7 +1623,9 @@ div.section {
       background-color: $color_big_stone;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
       &.sticky-here {
-        max-width: 282px;
+        &.doStick {
+          max-width: 282px;
+        }
       }
       .title-wrap {
         padding: 20px 24px;

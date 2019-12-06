@@ -6,26 +6,27 @@ var outdatedbrowser;
 window.Swiper = require('swiper');
 
 var swiper = new Swiper('.continuous-carousel.swiper-container', {
-   slidesPerView: 1,
    spaceBetween: 15,
-   slidesPerGroup: 1,
+   slidesPerGroup:1,
    loop: true,
-   loopFillGroupWithBlank: true,
+   loopFillGroupWithBlank: false,
    freeMode:true,
    preventInteractionOnTransition:true,
    allowTouchMove:true,
+   loopAdditionalSlides:3,
    autoplay: {
-     delay: 1,
+     delay:0,
+     stopOnLastSlide:false,
      disableOnInteraction: false,
      reverseDirection: false,
      waitForTransition:false
    },
    freeModeSticky:false,
-   speed:20000,
+   speed:110000,
    breakpoints: {
       320: {
+        speed:50000,
         slidesPerView: 'auto',
-        speed:20000,
         preventInteractionOnTransition:false,
         freeModeMomentumRatio:0.5,
         freeModeMomentumVelocityRatio:0.8,
@@ -46,6 +47,21 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
         spaceBetween: 30,
         preventInteractionOnTransition:true,
         freeModeSticky:false,
+      },
+      1600: {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        speed:40000
+      },
+      1900: {
+        slidesPerView: 6,
+        slidesPerGroup: 6,
+        speed:30000
+      },
+      2200: {
+        slidesPerView: 7,
+        slidesPerGroup: 7,
+        speed:30000
       }
    }
  });
@@ -64,7 +80,22 @@ var swiper = new Swiper('.continuous-carousel.swiper-container', {
      }
     }
   }
+  timeout()
+  var lastpos = 0
+  function timeout() {
+      setTimeout(function () {
+          if (typeof swiper !== 'undefined') {
+            if(lastpos==swiper.getTranslate()) {
+              swiper.autoplay.stop();
+              swiper.autoplay.start();
+            }else{
+              lastpos = swiper.getTranslate();
+            }
+          }
 
+          timeout();
+      }, 500);
+  }
 
   /*
   var swiperMain = document.getElementsByClassName("continuous-carousel");
@@ -137,15 +168,14 @@ function getStickOffset() {
 }
 
 function stickySidebar() {
-  var doc = document.documentElement;
-  var left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
-  var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-  var div = document.getElementsByClassName("sticky-here");
-
-  if (typeof div !== 'undefined' && typeof div[0] !== 'undefined' && window.innerWidth > 991) {
-
-    var transY = top;
-    div[0].style.transform = "translateY("+transY+"px)";
+  var stickySidebar = document.getElementsByClassName('sticky-here')[0];
+  if(typeof stickySidebar !== 'undefined') {
+    var sticky = stickySidebar.offsetTop;
+  }
+  if (window.pageYOffset > 60 ) {
+    stickySidebar.classList.add("doStick");
+  } else {
+    stickySidebar.classList.remove("doStick");
   }
 
 }
@@ -232,7 +262,7 @@ var header = document.getElementsByClassName("toolbar")[0];
 
 
 function scroll() {
-  //stickySidebar();
+  stickySidebar();
   stickyHeader();
 }
 function resize() {
@@ -251,19 +281,20 @@ var body = document.body;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyHeader() {
   //windowWidth = window.innerWidth;
-  if(windowWidth<=991) {
-    header.classList.remove("sticky");
-    body.classList.remove("stickyHeader");
-  }else{
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-      body.classList.add("stickyHeader");
-    } else {
+  if(typeof header !== 'undefined') {
+    if(windowWidth<=991) {
       header.classList.remove("sticky");
       body.classList.remove("stickyHeader");
+    }else{
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        body.classList.add("stickyHeader");
+      } else {
+        header.classList.remove("sticky");
+        body.classList.remove("stickyHeader");
+      }
     }
   }
-
 }
 
 var submenu_li = document.getElementsByClassName("has-submenu")[0];

@@ -13,7 +13,9 @@
     &.video-player {
       .text-area {
         &.sticky-here {
-          max-width: 223px;
+          &.doStick {
+            max-width: 223px;
+          }
         }
       }
     }
