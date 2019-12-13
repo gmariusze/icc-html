@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="modal_open">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
     <meta name="description" content="">
     <title></title>
 
@@ -11,9 +14,9 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="dashboard-popup-is-open">
 <div id="outdated"></div>
-<div class="dashpopup">
+<div class="dashpopup ">
   <div class="dashpopup-wrap" style="background-image:url('static/images/photos/i11.png')">
     <a href="" class="close"></a>
     <div class="icon"><img src="static/images/ico-alert.svg" alt=""></div>
@@ -23,6 +26,56 @@
   </div>
 </div>
 <div class="page-wrapper dashboard">
+    <div class="dashpopup form-popup new-practice  full-screen-mobile">
+      <div class="dashpopup-wrap">
+        <div class="form-dashboard">
+          <div class="top">
+            <div class="title">
+              <h2><span>Add evaluation </span> <a href="" class="close"></a></h2>
+            </div>
+            <div class="new-practices-form">
+              <div class="input-with-label offset-top">
+                <label for="notes">Which outcomes were achieved?</label>
+                <div class="rating-score offset-top-5">
+                  <ul>
+                    <li><span class="star"></span></li>
+                    <li><span class="star"></span></li>
+                    <li><span class="star"></span></li>
+                    <li><span class="star"></span></li>
+                    <li><span class="star open"></span></li>
+                    <li><span class="rating">4/5</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="input-with-label offset-top">
+                <label for="notes">Which outcomes were achieved?</label>
+                <input type="text" id="notes" name="notes">
+              </div>
+              <div class="input-with-label">
+                <label for="notes">How did the actual session differ from the planned session?</label>
+                <input type="text" id="equipment" name="equipment">
+              </div>
+              <div class="input-with-label">
+                <label for="notes">Did the session create any novel dilemmas for you?</label>
+                <input type="text" id="aim" name="aim">
+              </div>
+              <div class="input-with-label">
+                <label for="notes">What feedback did you get from players and other coaches?</label>
+                <input type="text" id="organisation" name="organisation">
+              </div>
+              <div class="input-with-label">
+                <label for="notes">Notes</label>
+                <input type="text" id="variation" name="variation">
+              </div>
+            </div>
+          </div>
+          <div class="buttons-wrap">
+            <a href="" class="button dark-grey-v2 br-5">Cancel</a>
+            <a href="" class="button green br-5">Save</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="page-side-menu">
       <div class="side-menu-wrapper">
         <a href="#home_url" class="logo"></a>
@@ -38,6 +91,7 @@
           </ul>
         </div>
       </div>
+
     </div>
     <div class="page-content">
       <!-- Can have class: overlay-gradient -->
@@ -225,11 +279,11 @@
             <ul>
               <li><a href="">Dashboard</a></li>
               <li><a href="">Plan practice</a></li>
-              <li><span class="current">SACS Ladies training</span></li>
+              <li><span class="current">New</span></li>
             </ul>
           </div>
           <div class="title">
-            <h2 class="justify"><div class="label">SACS Ladies training</div> <div class="buttons"><a href="" class="button dark-grey-v2 smaller button-with-icon icon-left c-icon-share min-mob-w-165">Share PDF</a></div></h2>
+            <h2>New plan</h2>
           </div>
         </div>
       </div>
@@ -241,41 +295,41 @@
               <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-3">
                   <div class="element">
-                    <div class="label label-list">Session plan name</div>
-                    <div class="input-value">
-                      SACS Ladies training
+                    <div class="label">Session plan name <span class="red">*</span></div>
+                    <div class="input-wrap">
+                      <input type="text" name='session-plan-name'>
                     </div>
                   </div>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3">
                   <div class="element">
-                    <div class="label label-list">Session description</div>
-                    <div class="input-value">
-                      Lorem ipsum
+                    <div class="label">Session description</div>
+                    <div class="input-wrap">
+                      <input type="text" name='session-plan-name'>
                     </div>
                   </div>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3">
                   <div class="element">
-                    <div class="label label-list">Venue</div>
-                    <div class="input-value">
-                      Lorem ipsum
+                    <div class="label">Venue</div>
+                    <div class="input-wrap">
+                      <input type="text" name='session-plan-name'>
                     </div>
                   </div>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3">
                   <div class="element">
-                    <div class="label label-list">Area for coach development</div>
-                    <div class="input-value">
-                      Lorem ipsum dolor sit
+                    <div class="label">Area for coach development</div>
+                    <div class="input-wrap">
+                      <input type="text" name='session-plan-name'>
                     </div>
                   </div>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-3">
                   <div class="element">
-                    <div class="label label-list">Date</div>
-                    <div class="input-value">
-                      12 / 12 / 2022
+                    <div class="label">Date <span class="red">*</span></div>
+                    <div class="input-wrap">
+                      <input type="text" name='session-plan-name' placeholder="dd/mm/yyyy">
                     </div>
                   </div>
                 </div>
@@ -297,41 +351,179 @@
                     <div class="pure-g ">
                       <div class="pure-u-1 pure-u-lg-1-3">
                         <div class="element">
-                          <div class="label label-list">Stage of development (ECB PDM)</div>
-                          <div class="input-value">
-                            Early, Basic, Enhanced
+                          <div class="label">Stage of development (ECB PDM)</div>
+                          <!-- select-is-open -->
+                          <div class="select-wrap ">
+                            <div class="select-input">
+                              <div class="label">All stages</div>
+                              <div class="arrow"><img src="static/images/input_arrow.svg" alt=""></div>
+                            </div>
+                            <div class="select-values">
+                              <div class="select-stats">
+                                <div class="left">
+                                  <strong>2</strong> selected
+                                </div>
+                                <div class="right">
+                                  <a href="" class="button white smaller no-shadow">Clear</a>
+                                </div>
+                              </div>
+                              <div class="select-entries">
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Basic</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="false">
+                                  <div class="label">Early</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Enhanced</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="pure-u-1 pure-u-lg-1-3">
                         <div class="element">
-                          <div class="label label-list">Age</div>
-                          <div class="input-value">
-                            23-28
+                          <div class="label">Age</div>
+                          <!-- CLASS: select-is-open -->
+                          <div class="select-wrap ">
+                            <div class="text-input">
+                              <input type="text" placeholder="">
+                            </div>
+                            <div class="select-values">
+                              <div class="select-stats">
+                                <div class="left">
+                                  <strong>2</strong> selected
+                                </div>
+                                <div class="right">
+                                  <a href="" class="button white smaller no-shadow">Clear</a>
+                                </div>
+                              </div>
+                              <div class="select-entries">
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Basic</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="false">
+                                  <div class="label">Early</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Enhanced</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="pure-u-1 pure-u-lg-1-3">
                         <div class="element">
-                          <div class="label label-list">Experience</div>
-                          <div class="input-value">
-                            2-5
+                          <div class="label">Experience</div>
+                          <!-- CLASS: select-is-open -->
+                          <div class="select-wrap ">
+                            <div class="text-input">
+                              <input type="text" placeholder="">
+                            </div>
+                            <div class="select-values">
+                              <div class="select-stats">
+                                <div class="left">
+                                  <strong>2</strong> selected
+                                </div>
+                                <div class="right">
+                                  <a href="" class="button white smaller no-shadow">Clear</a>
+                                </div>
+                              </div>
+                              <div class="select-entries">
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Basic</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="false">
+                                  <div class="label">Early</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Enhanced</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="pure-u-1 pure-u-lg-1-3">
                         <div class="element">
-                          <div class="label label-list">Stage of development (ECB PDM)</div>
-                          <div class="input-value">
-                            8-12
+                          <div class="label">Stage of development (ECB PDM)</div>
+                          <!-- select-is-open -->
+                          <div class="select-wrap ">
+                            <div class="select-input">
+                              <div class="label">All stages</div>
+                              <div class="arrow"><img src="static/images/input_arrow.svg" alt=""></div>
+                            </div>
+                            <div class="select-values">
+                              <div class="select-stats">
+                                <div class="left">
+                                  <strong>2</strong> selected
+                                </div>
+                                <div class="right">
+                                  <a href="" class="button white smaller no-shadow">Clear</a>
+                                </div>
+                              </div>
+                              <div class="select-entries">
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Basic</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="false">
+                                  <div class="label">Early</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Enhanced</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="pure-u-1 pure-u-lg-1-3">
                         <div class="element">
-                          <div class="label label-list">Roles</div>
-                          <div class="input-value">
-                            Batting, Bowiing, Fielding, Wicketkeeping, Captain
+                          <div class="label">Roles</div>
+                          <!-- select-is-open -->
+                          <div class="select-wrap ">
+                            <div class="select-input">
+                              <div class="label">Roles</div>
+                              <div class="arrow"><img src="static/images/input_arrow.svg" alt=""></div>
+                            </div>
+                            <div class="select-values">
+                              <div class="select-stats">
+                                <div class="left">
+                                  <strong>2</strong> selected
+                                </div>
+                                <div class="right">
+                                  <a href="" class="button white smaller no-shadow">Clear</a>
+                                </div>
+                              </div>
+                              <div class="select-entries">
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Basic</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="false">
+                                  <div class="label">Early</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                                <div class="entry" data-selected="true">
+                                  <div class="label">Enhanced</div>
+                                  <div class="icon"><img src="static/images/checkbox.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -344,156 +536,102 @@
         </div>
       </div>
 
-      <div class="section practice-view dash-board-container grey-bg">
+      <div class="section practice-list-edit dash-board-container grey-bg">
         <div class="dashboard-container">
           <div class="inner-container">
-            <h2 class="v3 special">
-                <div class="pure-g">
-                  <div class="pure-u-1 pure-u-md-1-3">
-                    <span class="top-line">
-                      <span class="title">
-                        Catching relay
-                      </span>
-                      <span class="subtitle block">
-                        Basic: Physical - Warm up and cool down
-                      </span>
-                    </span>
+            <h2 class="v2"><span class="title">Schedule</span> <span class="buttons"><a href="" class="button blue smaller">Personal practices (1)</a><a href="" class="button green smaller button-with-icon icon-left"><span>Add practices</span></a></span></h2>
+            <div class="practice-list-wrap">
+              <div class="line">
+                <div class="column-a">
+                  <div class="drag">
+                    <img src="static/images/ico-drag.svg" alt="">
                   </div>
-                  <div class="pure-u-1 pure-u-md-1-3">
-                    <span class="time-title">
-                      Time
-                    </span>
-                    <span class="subtitle">
-                      20:05
-                    </span>
-                  </div>
-                  <div class="pure-u-1 pure-u-md-1-3">
-                    <span class="buttons"><a href="" class="button blue smaller button-with-icon icon-left c-icon-play"><span class="safari-fix">Personal practices (1)</span></a></span>
-                  </div>
-                </div>
-            </h2>
-            <div class="info-container">
-              <h3>Organization</h3>
-              <ul>
-                <li>Players number themselves 1-5</li>
-                <li>1-3 stand behind a cone</li>
-                <li>4-5 stand behind the opposite cone</li>
-                <li>Number 1 starts with the ball and throws under-arm to the person opposite</li>
-                <li>Once they throw the ball the player must walk to the back of the other line</li>
-              </ul>
-              <div class="other-data">
-                <div class="pure-g">
-                  <div class="pure-u-1 pure-u-lg-1-3">
-                    <h3>Organization</h3>
-                    <p>
-                      Technical, Physical, Mental, Bowling
-                    </p>
-                  </div>
-                  <div class="pure-u-1 pure-u-lg-1-3">
-                    <h3>Core principles</h3>
-                    <p>
-                      Batting
-                    </p>
-                  </div>
-                  <div class="pure-u-1 pure-u-lg-1-3">
-                    <h3>Coaching tools</h3>
-                    <p>
-                      Question, Observe
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="other-data ">
-                <h3 class="no-bottom-margin">Practice Type</h3>
-                <div class="input-range-with-labels">
                   <div class="labels">
-                    <div class="label-item begining">
-                      Fixed practice
-                    </div>
-                    <!--
-                      Center is .label-item(width) / 2
-                      left 0 is .label-item container left, not marker center. Need to offset with .label-item(width) / 2
-                    -->
-                    <div class="label-item" style="left: 50%;transform: translateX(-45px);">
-                      Variable practice
-                    </div>
-                    <div class="label-item ending">
-                      Cricket game-based practice
-                    </div>
-                  </div>
-                  <div class="actual-input">
-                    <div class="line-deco"></div>
-                    <input type="range" min="1" max="100" value="25" name="range" class="rangefinder">
+                    <div class="title larger">SACS Ladies training</div>
+                    <div class="subtitle">Teaching Back Foot Drive Technique</div>
                   </div>
                 </div>
+                <div class="column-c">
+                  <div class="title">Time</div>
+                  <div class="subtitle">
+                    <input type="text" value="20:05">
+                  </div>
+                </div>
+                <div class="column-d">
+                  <a href="" class="button ico-button dark-grey-v2 br-5"><img src="static/images/ico-pen.svg" alt=""></a>
+                  <a href="" class="button ico-button red br-5"><img src="static/images/ico-trash.svg" alt=""></a>
+                </div>
               </div>
-              <div class="other-data last-item">
-                <h3>Notes</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                </p>
+              <div class="line">
+                <div class="column-a">
+                  <div class="drag">
+                    <img src="static/images/ico-drag.svg" alt="">
+                  </div>
+                  <div class="labels">
+                    <div class="title larger">CHPlan</div>
+                    <div class="subtitle">Teaching Back Foot Drive Technique</div>
+                  </div>
+                </div>
+                <div class="column-c">
+                  <div class="title">Time</div>
+                  <div class="subtitle">
+                    <input type="text" value="20:05">
+                  </div>
+                </div>
+                <div class="column-d">
+                  <a href="" class="button ico-button dark-grey-v2 br-5"><img src="static/images/ico-pen.svg" alt=""></a>
+                  <a href="" class="button ico-button red br-5"><img src="static/images/ico-trash.svg" alt=""></a>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section practice-view large-bottom-padding dash-board-container grey-bg">
-        <div class="dashboard-container">
-          <div class="inner-container">
-            <h2 class="v3">Evaluation  <span class="buttons"><a href="" class="button dark-grey-v2 smaller button-with-icon icon-left c-icon-pen min-mob-w-150">Edit</a></span></h2>
-            <div class="info-container">
-              <div class="other-data last-item">
-                <div class="rating">
-                  <h3>Your rate</h3>
-                  <div class="rating-score">
-                    <ul>
-                      <li><span class="star"></span></li>
-                      <li><span class="star"></span></li>
-                      <li><span class="star"></span></li>
-                      <li><span class="star"></span></li>
-                      <li><span class="star open"></span></li>
-                      <li><span class="rating">4/5</span></li>
-                    </ul>
+              <div class="line">
+                <div class="column-a">
+                  <div class="drag">
+                    <img src="static/images/ico-drag.svg" alt="">
                   </div>
-                  <div class="paragraph">
-                    <h3>Which outcomes were achieved?</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                    </p>
+                  <div class="labels">
+                    <div class="title larger">5 Day Summer Camp - Day 5</div>
+                    <div class="subtitle">The final day of a summer cricket camp for young children of a range of ages and abilities</div>
                   </div>
-                  <div class="paragraph">
-                    <h3>How did the actual session differ from the planned session?</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                </div>
+                <div class="column-c">
+                  <div class="title">Time</div>
+                  <div class="subtitle">
+                    <input type="text" value="20:05">
                   </div>
-                  <div class="paragraph">
-                    <h3>Did the session create any novel dilemmas for you?</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                </div>
+                <div class="column-d">
+                  <a href="" class="button ico-button dark-grey-v2 br-5"><img src="static/images/ico-pen.svg" alt=""></a>
+                  <a href="" class="button ico-button red br-5"><img src="static/images/ico-trash.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="line">
+                <div class="column-a">
+                  <div class="drag">
+                    <img src="static/images/ico-drag.svg" alt="">
                   </div>
-                  <div class="paragraph">
-                    <h3>What feedback did you get from players and other coaches?</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                    </p>
+                  <div class="labels">
+                    <div class="title larger">Indoor All Day Camp</div>
+                    <div class="subtitle">A summer cricket camp for young children of a range of ages and abilities that is indoor due to bad weather</div>
                   </div>
-                  <div class="paragraph">
-                    <h3>Notes</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </p>
+                </div>
+                <div class="column-c">
+                  <div class="title">Time</div>
+                  <div class="subtitle">
+                    <input type="text" value="20:05">
                   </div>
+                </div>
+                <div class="column-d">
+                  <a href="" class="button ico-button dark-grey-v2 br-5"><img src="static/images/ico-pen.svg" alt=""></a>
+                  <a href="" class="button ico-button red br-5"><img src="static/images/ico-trash.svg" alt=""></a>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      <div class="section dash-footer grey-bg footer-mobile-offset-bottom">
+      <div class="section dash-footer grey-bg">
         <div class="dashboard-container">
           <div class="footer-wrap">
             © ECB 2019, Coach development
@@ -503,13 +641,7 @@
       <div class="section save-back-buttons">
           <div class="dashboard-container">
             <div class="save-back-buttons-wrap">
-              <a href="" class="button dark-grey-v2 br-5">Back to plans</a>
-
-              <span class="more-right">
-                  <a href="" class="button ico-button larger dark-grey-v2 br-5"><img src="static/images/ico-pen.svg" width="16" alt=""></a>
-                  <a href="" class="button ico-button larger red br-5"><img src="static/images/ico-trash.svg" width="12" alt=""></a>
-                  <a href="" class="button green br-5"><span class="mobile-only-display">Save</span><span class="hide_if_mobile">Save as PDF</span></a>
-              </span>
+              <a href="" class="button dark-grey-v2 br-5">Back to plans</a><a href="" class="button green br-5">Save and finish</a>
             </div>
           </div>
       </div>

@@ -4,9 +4,6 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1379px) {
-  .dashboard-container {
-    width: 1130px;
-  }
   div.section{
     &.video-player {
       .text-area {
@@ -18,4 +15,7 @@
       }
     }
   }
+}
+@media (max-width: 1310px) {
+
 }

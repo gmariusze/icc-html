@@ -1,5 +1,22 @@
 div.section {
   padding: 15px 0;
+  &.privacy-policy {
+    ul {
+      li {
+        margin: 20px 0;
+        &:before{
+          content: " ";
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background-color: #51646E;
+          border-radius: 100%;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
   &.no-top-padding {
     padding-top: 0;
   }
@@ -175,6 +192,10 @@ div.section {
     /*596px*/
     h2 {
     	text-align: center;
+      &.frame-it {
+        max-width: 450px;
+        margin: 0 auto;
+      }
     }
     &.white {
       background-color: #fff;
@@ -615,14 +636,16 @@ div.section {
     .toolbar-wrap {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       .left {
-        width: 50%;
+        flex: 1;
+        padding-right: 15px;
       }
       .right {
-        width: 50%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
         > * {
           padding: 0 30px;
           border-left: 1px solid #EEF0F1;
@@ -743,7 +766,7 @@ div.section {
             position: relative;
             background: linear-gradient(180deg, #0171B3 0%, #01446C 100%);
             .background-animated-paths {
-              @include animation(lighten($color_prussian_blue,60),0.15);
+              @include animation2(lighten($color_prussian_blue,60),0.15);
 
               /*
               @include full_size;
@@ -1013,6 +1036,17 @@ div.section {
     }
     .inner-container {
       padding-bottom: 0;
+      &.half-height {
+        .news-container {
+          min-height: 164px;
+        }
+      }
+      &.full-height {
+        min-height: 100%;
+        .news-container {
+          min-height: 419px;
+        }
+      }
     }
     .news-container {
       padding: 0 24px;
@@ -1240,7 +1274,7 @@ div.section {
           }
         }
         .main-text-container {
-          
+
           &.grey-text-back {
             .text-wrap {
               position: relative;
@@ -1370,10 +1404,12 @@ div.section {
             }
           }
           .edit-actions {
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             padding: 0 24px;
             > * {
-              margin-left: 13px;
+              margin-left: 15px;
               vertical-align: middle;
               &.button:not(.btn-attachments) {
                 min-width: 91px;
@@ -1485,7 +1521,7 @@ div.section {
         }
         input[type=submit] {
           position: absolute;
-          top:calc(50% - 14px);
+          bottom:3px;
           right: 3px;
           font-size: 12px;
           font-weight: 500;
@@ -1696,6 +1732,7 @@ div.section {
     padding: 10px 0;
     .picture {
       height: 100%;
+      min-height: 468px;
       > img,
       > * {
         object-fit: cover;
@@ -1802,6 +1839,9 @@ div.section {
             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #002C5B 100%);
             height: 120px;
           }
+          video {
+            outline: none;
+          }
           > * {
             z-index: 50;
           }
@@ -1825,6 +1865,7 @@ div.section {
 
           .title {
             position: relative;
+            min-height: 28px;
             .hide-overflow {
               display: block;
               max-height: 36px;
@@ -1911,6 +1952,7 @@ div.section {
               line-height: 12px;
               padding: 3px 8px;
               height: 18px;
+              white-space: nowrap;
             }
           }
         }
@@ -2198,6 +2240,9 @@ div.section {
                 font-weight: 300;
                 line-height: 18px;
                 margin-top: 14px;
+                &.offset {
+                  margin-left: -55px;
+                }
               }
             }
           }
@@ -2212,6 +2257,12 @@ div.section {
     font-size: 12px;
     font-weight: 300;
     line-height: 14px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+
     &.grey-bg,
     &.grey {
       color: $color_comet;
@@ -2249,7 +2300,8 @@ div.section {
         ul {
           li {
             color: #fff;
-            a {
+            * {
+              color: #fff;
               &:after {
                 background-image: url('#{$path}static/images/ico-breadcrumbs-seperator-white.svg');
               }
@@ -2265,7 +2317,7 @@ div.section {
       .breadcrumbs-wrap {
         ul {
           li {
-            a {
+            * {
               color: $color_oslo_gray;
             }
           }
@@ -2301,8 +2353,8 @@ div.section {
           font-size: 12px;
           font-weight: 300;
           line-height: 14px;
-          a {
-            color: $color_white;
+          * {
+            color: #fff;
           	font-family: $font-stack-2;
           	font-size: 12px;
           	font-weight: 300;
@@ -2317,6 +2369,15 @@ div.section {
               width: 6px;
               height: 6px;
               margin-left: 10px;
+            }
+            &.no-underline {
+              text-decoration: none;
+            }
+            &.current {
+              text-decoration: none;
+              &:after {
+                display: none;
+              }
             }
           }
         }
@@ -2632,6 +2693,13 @@ div.section {
       word-break: break-all;
       min-height: 100%;
       background-color: #fff;
+      &:hover {
+        .picture {
+          .ico-play {
+            transform: scale(1.1)
+          }
+        }
+      }
       .picture {
         position: relative;
         .play-button {
@@ -2657,6 +2725,7 @@ div.section {
           right: 10px;
           top:10px;
         }
+
         .ico-play {
           background-image: url(#{$path}static/images/play_button.svg);
           background-size: cover;
@@ -2667,9 +2736,7 @@ div.section {
           left: 15px;
           bottom: 15px;
           transition: .2s;
-          &:hover {
-            transform: scale(1.1)
-          }
+
           &.playlist {
             background-image: url(#{$path}static/images/playlist.svg);
             background-size: 40px;
@@ -2729,7 +2796,7 @@ div.section {
             margin: -5px;
             li {
               display: inline;
-              > a {
+              > * {
                 padding: 5px;
                 display: inline-block;
                 color: $color_dark_grey;
@@ -2739,7 +2806,7 @@ div.section {
                 line-height: 12px;
               }
               &.more {
-                > a {
+                > * {
                   color: $color_prussian_blue;
                   font-size: 10px;
                   font-weight: 500;
@@ -2943,42 +3010,6 @@ div.section {
       > .rating {
         .rating-score {
           margin-bottom: 30px;
-        }
-        ul {
-          display: flex;
-          align-items: center;
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          margin: 10px 0;
-          > li {
-            &:before {
-              display: none;
-            }
-            margin-left: 10px;
-            &:first-child {
-              margin-left: 0;
-            }
-            > *.rating {
-              display: block;
-              color: $color_prussian_blue;
-              font-family: $font-stack-2;
-              font-size: 11px;
-              font-weight: 500;
-              line-height: 13px;
-            }
-            > *.star {
-              display: block;
-              width: 21px;
-              height: 20px;
-              background-image: url('#{$path}static/images/ico-star-rating-filled.svg');
-              background-size: cover;
-              background-repeat: no-repeat;
-              &.open {
-                background-image: url('#{$path}static/images/ico-star-rating-open.svg');
-              }
-            }
-          }
         }
       }
       .paragraph {
@@ -3306,6 +3337,9 @@ div.section {
           height: 6px;
           width: 6px;
           background-color: $color_sunset_orange;
+        }
+        &.buble {
+
         }
       }
       .picture {

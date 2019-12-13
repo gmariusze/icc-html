@@ -54,6 +54,7 @@ body {
         left: 0;
         top:0;
       }
+      
       &:after {
         transform: translateY(7px) translateX(-2px) rotate(45deg);
       }
@@ -342,6 +343,14 @@ body {
   &.new-practice,
   &.personal-practice,
   &.add-practice {
+    /*ShitaPhone ?*/
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    /*ShitaPhone ?*/
     overflow: auto;
     .dashpopup-wrap {
       width: 680px;

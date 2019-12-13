@@ -31,6 +31,17 @@ body {
   }
 }
 
+.no-activities {
+  background-color: #F9F9F9;
+  color: #51646E;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 0;
+  font-family: $font-stack-2;
+}
 .prof-picture,
 div.section.notifications .line .picture,
 div.section .notifications-list .line .picture {
@@ -288,18 +299,23 @@ p {
   }
   &.dashboard {
     display: flex;
+    /*
     .side-menu-wrapper {
       position: fixed;
       top:0;
       width: $side-menu-width;
-    }
+    }*/
     .page-side-menu {
-      position: relative;
+      position: fixed;
+      top:0;
       background-color: $color_prussian_blue;
       box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
       width: $side-menu-width;
       flex-shrink: 0;
       z-index: $zi_side_menu;
+      min-height: 100vh;
+      backface-visibility: hidden;
+      perspective: 1000;
       .logo {
         display: block;
         width: 106px;
@@ -313,6 +329,8 @@ p {
     .page-content {
       width: 100%;
       overflow: hidden;
+      padding-bottom: $footer-height;
+      padding-left: $side-menu-width;
     }
   }
 }

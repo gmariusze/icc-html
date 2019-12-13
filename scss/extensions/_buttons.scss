@@ -430,6 +430,10 @@ input[type='button'],
     border: 1px solid $tag_button_color;
     border-radius: 15px;
     padding: 7px 14px;
+    &:hover {
+      background-color: #60737E;
+      color: #fff;
+    }
     &.grey {
       border: 1px solid $color_iron;
     }

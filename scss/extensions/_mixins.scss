@@ -26,8 +26,50 @@
     @content;
   }
 }
-
+@keyframes spin {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+@mixin animation2($color, $opacity) {
+  overflow: hidden;
+  $scale:0.4;
+  @include full_size;
+  .wave {
+    width: 500px;
+    height: 522px;
+    position: absolute;
+    bottom: -244%;
+    left: 20%;
+    margin-left: -175px;
+    margin-bottom: -227px;
+    border-radius: 35%;
+    background: rgba($color, $opacity);
+    animation: spin 20s infinite linear;
+    &.sth {
+      animation: spin 25s infinite linear;
+      background: rgba($color, $opacity*0.9);
+    }
+  }
+}
 @mixin animation($color, $opacity) {
+  @include full_size;
+  .wave {
+    width: 1000px;
+    height: 1055px;
+    position: absolute;
+    bottom: -610%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background: rgba($color, $opacity);
+    animation: spin 20s infinite linear;
+    &.sth {
+      animation: spin 25s infinite linear;
+      background: rgba($color, $opacity*0.9);
+    }
+  }
+  /*
   @include full_size;
   .wave {
     width: 100%;
@@ -43,7 +85,7 @@
         animation-duration: 30s;
       }
     }
-  }
+  }*/
 }
 @keyframes wave {
   0%, 100% {
