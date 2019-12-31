@@ -578,9 +578,15 @@
                     <div class="picture">
                       <img src="http://dummyimage.com/40x40/cecece/fff.jpg" alt="">
                     </div>
-                    <div class="input">
-                      <input type="text" class="grey round-corners" placeholder="Add a comment.">
-                      <input type="submit" class="button blue br-17" value="Send">
+                    <div class="input error">
+                      <!--<input type="text" class="grey round-corners" placeholder="Add a comment.">-->
+                      <div class="some-wrap">
+                        <textarea name="name" rows="8" cols="80" class="grey round-corners as-input" placeholder="Add a comment."></textarea>
+                        <input type="submit" class="button blue br-17" value="Send">
+                      </div>
+                      <div class="error-label">
+                        Input should not be empty
+                      </div>
                     </div>
                   </div>
                   <div class="comments-list">
@@ -589,7 +595,22 @@
                         <img src="http://dummyimage.com/40x40/cecece/fff.jpg" alt="">
                       </div>
                       <div class="comment-content">
-                        <div class="name"><span class="text-label">Tim Simon</span> <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a></div>
+                        <div class="name">
+                          <span class="text-label">Tim Simon</span>
+
+                          <div class="more-button relative-pos">
+                            <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a>
+                            <div class="more-menu">
+                              <ul>
+                                <li><a href="">Edit post</a></li>
+                                <li><a href="">Report/Block post</a></li>
+                                <li><a href="">Delete post</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+
+                        </div>
                         <div class="subtitle">
                           <div class="job">Coach</div>
                           <div class="date">11/04/2019 at 14:27</div>
@@ -606,7 +627,19 @@
                         <img src="http://dummyimage.com/40x40/cecece/fff.jpg" alt="">
                       </div>
                       <div class="comment-content">
-                        <div class="name"><span class="text-label">Tim Simon</span> <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a></div>
+                        <div class="name">
+                          <span class="text-label">Tim Simon</span>
+                          <div class="more-button relative-pos">
+                            <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a>
+                            <div class="more-menu hide">
+                              <ul>
+                                <li><a href="">Edit post</a></li>
+                                <li><a href="">Report/Block post</a></li>
+                                <li><a href="">Delete post</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                         <div class="subtitle">
                           <div class="job">Coach</div>
                           <div class="date">11/04/2019 at 14:27</div>
@@ -623,7 +656,19 @@
                         <img src="http://dummyimage.com/40x40/cecece/fff.jpg" alt="">
                       </div>
                       <div class="comment-content">
-                        <div class="name"><span class="text-label">Tim Simon</span> <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a></div>
+                        <div class="name">
+                          <span class="text-label">Tim Simon</span>
+                          <div class="more-button relative-pos">
+                            <a href="" class="more"><img src="static/images/team_feed_dots.svg" alt=""></a>
+                            <div class="more-menu hide">
+                              <ul>
+                                <li><a href="">Edit post</a></li>
+                                <li><a href="">Report/Block post</a></li>
+                                <li><a href="">Delete post</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                         <div class="subtitle">
                           <div class="job">Coach</div>
                           <div class="date">11/04/2019 at 14:27</div>

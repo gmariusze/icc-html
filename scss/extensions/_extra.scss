@@ -43,6 +43,17 @@
 .fr {
     float: right;
 }
+ .relative-pos {
+   position: relative;
+ }
+ .more-button {
+   &.relative-pos {
+     .more-menu {
+       top:25px;
+       z-index: 50;
+     }
+   }
+ }
 
 .clear:after {
     clear: both;

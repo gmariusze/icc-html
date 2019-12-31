@@ -726,9 +726,21 @@
           .comment-input {
             .input {
               display: flex;
+              &.error {
+                display: block;
+              }
+              .some-wrap {
+                display: flex;
+              }
+              .error-label {
+              }
+              textarea,
               input[type=text] {
                 margin-right: 10px;
                 height: 34px;
+              }
+              textarea {
+                padding: 7px 15px;
               }
               input[type=submit] {
                 position: static;

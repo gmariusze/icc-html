@@ -2123,7 +2123,7 @@ div.section {
     .desc-column {
       background-color: #FFFFFF;
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
-      overflow: hidden;
+      //overflow: hidden;
 
       border-radius: 5px;
       h2 {
@@ -2142,7 +2142,7 @@ div.section {
         padding: 20px 24px;
         .comment-input {
           display: flex;
-          align-items: center;
+          //align-items: center;
           .picture {
             width: 40px;
             height: 40px;

@@ -1,6 +1,12 @@
 'use strict';
 var outdatedbrowser;
-
+/*Detect Fake safari (Safari wrapped with chrome skin, Apple fuckery)*/
+if(navigator.userAgent.match('Macintosh;') && navigator.userAgent.match('Safari/') && navigator.userAgent.match('Chrome/')) {
+  document.body.classList.add("fakeSafari");
+}
+if(navigator.userAgent.match('Macintosh;') && navigator.userAgent.match('Chrome/')) {
+  document.body.classList.add("fakeSafariChrome");
+}
 
 /* Create carousel */
 window.Swiper = require('swiper');
@@ -269,7 +275,7 @@ function stickyHeader() {
       header.classList.remove("sticky");
       document.body.classList.remove("stickyHeader");
     }else{
-      console.log(window.pageYOffset+' '+sticky);
+      //console.log(window.pageYOffset+' '+sticky);
       if(window.pageYOffset>0) {
         if (window.pageYOffset >= sticky-5) {
           header.classList.add("sticky");

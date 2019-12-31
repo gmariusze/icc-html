@@ -742,6 +742,7 @@ input[type='password'] {
   }
 }
 .rich-input,
+textarea.as-input,
 input[type='password'],
 input[type='text'] {
   width: 100%;
@@ -778,6 +779,17 @@ input[type='text'] {
   &.noborder {
     border: 0;
   }
+}
+.some-wrap {
+  position: relative;
+}
+textarea.as-input {
+  height: 40px;
+  padding: 10px 15px;
+  min-height: auto;
+  resize: none;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 select {
@@ -1149,69 +1161,111 @@ textarea {
 }
 
 /* Safari 10.1+ (alternate method) */
+@mixin fake_safari {
+  .button {
+    > span {
+      &:not(.icon) {
+        position: relative;
+        bottom: -1px;
+      }
+      &.icon {
+        position: relative;
+        top:-1px;
+      }
+    }
+    &.button-with-create {
+      &:before {
+        position: relative;
+        bottom: -2px;
+      }
+      > span {
+        position: relative;
+        bottom: -1px;
+        top:initial;
+      }
+    }
 
+  }
+  .dashpopup{
+    &.personal-practice {
+      .practices-count {
+        .right {
+          .button {
+            &.smaller {
+              > span {
+                top:1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .text-tag,
+  .video-tag {
+    .number {
+      position: relative;
+      bottom: -1px;
+    }
+  }
+  .button {
+    .safari-fix {
+      position: relative;
+      bottom: -1px;
+      display: inline-block;
+    }
+    &.smaller {
+
+      .safari-fix,
+      > span {
+        position: relative;
+        top:0;
+      }
+      &.button-with-icon{
+        &.icon-left{
+          > span {
+            top: initial;
+          }
+          &.c-icon-play {
+            > span {
+              top:0;
+            }
+          }
+          &.c-icon-share{
+            &:before {
+              position: relative;
+              top:-1px;
+            }
+          }
+        }
+      }
+    }
+
+    .safari-fix {
+      position: relative;
+      bottom: -1px;
+      display: inline-block;
+    }
+  }
+}
+
+body {
+  &.fakeSafari {
+    @include fake_safari
+  }
+  &.fakeSafariChrome {
+    .button.ico-button>img,
+    button.ico-button>img,
+    input[type=button].ico-button>img,
+    input[type=submit].ico-button>img {
+      vertical-align: middle;
+    }
+  }
+}
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
   body {
-    .dashpopup{
-      &.personal-practice {
-        .practices-count {
-          .right {
-            .button {
-              &.smaller {
-                > span {
-                  top:1px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .text-tag,
-    .video-tag {
-      .number {
-        position: relative;
-        bottom: -1px;
-      }
-    }
-    .button {
-      .safari-fix {
-        position: relative;
-        bottom: -1px;
-        display: inline-block;
-      }
-      &.smaller {
-        .safari-fix,
-        > span {
-          position: relative;
-          top:0;
-        }
-        &.button-with-icon{
-          &.icon-left{
-            &.c-icon-play {
-              > span {
-                top:0;
-              }
-            }
-            &.c-icon-share{
-              &:before {
-                position: relative;
-                top:-1px;
-              }
-            }
-          }
-        }
-      }
-
-      .safari-fix {
-        position: relative;
-        bottom: -1px;
-        display: inline-block;
-      }
-    }
-
-
+    @include fake_safari
   }
   div.section {
     &.news-feed-list,
