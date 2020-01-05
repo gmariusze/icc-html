@@ -1254,6 +1254,34 @@ body {
     @include fake_safari
   }
   &.fakeSafariChrome {
+    .button {
+      line-height: 18px;
+    }
+    div.section {
+      &.video-playlist {
+        .video-container {
+          .element {
+            .title-wrap {
+              .title[data-playing-title] {
+                &:after {
+                  line-height: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .button.smaller-2 {
+      line-height: 16px;
+    }
+    .button.smaller {
+      .safari-fix {
+        position: relative;
+        top: initial;
+        bottom: -3px;
+      }
+    }
     .button.ico-button>img,
     button.ico-button>img,
     input[type=button].ico-button>img,

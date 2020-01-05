@@ -362,6 +362,8 @@ div.section {
           transition-timing-function: linear;
           transform: translateY(-1em);
           position: relative;
+          -webkit-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
 
           .swiper-slide {
             padding: 20px 0;
@@ -393,6 +395,7 @@ div.section {
       flex-flow: column;
       justify-content: space-between;
       &:before {
+
         position: absolute;
         z-index: -1;
         right: 24px;
